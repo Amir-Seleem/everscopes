@@ -866,33 +866,129 @@ function initParticles() {
 // ===== FORM HANDLING =====
 function initForms() {
   // Contact form
+ // Contact form
+  // Contact form
   const contactForm = document.getElementById("contactForm");
   if (contactForm) {
     contactForm.addEventListener("submit", (e) => {
       e.preventDefault();
-      const wrap = document.getElementById("contactFormWrap");
-      wrap.innerHTML = `
-        <div class="form-success">
-          <div class="form-success-icon">${SVG.check}</div>
-          <h3 class="form-success-title">${i18n[currentLang].contact_success_title}</h3>
-          <p class="form-success-text">${i18n[currentLang].contact_success_text}</p>
-        </div>`;
-      setTimeout(() => location.reload(), 4000);
+
+      // 1. Capture the data and use .trim() to remove empty spaces
+      const formData = {
+        "Name": document.getElementById("contactName").value.trim(),
+        "Phone": document.getElementById("contactPhone").value.trim(),
+        "Email": document.getElementById("contactEmail").value.trim(),
+        "Interest": document.getElementById("contactInterest").value.trim(),
+        "Message": document.getElementById("contactMessage").value.trim()
+      };
+
+      // 2. VALIDATION CHECK: Make sure no field is empty
+      if (!formData.Name || !formData.Phone || !formData.Email || !formData.Interest || !formData.Message) {
+        alert("Please fill out all the fields before sending your message.");
+        return; // This completely stops the form from submitting
+      }
+
+      // 3. Briefly change the button to show it is processing
+      const submitBtn = contactForm.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn.innerHTML;
+      submitBtn.innerHTML = "Sending...";
+      submitBtn.disabled = true;
+
+      // 4. Your actual SheetDB API link
+      const GOOGLE_SHEETS_API_URL = "https://sheetdb.io/api/v1/c9jwfmnay9u6v"; 
+
+      // 5. Send the data to your API
+      fetch(GOOGLE_SHEETS_API_URL, {
+        method: "POST",
+        headers: {
+          "Accept": "application/json",
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ data: [formData] })
+      })
+      .then(response => response.json())
+      .then(data => {
+        // 6. Show your existing success animation
+        const wrap = document.getElementById("contactFormWrap");
+        wrap.innerHTML = `
+          <div class="form-success">
+            <div class="form-success-icon">${SVG.check}</div>
+            <h3 class="form-success-title">${i18n[currentLang].contact_success_title}</h3>
+            <p class="form-success-text">${i18n[currentLang].contact_success_text}</p>
+          </div>`;
+        setTimeout(() => location.reload(), 4000);
+      })
+      .catch(error => {
+        // Handle failure by reverting the button so they can try again
+        console.error("API Error: ", error);
+        submitBtn.innerHTML = originalBtnText;
+        submitBtn.disabled = false;
+        alert("Something went wrong. Please try again.");
+      });
     });
   }
 
+  // Careers form
   // Careers form
   const careersForm = document.getElementById("careersForm");
   if (careersForm) {
     careersForm.addEventListener("submit", (e) => {
       e.preventDefault();
-      const wrap = document.getElementById("careersFormWrap");
-      wrap.innerHTML = `
-        <div class="careers-form-success">
-          <div class="careers-success-icon">${SVG.check}</div>
-          <h4 class="careers-success-title">${i18n[currentLang].career_success_title}</h4>
-          <p class="careers-success-text">${i18n[currentLang].career_success_text}</p>
-        </div>`;
+
+      // 1. Capture the data and use .trim() to clean up blank spaces
+      const formData = {
+        "Name": document.getElementById("careerName").value.trim(),
+        "Phone": document.getElementById("careerPhone").value.trim(),
+        "Position": document.getElementById("careerPosition").value.trim(),
+        "Email": document.getElementById("careerEmail").value.trim(),
+        "Experience": document.getElementById("careerExp").value.trim(),
+        "Notes": document.getElementById("careerNotes").value.trim()
+      };
+
+      // 2. VALIDATION: Ensure the required fields (*) are filled
+      if (!formData.Name || !formData.Phone || !formData.Position || !formData.Email) {
+        alert("Please fill out all the required fields (*) before submitting your application.");
+        return; 
+      }
+
+      // 3. Briefly change the button to show it is processing
+      const submitBtn = careersForm.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn.innerHTML;
+      submitBtn.innerHTML = "Submitting...";
+      submitBtn.disabled = true;
+
+      // 4. Your specific SheetDB API link for Careers
+      const CAREERS_API_URL = "https://sheetdb.io/api/v1/pmolnuf3gwlsg"; 
+
+      // 5. Send the data to your API
+      fetch(CAREERS_API_URL, {
+        method: "POST",
+        headers: {
+          "Accept": "application/json",
+          "Content-Type": "application/json"
+        },
+        // Wrap the payload in a "data" array as required by SheetDB
+        body: JSON.stringify({ data: [formData] })
+      })
+      .then(response => response.json())
+      .then(data => {
+        // 6. Show your existing success animation
+        const wrap = document.getElementById("careersFormWrap");
+        wrap.innerHTML = `
+          <div class="careers-form-success">
+            <div class="careers-success-icon">${SVG.check}</div>
+            <h4 class="careers-success-title">${i18n[currentLang].career_success_title}</h4>
+            <p class="careers-success-text">${i18n[currentLang].career_success_text}</p>
+          </div>`;
+        setTimeout(() => location.reload(), 4000);
+      })
+      .catch(error => {
+        // Handle failure by reverting the button so they can try again
+        console.error("API Error: ", error);
+        submitBtn.innerHTML = originalBtnText;
+        submitBtn.disabled = false;
+        alert("Something went wrong. Please try again.");
+      });
     });
   }
 }
