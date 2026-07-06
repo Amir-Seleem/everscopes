@@ -1057,7 +1057,7 @@ input, select, textarea { font: inherit; }
   padding: 0.25rem 0.625rem; font-size: 0.75rem; font-weight: 600;
   transition: all 0.3s; color: rgba(255, 102, 0, 0.993);
 }
-.navbar.scrolled .lang-btn { color: rgba(255, 102, 0, 0.993); }
+.navbar.scrolled .lang-btn { color: #000; }
 .lang-btn.active {
   background: var(--es-orange); color: #fff;
 }
