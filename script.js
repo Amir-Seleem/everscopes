@@ -279,7 +279,7 @@ const values = [
 
 const contactInfo = [
   //   { icon: "phone", label: "Call Us", value: "+20 100 000 0000", href: "tel:+201000000000" },
-  { icon: "mail", label: "Email Us", value: "Customer-service@everscopes.com", href: "mailto:Customer-service@everscopes.com" },
+  { icon: "mail", label: "Email Us", value: "inquires@everscopes.com", href: "mailto:inquires@everscopes.com" },
   { icon: "map", label: "Visit Us", value: "Everscopes, New Cairo, Egypt", href: "https://maps.app.goo.gl/zPmiGDvLm6EiYk2e8" },
   { icon: "clock", label: "Working Hours", value: "Sat - Thu: 9AM - 9PM", href: "#" }
 ];
