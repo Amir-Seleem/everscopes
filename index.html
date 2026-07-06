@@ -5,9 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EverScopes — Egypt's Premier Real Estate Marketing</title>
   <meta name="description" content="EverScopes is Egypt's premier real estate marketing company, connecting you with premium properties from the nation's top developers.">
+   <link rel="icon" type="image/x-icon" href="https://z-cdn-media.chatglm.cn/files/e8b29a55-7616-4655-b8b1-98bb65e1391b.png?auth_key=1882717688-263d2fe5270a4b43b865732bde6ffa7b-0-c100c6a672309a8068e148e91fac5acf">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="icon" type="image/x-icon" href="https://z-cdn-media.chatglm.cn/files/e8b29a55-7616-4655-b8b1-98bb65e1391b.png?auth_key=1882717688-263d2fe5270a4b43b865732bde6ffa7b-0-c100c6a672309a8068e148e91fac5acf">
-
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -58,10 +57,10 @@
           <button class="lang-btn" id="langAr" onclick="setLang('ar')">AR</button>
         </div>
       <div class="nav-cta">
-        <!--<a href="tel:+201000000000" class="nav-phone">     0000000
+        <!--<a href="tel:+201000000000" class="nav-phone">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
           <span data-i18n="nav_contact_us">Contact Us</span>
-        </a> -->
+        </a>-->
         <button class="nav-cta-btn" onclick="scrollToSection('careers')" data-i18n="nav_join">Join Our Team</button>
       </div>
 
@@ -491,35 +490,35 @@
           <div class="reveal-right">
             <div class="contact-form-wrap" id="contactFormWrap">
               <form id="contactForm" novalidate>
-                <div class="form-row">
-                  <div class="form-group">
-                    <label class="form-label" data-i18n="contact_name">Full Name</label>
-                    <input type="text" class="form-input" required placeholder="Your name" data-i18n-placeholder="contact_name_ph">
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label" data-i18n="contact_phone">Phone Number</label>
-                    <input type="tel" class="form-input" required placeholder="+20 xxx xxx xxxx">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="form-label" data-i18n="contact_email">Email Address</label>
-                  <input type="email" class="form-input" required placeholder="your@email.com">
-                </div>
-                <div class="form-group">
-                  <label class="form-label" data-i18n="contact_interested">Interested In</label>
-                  <select class="form-select" id="contactInterest">
-                    <option value="" data-i18n="contact_select">Select a project or developer</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label class="form-label" data-i18n="contact_message">Message</label>
-                  <textarea class="form-textarea" rows="4" placeholder="Tell us about your requirements..." data-i18n-placeholder="contact_msg_ph"></textarea>
-                </div>
-                <button type="submit" class="btn-submit">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-                  <span data-i18n="contact_send">Send Message</span>
-                </button>
-              </form>
+  <div class="form-row">
+    <div class="form-group">
+      <label class="form-label" data-i18n="contact_name">Full Name</label>
+      <input type="text" id="contactName" class="form-input" required placeholder="Your name" data-i18n-placeholder="contact_name_ph">
+    </div>
+    <div class="form-group">
+      <label class="form-label" data-i18n="contact_phone">Phone Number</label>
+      <input type="tel" id="contactPhone" class="form-input" required placeholder="+20 xxx xxx xxxx">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="form-label" data-i18n="contact_email">Email Address</label>
+    <input type="email" id="contactEmail" class="form-input" required placeholder="your@email.com">
+  </div>
+  <div class="form-group">
+    <label class="form-label" data-i18n="contact_interested">Interested In</label>
+    <select class="form-select" id="contactInterest">
+      <option value="" data-i18n="contact_select">Select a project or developer</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label class="form-label" data-i18n="contact_message">Message</label>
+    <textarea id="contactMessage" class="form-textarea" rows="4" placeholder="Tell us about your requirements..." data-i18n-placeholder="contact_msg_ph"></textarea>
+  </div>
+  <button type="submit" class="btn-submit">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+    <span data-i18n="contact_send">Send Message</span>
+  </button>
+</form>
             </div>
           </div>
         </div>
@@ -558,52 +557,58 @@
               <span data-i18n="careers_apply">Apply Now</span>
             </h3>
             <div class="careers-form" id="careersFormWrap">
+              
+              
               <form id="careersForm" novalidate>
-                <div class="form-row">
-                  <div class="form-group">
-                    <label class="form-label" data-i18n="career_name">Full Name *</label>
-                    <div class="careers-input-wrap">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                      <input type="text" class="form-input" required placeholder="Your full name" data-i18n-placeholder="career_name_ph">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label" data-i18n="career_phone">Phone Number *</label>
-                    <div class="careers-input-wrap">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                      <input type="tel" class="form-input" required placeholder="+20 xxx xxx xxxx">
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="form-label" data-i18n="career_position">Job Title You're Applying For *</label>
-                  <select class="form-select" id="careerPosition" required>
-                    <option value="" data-i18n="career_select">Select a position</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label class="form-label" data-i18n="career_email">Email Address *</label>
-                  <input type="email" class="form-input" required placeholder="your@email.com">
-                </div>
-                <div class="form-group">
-                  <label class="form-label" data-i18n="career_exp">Years of Experience</label>
-                  <select class="form-select" id="careerExp">
-                    <option value="" data-i18n="career_exp_select">Select experience</option>
-                    <option value="0-1">0 - 1 years</option>
-                    <option value="1-3">1 - 3 years</option>
-                    <option value="3-5">3 - 5 years</option>
-                    <option value="5+">5+ years</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label class="form-label" data-i18n="career_notes">Additional Notes</label>
-                  <textarea class="form-textarea" rows="3" placeholder="Tell us about yourself and why you'd like to join EverScopes..." data-i18n-placeholder="career_notes_ph"></textarea>
-                </div>
-                <button type="submit" class="btn-submit">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-                  <span data-i18n="career_submit">Submit Application</span>
-                </button>
-              </form>
+  <div class="form-row">
+    <div class="form-group">
+      <label class="form-label" data-i18n="career_name">Full Name *</label>
+      <div class="careers-input-wrap">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        <input type="text" id="careerName" class="form-input" required placeholder="Your full name" data-i18n-placeholder="career_name_ph">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label" data-i18n="career_phone">Phone Number *</label>
+      <div class="careers-input-wrap">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        <input type="tel" id="careerPhone" class="form-input" required placeholder="+20 xxx xxx xxxx">
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="form-label" data-i18n="career_position">Job Title You're Applying For *</label>
+    <select class="form-select" id="careerPosition" required>
+      <option value="" data-i18n="career_select">Select a position</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label class="form-label" data-i18n="career_email">Email Address *</label>
+    <input type="email" id="careerEmail" class="form-input" required placeholder="your@email.com">
+  </div>
+  <div class="form-group">
+    <label class="form-label" data-i18n="career_exp">Years of Experience</label>
+    <select class="form-select" id="careerExp">
+      <option value="" data-i18n="career_exp_select">Select experience</option>
+      <option value="0-1">0 - 1 years</option>
+      <option value="1-3">1 - 3 years</option>
+      <option value="3-5">3 - 5 years</option>
+      <option value="5+">5+ years</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label class="form-label" data-i18n="career_notes">Additional Notes</label>
+    <textarea id="careerNotes" class="form-textarea" rows="3" placeholder="Tell us about yourself and why you'd like to join EverScopes..." data-i18n-placeholder="career_notes_ph"></textarea>
+  </div>
+  <button type="submit" class="btn-submit">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+    <span data-i18n="career_submit">Submit Application</span>
+  </button>
+</form>
+
+
+
+
             </div>
           </div>
         </div>
