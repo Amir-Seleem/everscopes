@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Everscops — Employee Handbook</title>
-    <link rel="icon" type="image/x-icon" href="https://z-cdn-media.chatglm.cn/files/e8b29a55-7616-4655-b8b1-98bb65e1391b.png?auth_key=1882717688-263d2fe5270a4b43b865732bde6ffa7b-0-c100c6a672309a8068e148e91fac5acf">
+      <link rel="icon" type="image/x-icon" href="https://z-cdn-media.chatglm.cn/files/e8b29a55-7616-4655-b8b1-98bb65e1391b.png?auth_key=1882717688-263d2fe5270a4b43b865732bde6ffa7b-0-c100c6a672309a8068e148e91fac5acf">
 
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -44,7 +44,6 @@
             font-family: 'Cairo', 'Tajawal', sans-serif;
         }
 
-        /* ===== BACKGROUND EFFECTS ===== */
         .bg-effects {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             pointer-events: none; z-index: 0;
@@ -86,13 +85,11 @@
             background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
         }
 
-        /* ===== SCROLLBAR ===== */
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: var(--dark); }
         ::-webkit-scrollbar-thumb { background: var(--orange-dark); border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: var(--orange); }
 
-        /* ===== NAVIGATION ===== */
         .navbar {
             position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
             padding: 0 2rem; height: 72px;
@@ -161,10 +158,8 @@
         .nav-toggle.active span:nth-child(2) { opacity: 0; }
         .nav-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
 
-        /* ===== MAIN CONTENT ===== */
         .main-content { position: relative; z-index: 1; padding-top: 72px; }
 
-        /* ===== HERO SECTION ===== */
         .hero {
             min-height: 92vh; display: flex; align-items: center; justify-content: center;
             padding: 6rem 2rem; position: relative; overflow: hidden;
@@ -244,7 +239,6 @@
             color: var(--orange); transform: translateY(-3px);
         }
 
-        /* 3D floating cards */
         .hero-3d-elements {
             position: absolute; top: 0; left: 0; width: 100%; height: 100%;
             pointer-events: none; perspective: 1200px;
@@ -275,8 +269,7 @@
         @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
         @keyframes fadeInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
 
-        /* ===== SECTION COMMON ===== */
-        .section { padding: 2rem 2rem; max-width: 1200px; margin: 0 auto; }
+        .section { padding: 5rem 2rem; max-width: 1200px; margin: 0 auto; }
         .section-header { text-align: center; margin-bottom: 4rem; }
         .section-label {
             display: inline-flex; align-items: center; gap: 8px;
@@ -289,8 +282,7 @@
         .section-title { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; line-height: 1.2; margin-bottom: 1rem; }
         .section-subtitle { font-size: 1.05rem; color: var(--text-muted); max-width: 600px; margin: 0 auto; }
 
-        /* ===== ABOUT SECTION ===== */
-        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
         .about-visual { position: relative; perspective: 1000px; }
         .about-card-3d {
             background: linear-gradient(145deg, var(--dark-3), var(--dark-2));
@@ -319,6 +311,205 @@
         }
         html[dir="rtl"] .about-text .quote-line i { margin-left: 8px; margin-right: 0; }
         html[dir="ltr"] .about-text .quote-line i { margin-right: 8px; margin-left: 0; }
+
+        /* ===== CEO MESSAGE ===== */
+        .ceo-message {
+            margin-top: 4rem;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 5rem;
+            align-items: stretch;
+        }
+        .ceo-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .ceo-label {
+            font-size: 0.78rem; font-weight: 700; color: var(--orange);
+            text-transform: uppercase; letter-spacing: 3px; margin-bottom: 0.5rem;
+        }
+        .ceo-name {
+            font-size: 1.4rem; font-weight: 800; margin-bottom: 1.5rem;
+            color: var(--text);
+        }
+        .ceo-name span {
+            font-size: 0.85rem; font-weight: 600; color: var(--orange-light);
+            display: block; margin-top: 0.15rem;
+        }
+        .ceo-body p {
+            color: var(--text-muted); font-size: 0.95rem; line-height: 1.95;
+            margin-bottom: 1rem;
+        }
+        .ceo-body p:last-child { margin-bottom: 0; }
+        .ceo-highlight {
+            color: var(--gold-light) !important;
+            font-weight: 600;
+            font-style: italic;
+            font-size: 1rem !important;
+        }
+        .ceo-divider {
+            width: 60px; height: 3px;
+            background: linear-gradient(90deg, var(--orange), var(--gold));
+            border-radius: 3px; margin: 1.5rem 0;
+        }
+        .ceo-image-wrap {
+            position: relative;
+            width: 280px;
+            min-height: 100%;
+            border-radius: 24px;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+        .ceo-image-wrap::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 24px;
+            background: linear-gradient(
+                180deg,
+                transparent 50%,
+                rgba(10, 10, 20, 0.6) 85%,
+                rgba(10, 10, 20, 0.95) 100%
+            );
+            z-index: 2;
+            pointer-events: none;
+        }
+        .ceo-image-wrap::after {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            border-radius: 26px;
+            background: linear-gradient(
+                180deg,
+                rgba(255, 107, 0, 0.25) 0%,
+                rgba(255, 107, 0, 0.05) 40%,
+                transparent 70%,
+                rgba(255, 107, 0, 0.15) 100%
+            );
+            z-index: 3;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        .ceo-image-wrap:hover::after {
+            opacity: 1;
+        }
+        .ceo-image-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+            display: block;
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.6s ease;
+            filter: contrast(1.05) saturate(0.9) brightness(0.95);
+        }
+        .ceo-image-wrap:hover img {
+            transform: scale(1.05);
+            filter: contrast(1.1) saturate(1) brightness(1);
+        }
+        .ceo-image-glow {
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 60px;
+            background: radial-gradient(ellipse, rgba(255, 107, 0, 0.2), transparent 70%);
+            z-index: 0;
+            filter: blur(15px);
+            transition: all 0.5s ease;
+        }
+        .ceo-image-wrap:hover .ceo-image-glow {
+            width: 90%;
+            height: 80px;
+            background: radial-gradient(ellipse, rgba(255, 107, 0, 0.35), transparent 70%);
+        }
+
+        /* ===== JOINING SECTION ===== */
+        .joining-section {
+            margin-top: 4rem;
+            background: var(--card);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            padding: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .joining-section::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; height: 4px;
+            background: linear-gradient(90deg, var(--orange), var(--gold), var(--orange));
+        }
+        .joining-title {
+            text-align: center;
+            font-size: 1.6rem;
+            font-weight: 800;
+            margin-bottom: 2.5rem;
+        }
+        .joining-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+        .joining-card {
+            padding: 2rem;
+            border-radius: 18px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.4s ease;
+            transform-style: preserve-3d;
+        }
+        .joining-card:hover {
+            background: rgba(255, 107, 0, 0.04);
+            border-color: rgba(255, 107, 0, 0.15);
+            transform: translateY(-4px) perspective(600px) rotateX(3deg);
+            box-shadow: 0 8px 30px rgba(255, 107, 0, 0.08);
+        }
+        .joining-card-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .joining-card-icon {
+            width: 50px; height: 50px; border-radius: 14px;
+            background: linear-gradient(135deg, var(--orange), var(--orange-dark));
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.1rem; color: #fff; flex-shrink: 0;
+        }
+        .joining-card-title {
+            font-size: 1.15rem; font-weight: 700;
+        }
+        .joining-card ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        .joining-card ul li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+            padding: 0.5rem 0.75rem;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.02);
+            transition: all 0.3s ease;
+        }
+        .joining-card ul li:hover {
+            background: rgba(255, 107, 0, 0.06);
+            color: var(--text);
+        }
+        .joining-card ul li i {
+            color: var(--orange);
+            font-size: 0.7rem;
+            margin-top: 0.55rem;
+            flex-shrink: 0;
+        }
 
         /* ===== VALUES SECTION ===== */
         .values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
@@ -358,7 +549,7 @@
             background: linear-gradient(180deg, transparent, rgba(255, 107, 0, 0.03), transparent);
             border-top: 1px solid var(--card-border); border-bottom: 1px solid var(--card-border);
         }
-        .mission-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
+        .mission-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; }
         .mission-card {
             background: var(--card); border: 1px solid var(--card-border);
             border-radius: 24px; padding: 3rem; position: relative; overflow: hidden;
@@ -416,10 +607,6 @@
         .evp-subtitle {
             font-size: 1.6rem; font-weight: 800; margin-bottom: 2rem;
             line-height: 1.3;
-        }
-        .evp-subtitle .highlight {
-            background: linear-gradient(135deg, var(--orange), var(--gold-light));
-            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
         }
         .evp-list { display: flex; flex-direction: column; gap: 1rem; position: relative; z-index: 1; }
         .evp-item {
@@ -480,16 +667,13 @@
         }
         .coc-msg strong { color: var(--text); }
 
-        /* Accordion */
         .coc-accordion { display: flex; flex-direction: column; gap: 0.75rem; }
         .coc-accordion-item {
             background: var(--card); border: 1px solid var(--card-border);
             border-radius: 16px; overflow: hidden;
             transition: all 0.4s ease; transform-style: preserve-3d;
         }
-        .coc-accordion-item:hover {
-            border-color: rgba(255, 107, 0, 0.25);
-        }
+        .coc-accordion-item:hover { border-color: rgba(255, 107, 0, 0.25); }
         .coc-accordion-item.open {
             border-color: rgba(255, 107, 0, 0.3);
             box-shadow: 0 4px 20px rgba(255, 107, 0, 0.08);
@@ -697,7 +881,6 @@
         }
         .contact-card a:hover { color: var(--orange); }
 
-        /* ===== FOOTER ===== */
         .footer {
             border-top: 1px solid var(--card-border); text-align: center;
         }
@@ -707,13 +890,11 @@
         .footer p { font-size: 0.85rem; color: var(--text-muted); }
         .footer .footer-brand { color: var(--orange); font-weight: 700; }
 
-        /* ===== SCROLL REVEAL ===== */
         .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
         .reveal.visible { opacity: 1; transform: translateY(0); }
 
         .section-divider { width: 100%; height: 1px; background: linear-gradient(90deg, transparent, var(--card-border), transparent); margin: 0 auto; }
 
-        /* ===== BACK TO TOP ===== */
         .back-to-top {
             position: fixed; bottom: 2rem; left: 2rem;
             width: 48px; height: 48px; border-radius: 14px;
@@ -750,7 +931,7 @@
             .culture-grid, .env-grid { grid-template-columns: 1fr; }
             .float-card { display: none; }
             .hero { min-height: 80vh; padding: 4rem 1.5rem; }
-            .section { padding: 1rem 1.5rem; }
+            .section { padding: 3rem 1.5rem; }
             .rec-step { flex-direction: column; text-align: center; }
             .rec-step-arrow { display: none; }
             .evp-card { padding: 2rem; }
@@ -759,6 +940,10 @@
             .coc-meta { justify-content: center; }
             .coc-accordion-body-inner { padding-inline-start: 1.5rem; }
             .coc-core-values-inline { grid-template-columns: 1fr; }
+            .ceo-message { grid-template-columns: 1fr; gap: 2rem; }
+            .ceo-image-wrap { width: 220px; margin: 0 auto; min-height: 300px; }
+            .joining-grid { grid-template-columns: 1fr; }
+            .joining-section { padding: 2rem; }
         }
         @media (max-width: 480px) {
             .hero h1 { font-size: 2rem; }
@@ -770,9 +955,9 @@
             .lang-toggle span.lang-full { display: none; }
             .evp-item { padding: 0.8rem 1rem; }
             .evp-item-text { font-size: 0.92rem; }
+            .ceo-image-wrap { width: 180px; min-height: 250px; }
         }
 
-        /* ===== LOADING SCREEN ===== */
         .loader {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             background: var(--dark); display: flex; flex-direction: column;
@@ -797,7 +982,6 @@
 
         #particles-canvas { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; }
 
-        /* Sub-section title */
         .sub-section-title {
             text-align: center; font-size: 1.3rem; font-weight: 700;
             margin-bottom: 2rem; color: var(--gold-light);
@@ -808,13 +992,11 @@
 </head>
 <body>
 
-    <!-- Loading Screen -->
     <div class="loader" id="loader">
         <img src="https://z-cdn-media.chatglm.cn/files/e8b29a55-7616-4655-b8b1-98bb65e1391b.png?auth_key=1882717688-263d2fe5270a4b43b865732bde6ffa7b-0-c100c6a672309a8068e148e91fac5acf" alt="Everscops" class="loader-logo">
         <div class="loader-bar"><div class="loader-bar-inner"></div></div>
     </div>
 
-    <!-- Background Effects -->
     <div class="bg-effects">
         <div class="orb orb-1"></div>
         <div class="orb orb-2"></div>
@@ -823,7 +1005,6 @@
     <div class="egyptian-pattern"></div>
     <canvas id="particles-canvas"></canvas>
 
-    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <a href="#" class="nav-logo">
             <img src="https://z-cdn-media.chatglm.cn/files/e8b29a55-7616-4655-b8b1-98bb65e1391b.png?auth_key=1882717688-263d2fe5270a4b43b865732bde6ffa7b-0-c100c6a672309a8068e148e91fac5acf" alt="Everscops">
@@ -849,10 +1030,8 @@
         </div>
     </nav>
 
-    <!-- Main Content -->
     <div class="main-content">
 
-        <!-- Hero -->
         <section class="hero" id="hero">
             <div class="hero-3d-elements">
                 <div class="float-card float-card-1">
@@ -900,13 +1079,15 @@
             </div>
         </section>
 
-        <!-- About Section -->
+        <!-- ===== ABOUT SECTION ===== -->
         <section class="section" id="about">
             <div class="section-header reveal">
                 <div class="section-label">About Us</div>
                 <h2 class="section-title tr" data-en="Who We Are" data-ar="من نحن"></h2>
                 <p class="section-subtitle tr" data-en="Discover our story and vision in the real estate marketing world" data-ar="تعرّف على قصتنا ورؤيتنا في عالم التسويق العقاري"></p>
             </div>
+
+            <!-- Existing Who We Are Grid -->
             <div class="about-grid">
                 <div class="about-visual reveal">
                     <div class="about-card-3d">
@@ -917,10 +1098,6 @@
                                 <div class="stat-num">+200</div>
                                 <div class="stat-label tr" data-en="Distinguished Employees" data-ar="موظف متميز"></div>
                             </div>
-                            <!--<div class="stat-item">
-                                <div class="stat-num">1</div>
-                                <div class="stat-label tr" data-en="Main Branches" data-ar="فروع رئيسية"></div>
-                            </div>  -->
                             <div class="stat-item">
                                 <div class="stat-num">+20%</div>
                                 <div class="stat-label tr" data-en="Annual Growth" data-ar="نمو سنوي"></div>
@@ -939,6 +1116,30 @@
                     <p class="quote-line"><i class="fas fa-quote-right" style="color: var(--orange);"></i> <span class="tr" data-en="We believe our employees are the core of our success" data-ar="نؤمن بأن موظفينا هم جوهر نجاحنا"></span></p>
                 </div>
             </div>
+
+            <!-- ===== CEO MESSAGE (below Who We Are) ===== -->
+            <div class="ceo-message reveal">
+                <div class="ceo-text">
+                    <div class="ceo-label tr" data-en="Message from the CEO" data-ar="رسالة من الرئيس التنفيذي"></div>
+                    <div class="ceo-name">
+                        Amr Shoukry
+                        <span class="tr" data-en="CEO" data-ar="الرئيس التنفيذي"></span>
+                    </div>
+                    <div class="ceo-divider"></div>
+                    <div class="ceo-body">
+                        <p><span class="tr" data-en="When we started Ever Scopes, we made a decision early on: we would not chase volume. We would chase clarity." data-ar="عندما أسّسنا إيفرسكوبس، اتخذنا قراراً منذ البداية: لا نسعى وراء الحجم، بل وراء الوضوح."></span></p>
+                        <p><span class="tr" data-en="Our code of conduct exists for the same reason our advisory work does — discipline only matters if it's consistent. The standards we hold for how we treat our clients and partners are the same standards we hold for how we treat each other internally." data-ar="مدوّنة السلوك لدينا قائمة لنفس السبب الذي يقوم عليه عملنا الاستشاري — الانضباط لا معنى له إلا إذا كان ثابتاً ومستمراً. المعايير التي نلتزم بها في تعاملنا مع عملائنا وشركائنا هي نفس المعايير التي نلتزم بها في تعاملنا مع بعضنا داخل الشركة."></span></p>
+                        <p class="ceo-highlight"><span class="tr" data-en="Precision without integrity isn't precision — it's just performance." data-ar="الدقة بلا نزاهة ليست دقة، بل مجرد أداء شكلي."></span></p>
+                        <p><span class="tr" data-en="That's the standard. Every one of us is expected to uphold it." data-ar="هذا هو المعيار، والمطلوب من كل واحد منا أن يلتزم به."></span></p>
+                    </div>
+                </div>
+                <div class="ceo-image-wrap">
+                    <img src="https://z-cdn-media.chatglm.cn/files/acde8ffb-874c-4ae3-b519-6ff3cee61ec5.png?auth_key=1884018289-28d127520b2844baa2010bf258ae51f8-0-1946ce690c72965a5f5450ca2730292f" alt="Amr Shoukry — CEO">
+                    <div class="ceo-image-glow"></div>
+                </div>
+            </div>
+
+            
         </section>
 
         <div class="section-divider"></div>
@@ -986,7 +1187,7 @@
 
         <div class="section-divider"></div>
 
-        <!-- Mission & Vision Section (now includes EVP + Code of Conduct) -->
+        <!-- Mission & Vision Section -->
         <section class="mission-section">
             <div class="section" id="mission">
                 <div class="section-header reveal">
@@ -1014,7 +1215,7 @@
                     </div>
                 </div>
 
-                <!-- ===== EVP SECTION ===== -->
+                <!-- EVP -->
                 <div class="evp-wrapper reveal">
                     <div class="evp-card">
                         <div class="evp-title tr" data-en="Employer Value Proposition" data-ar="عرض القيمة للموظفين"></div>
@@ -1022,39 +1223,18 @@
                             <span class="tr" data-en="Join EVERSCOPES if you want to..." data-ar="انضم إلى إيفرسكوبس إذا كنت تريد..."></span>
                         </div>
                         <div class="evp-list">
-                            <div class="evp-item">
-                                <div class="evp-item-num">01</div>
-                                <div class="evp-item-text tr" data-en="Solve meaningful challenges." data-ar="حل تحديات ذات معنى."></div>
-                            </div>
-                            <div class="evp-item">
-                                <div class="evp-item-num">02</div>
-                                <div class="evp-item-text tr" data-en="Learn faster than anywhere else." data-ar="تعلّم أسرع من أي مكان آخر."></div>
-                            </div>
-                            <div class="evp-item">
-                                <div class="evp-item-num">03</div>
-                                <div class="evp-item-text tr" data-en="Work with ambitious people." data-ar="العمل مع أشخاص طموحين."></div>
-                            </div>
-                            <div class="evp-item">
-                                <div class="evp-item-num">04</div>
-                                <div class="evp-item-text tr" data-en="Own your ideas." data-ar="امتلك أفكارك."></div>
-                            </div>
-                            <div class="evp-item">
-                                <div class="evp-item-num">05</div>
-                                <div class="evp-item-text tr" data-en="Be trusted, not micromanaged." data-ar="أن تُوثق ولا تُدار بالتفصيل الممل."></div>
-                            </div>
-                            <div class="evp-item">
-                                <div class="evp-item-num">06</div>
-                                <div class="evp-item-text tr" data-en="Build something that matters." data-ar="بناء شيء ذي قيمة."></div>
-                            </div>
-                            <div class="evp-item">
-                                <div class="evp-item-num">07</div>
-                                <div class="evp-item-text tr" data-en="Grow beyond your job title." data-ar="النمو beyond لقبك الوظيفي."></div>
-                            </div>
+                            <div class="evp-item"><div class="evp-item-num">01</div><div class="evp-item-text tr" data-en="Solve meaningful challenges." data-ar="حل تحديات ذات معنى."></div></div>
+                            <div class="evp-item"><div class="evp-item-num">02</div><div class="evp-item-text tr" data-en="Learn faster than anywhere else." data-ar="تعلّم أسرع من أي مكان آخر."></div></div>
+                            <div class="evp-item"><div class="evp-item-num">03</div><div class="evp-item-text tr" data-en="Work with ambitious people." data-ar="العمل مع أشخاص طموحين."></div></div>
+                            <div class="evp-item"><div class="evp-item-num">04</div><div class="evp-item-text tr" data-en="Own your ideas." data-ar="امتلك أفكارك."></div></div>
+                            <div class="evp-item"><div class="evp-item-num">05</div><div class="evp-item-text tr" data-en="Be trusted, not micromanaged." data-ar="أن تُوثق ولا تُدار بالتفصيل الممل."></div></div>
+                            <div class="evp-item"><div class="evp-item-num">06</div><div class="evp-item-text tr" data-en="Build something that matters." data-ar="بناء شيء ذي قيمة."></div></div>
+                            <div class="evp-item"><div class="evp-item-num">07</div><div class="evp-item-text tr" data-en="Grow beyond your job title." data-ar="النموeyond لقبك الوظيفي."></div></div>
                         </div>
                     </div>
                 </div>
 
-                <!-- ===== CODE OF CONDUCT SECTION ===== -->
+                <!-- Code of Conduct -->
                 <div class="coc-wrapper reveal">
                     <div class="coc-header-card">
                         <div class="coc-header-top">
@@ -1065,222 +1245,27 @@
                             </div>
                         </div>
                         <div class="coc-meta">
-                            <div class="coc-meta-item">
-                                <i class="fas fa-map-pin"></i>
-                                <span class="tr" data-en="New Cairo, Arab Republic of Egypt" data-ar="القاهرة الجديدة، جمهورية مصر العربية"></span>
-                            </div>
-                            <div class="coc-meta-item">
-                                <i class="fas fa-calendar-alt"></i>
-                                <span class="tr" data-en="Effective: January 1, 2026" data-ar="سريع: 1 يناير 2026"></span>
-                            </div>
-                            <div class="coc-meta-item">
-                                <i class="fas fa-file-alt"></i>
-                                <span>Version 1.0</span>
-                            </div>
-                            <div class="coc-meta-item">
-                                <i class="fas fa-stamp"></i>
-                                <span class="tr" data-en="Approved by Executive Management" data-ar="معتمد من الإدارة التنفيذية"></span>
-                            </div>
+                            <div class="coc-meta-item"><i class="fas fa-map-pin"></i><span>New Cairo, Arab Republic of Egypt</span></div>
+                            <div class="coc-meta-item"><i class="fas fa-calendar-alt"></i><span class="tr" data-en="Effective: January 1, 2026" data-ar="سريع: 1 يناير 2026"></span></div>
+                            <div class="coc-meta-item"><i class="fas fa-file-alt"></i><span>Version 1.0</span></div>
+                            <div class="coc-meta-item"><i class="fas fa-stamp"></i><span class="tr" data-en="Approved by Executive Management" data-ar="معتمد من الإدارة التنفيذية"></span></div>
                         </div>
                         <div class="coc-msg">
                             <strong><span class="tr" data-en="A Message from Executive Management:" data-ar="رسالة من الإدارة التنفيذية:"></span></strong>
                             <span class="tr" data-en=" Everscopes was built on a simple idea: in real estate, trust is the product. Every consultation, every listing, and every closed deal carries our name and the confidence our clients place in us. As one of New Cairo's fastest-growing real estate agencies, our growth depends entirely on protecting that trust. This Code of Conduct sets out how every member of the Everscops team is expected to behave with clients, colleagues, developers, and partners. We ask every employee to read this Code carefully, raise questions where anything is unclear, and apply it consistently in their daily work." data-ar=" بُنيت إيفرسكوبس على فكرة بسيطة: في العقارات، الثقة هي المنتج. كل استشارة، كل قائمة، وكل صفقة مغلقة تحمل اسمنا والثقة التي يضعها عملاؤنا فينا. كواحدة من أسرع وكالات العقارات نمواً في القاهرة الجديدة، يعتمد نمونا بالكامل على حماية تلك الثقة. تحدد هذه المدونة كيف يُتوقع من كل عضو في فريق إيفرسكوبس التصرف مع العملاء والزملاء والمطورين والشركاء. نطلب من كل موظف قراءة هذه المدونة بعناية، وطرح الأسئلة حيث يكون أي شيء غير واضح، وتطبيقها باستمرار في عمله اليومي."></span>
                         </div>
                     </div>
-
                     <div class="coc-accordion">
-                        <!-- Section 1 -->
-                        <div class="coc-accordion-item">
-                            <button class="coc-accordion-trigger" aria-expanded="false">
-                                <div class="coc-accordion-num">01</div>
-                                <div class="coc-accordion-label tr" data-en="Purpose and Scope" data-ar="الغرض والنطاق"></div>
-                                <i class="fas fa-chevron-down coc-accordion-arrow"></i>
-                            </button>
-                            <div class="coc-accordion-body">
-                                <div class="coc-accordion-body-inner">
-                                    <p><span class="tr" data-en="This Code of Conduct establishes the standards of ethical and professional behavior expected of all Everscops employees, sales consultants, brokers, contractors, and any individual representing Everscops in dealings with clients, property owners, developers, or the public." data-ar="تُنشئ هذه المدونة معايير السلوك الأخلاقي والمهني المتوقع من جميع موظفي إيفرسكوبس ومستشاري المبيعات والوسطاء والمتعاقدين وأي فرد يمثل إيفرسكوبس في تعاملاته مع العملاء أو مالكي العقارات أو المطورين أو الجمهور."></span></p>
-                                    <p><span class="tr" data-en="It applies to all Everscopes offices and to all forms of client interaction, including site visits, phone and WhatsApp communication, social media, and digital marketing. Where Egyptian law sets stricter requirements than this Code, the law prevails." data-ar="تنطبق على جميع مكاتب إيفرسكوبس وعلى جميع أشكال التفاعل مع العملاء، بما في ذلك زيارات المواقع والاتصالات الهاتفية والواتساب ووسائل التواصل الاجتماعي والتسويق الرقمي. عندما تضع القوانين المصرية متطلبات أصرم من هذه المدونة، يسود القانون."></span></p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Section 2 -->
-                        <div class="coc-accordion-item">
-                            <button class="coc-accordion-trigger" aria-expanded="false">
-                                <div class="coc-accordion-num">02</div>
-                                <div class="coc-accordion-label tr" data-en="Our Core Values" data-ar="قيمنا الأساسية"></div>
-                                <i class="fas fa-chevron-down coc-accordion-arrow"></i>
-                            </button>
-                            <div class="coc-accordion-body">
-                                <div class="coc-accordion-body-inner">
-                                    <div class="coc-core-values-inline">
-                                        <div class="coc-cv-item"><i class="fas fa-check"></i> <span class="tr" data-en="Integrity — Accurate, honest information with no exaggeration" data-ar="النزاهة — معلومات دقيقة وصادقة بدون مبالغة"></span></div>
-                                        <div class="coc-cv-item"><i class="fas fa-check"></i> <span class="tr" data-en="Respect — Fairness, courtesy, and professionalism at all times" data-ar="الاحترام — الإنصاف واللباقة والاحترافية دائماً"></span></div>
-                                        <div class="coc-cv-item"><i class="fas fa-check"></i> <span class="tr" data-en="Ownership — Following through on commitments and taking responsibility" data-ar="المسؤولية — الوفاء بالالتزامات وتحمل المسؤولية"></span></div>
-                                        <div class="coc-cv-item"><i class="fas fa-check"></i> <span class="tr" data-en="Confidentiality — Protecting client info and commercial terms" data-ar="السرية — حماية معلومات العملاء والشروط التجارية"></span></div>
-                                        <div class="coc-cv-item"><i class="fas fa-check"></i> <span class="tr" data-en="Compliance — Following Egyptian regulations and company policies" data-ar="الامتثال — اتباع اللوائح المصرية وسياسات الشركة"></span></div>
-                                        <div class="coc-cv-item"><i class="fas fa-check"></i> <span class="tr" data-en="Professional Representation — Accurate presentation in every interaction" data-ar="التمثيل الاحترافي — تقديم دقيق في كل تفاعل"></span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Section 3 -->
-                        <div class="coc-accordion-item">
-                            <button class="coc-accordion-trigger" aria-expanded="false">
-                                <div class="coc-accordion-num">03</div>
-                                <div class="coc-accordion-label tr" data-en="Integrity in Client and Property Dealings" data-ar="النزاهة في تعاملات العملاء والعقارات"></div>
-                                <i class="fas fa-chevron-down coc-accordion-arrow"></i>
-                            </button>
-                            <div class="coc-accordion-body">
-                                <div class="coc-accordion-body-inner">
-                                    <div class="coc-subsection">
-                                        <div class="coc-subsection-title tr" data-en="3.1 Honest Marketing and Representation" data-ar="3.1 التسويق والتمثيل الصادق"></div>
-                                        <p><span class="tr" data-en="All property listings, brochures, and advertisements — whether printed, on our website, or on social media — must accurately reflect the property's location, specifications, pricing, payment plans, and delivery dates. Consultants must never overstate a unit's features, fabricate views or finishing levels, or promise delivery dates not confirmed by the developer." data-ar="جميع قوائم العقارات والكتيبات والإعلانات — سواء المطبوعة أو على موقعنا أو على وسائل التواصل الاجتماعي — يجب أن تعكس بدقة موقع العقار ومواصفاته وتسعيره وخطط الدفع وتواريخ التسليم. يجب على المستشارين عدم المبالغة في ميزات الوحدة أو اختلاق إطلالات أو مستويات تشطيب أو الوعد بتواريخ تسليم غير مؤكدة من المطور."></span></p>
-                                    </div>
-                                    <div class="coc-subsection">
-                                        <div class="coc-subsection-title tr" data-en="3.2 Fair Dealing with Buyers, Sellers, and Developers" data-ar="3.2 التعامل العادل مع المشترين والبائعين والمطورين"></div>
-                                        <p><span class="tr" data-en="Consultants must disclose all material facts about a property known to them that could affect a client's decision, including known defects, disputes, or restrictions. Consultants must never pressure clients into a purchase, misrepresent competing offers, or create false urgency to close a deal." data-ar="يجب على المستشارين الإفصاح عن جميع الحقائق الجوهرية عن العقار المعروفة لهم والتي قد تؤثر على قرار العميل، بما في ذلك العيوب المعروفة أو النزاعات أو القيود. يجب على المستشارين عدم الضغط على العملاء للشراء أو تضليل العروض المنافسة أو خلق إلحاح كاذب لإغلاق صفقة."></span></p>
-                                    </div>
-                                    <div class="coc-subsection">
-                                        <div class="coc-subsection-title tr" data-en="3.3 Conflicts of Interest" data-ar="3.3 تضارب المصالح"></div>
-                                        <p><span class="tr" data-en="Employees must disclose any personal, family, or financial interest in a property or transaction they are involved in — including personally owning or co-owning a listed unit — before proceeding. Undisclosed dual representation or self-dealing is strictly prohibited." data-ar="يجب على الموظفين الإفصاح عن أي مصلحة شخصية أو عائلية أو مالية في عقار أو صفقة يشاركون فيها — بما في ذلك ملكية شخصية أو ملكية مشتركة لوحدة مدرجة — قبل المضي قدماً. التمثل المزدوج غير المفصح عنه أو التعامل الذاتي محظور تماماً."></span></p>
-                                    </div>
-                                    <div class="coc-subsection">
-                                        <div class="coc-subsection-title tr" data-en="3.4 Commissions and Fees" data-ar="3.4 العمولات والرسوم"></div>
-                                        <p><span class="tr" data-en="All commissions, referral fees, and incentives must be disclosed transparently and recorded through official Company channels. Employees must not accept undisclosed side payments, under-the-table commissions, or favors from developers, owners, or clients in exchange for preferential treatment, and must not charge clients fees outside of Everscops' approved fee structure." data-ar="جميع العمولات ورسوم الإحالة والحوافز يجب الإفصاح عنها بشفافية وتسجيلها عبر القنوات الرسمية للشركة. يجب على الموظفين عدم قبول مدفوعات جانبية غير معلنة أو عمولات تحت الطاولة أو خدمات من المطورين أو المالكين أو العملاء مقابل معاملة تفضيلية، ويجب عدم فرض رسوم على العملاء خارج هيكل الرسوم المعتمد من إيفرسكوبس."></span></p>
-                                    </div>
-                                    <div class="coc-subsection">
-                                        <div class="coc-subsection-title tr" data-en="3.5 Anti-Money Laundering (AML) and Know-Your-Client (KYC)" data-ar="3.5 مكافحة غسل الأموال ومعرفة العميل"></div>
-                                        <p><span class="tr" data-en="Real estate transactions are a recognized channel for money laundering risk. Employees must follow Company KYC procedures for verifying client identity and source of funds, and must immediately report any transaction that appears structured to avoid scrutiny, involves unusual cash payments, or otherwise raises suspicion, in line with Egyptian anti-money laundering law." data-ar="تُعد معاملات العقارات قناة معروفة لمخاطر غسل الأموال. يجب على الموظفين اتباع إجراءات الشركة لمعرفة العميل للتحقق من هوية العميل ومصادر الأموال، والإبلاغ فوراً عن أي معاملة تبدو مهيكلة لتجنب الفحص أو تتضمن مدفوعات نقدية غير عادية أو تثير الشبهات بطريقة أخرى، وفقاً لقانون مكافحة غسل الأموال المصري."></span></p>
-                                    </div>
-                                    <div class="coc-subsection">
-                                        <div class="coc-subsection-title tr" data-en="3.6 Handling of Client Funds and Documents" data-ar="3.6 التعامل مع أموال ومستندات العملاء"></div>
-                                        <p><span class="tr" data-en="Reservation deposits, contracts, and official documents must be handled exactly according to Company procedure, recorded promptly, and never held in an employee's personal account or custody beyond what is required to complete an authorized step in the transaction." data-ar="يجب التعامل مع ودائع الحجز والعقود والمستندات الرسمية وفقاً تماماً لإجراءات الشركة، وتسجيلها فوراً، وعدم الاحتفاظ بها في حساب الموظف الشخصي أو عهدته أكثر مما يلزم لإتمام خطوة مرخصة في المعاملة."></span></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Section 4 -->
-                        <div class="coc-accordion-item">
-                            <button class="coc-accordion-trigger" aria-expanded="false">
-                                <div class="coc-accordion-num">04</div>
-                                <div class="coc-accordion-label tr" data-en="A Fair and Respectful Workplace" data-ar="بيئة عمل عادلة ومحترمة"></div>
-                                <i class="fas fa-chevron-down coc-accordion-arrow"></i>
-                            </button>
-                            <div class="coc-accordion-body">
-                                <div class="coc-accordion-body-inner">
-                                    <div class="coc-subsection">
-                                        <div class="coc-subsection-title tr" data-en="4.1 Equal Opportunity and Non-Discrimination" data-ar="4.1 تكافؤ الفرص وعدم التمييز"></div>
-                                        <p><span class="tr" data-en="Everscopes provides equal opportunity in hiring, promotion, and day-to-day treatment, without discrimination based on gender, religion, disability, marital status, or any other characteristic protected under Egyptian Labor Law." data-ar="توفر إيفرسكوبس تكافؤ الفرص في التوظيف والترقية والمعاملة اليومية، بدون تمييز بسبب الجنس أو الدين أو الإعاقة أو الحالة الاجتماعية أو أي سمة أخرى محمية بموجب قانون العمل المصري."></span></p>
-                                    </div>
-                                    <div class="coc-subsection">
-                                        <div class="coc-subsection-title tr" data-en="4.2 Anti-Harassment" data-ar="4.2 مكافحة التحرش"></div>
-                                        <p><span class="tr" data-en="Harassment, bullying, or inappropriate conduct of any kind — between colleagues, toward clients, or toward site/developer staff during property visits — is strictly prohibited and will result in disciplinary action." data-ar="التحرش أو التنمر أو السلوك غير اللائق من أي نوع — بين الزملاء أو تجاه العملاء أو تجاه موظفي الموقع/المطور أثناء زيارات العقارات — محظور تماماً وسيؤدي إلى إجراءات تأديبية."></span></p>
-                                    </div>
-                                    <div class="coc-subsection">
-                                        <div class="coc-subsection-title tr" data-en="4.3 Health and Safety" data-ar="4.3 الصحة والسلامة"></div>
-                                        <p><span class="tr" data-en="Employees conducting property site visits, including to construction sites, must follow all applicable safety precautions and Company guidance, and must never place themselves or clients in unsafe conditions to close a sale." data-ar="يجب على الموظفين الذين يجرون زيارات لمواقع العقارات، بما في ذلك مواقع البناء، اتباع جميع احتياطات السلامة المعمول بها وإرشادات الشركة، وعدم تعريض أنفسهم أو عملائهم لظروف غير آمنة لإغلاق عملية بيع."></span></p>
-                                    </div>
-                                    <div class="coc-subsection">
-                                        <div class="coc-subsection-title tr" data-en="4.4 Sales Floor Conduct" data-ar="4.4 سلوك قسم المبيعات"></div>
-                                        <p><span class="tr" data-en="Healthy competition between sales teams is encouraged; undermining colleagues, poaching a colleague's client relationship, or manipulating the CRM/lead system to claim another consultant's lead is a violation of this Code." data-ar="يُشجع التنافس الصحي بين فرق المبيعات؛ الإضرار بالزملاء أو اختطاف علاقة عميل زميل أو التلاعب بنظام إدارة العملاء/العملاء المحتملين لادعاء عميل مستشار آخر يُعد انتهاكاً لهذه المدونة."></span></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Section 5 -->
-                        <div class="coc-accordion-item">
-                            <button class="coc-accordion-trigger" aria-expanded="false">
-                                <div class="coc-accordion-num">05</div>
-                                <div class="coc-accordion-label tr" data-en="Confidentiality and Data Protection" data-ar="السرية وحماية البيانات"></div>
-                                <i class="fas fa-chevron-down coc-accordion-arrow"></i>
-                            </button>
-                            <div class="coc-accordion-body">
-                                <div class="coc-accordion-body-inner">
-                                    <p><span class="tr" data-en="Client phone numbers, financial details, and purchase intentions are confidential and must only be used for legitimate Everscops business. Client databases and leads remain Company property and must not be copied, exported, or taken by an employee upon resignation or termination." data-ar="أرقام هواتف العملاء والتفاصيل المالية ونوايا الشراء سرية ويجب استخدامها فقط لأعمال إيفرسكوبس المشروعة. تظل قواعد بيانات العملاء والعملاء المحتملين ملكاً للشركة ولا يجب نسخها أو تصديرها أو أخذها من قبل الموظف عند الاستقالة أو إنهاء الخدمة."></span></p>
-                                    <p><span class="tr" data-en="Commercial terms with developers, pricing strategies, and internal sales data must not be shared outside the Company, including with competitor agencies or former colleagues who have left Everscops." data-ar="يجب عدم مشاركة الشروط التجارية مع المطورين واستراتيجيات التسعير وبيانات المبيعات الداخلية خارج الشركة، بما في ذلك مع الوكالات المنافسة أو الزملاء السابقين الذين غادروا إيفرسكوبس."></span></p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Section 6 -->
-                        <div class="coc-accordion-item">
-                            <button class="coc-accordion-trigger" aria-expanded="false">
-                                <div class="coc-accordion-num">06</div>
-                                <div class="coc-accordion-label tr" data-en="Social Media and Digital Conduct" data-ar="السلوك على وسائل التواصل الاجتماعي والرقمي"></div>
-                                <i class="fas fa-chevron-down coc-accordion-arrow"></i>
-                            </button>
-                            <div class="coc-accordion-body">
-                                <div class="coc-accordion-body-inner">
-                                    <p><span class="tr" data-en="Employees who market properties or the Everscops brand on personal social media accounts must ensure all content is accurate, professional, and consistent with this Code. Employees must not use Company-owned property photos, floor plans, or client information after leaving the Company, and must not make public statements on behalf of Everscops without authorization." data-ar="يجب على الموظفين الذين يسوقون العقارات أو علامة إيفرسكوبس التجارية على حساباتهم الشخصية في وسائل التواصل الاجتماعي التأكد من أن جميع المحتوى دقيق واحترافي ومتسق مع هذه المدونة. يجب على الموظفين عدم استخدام صور العقارات المملوكة للشركة أو مخططات الطوابق أو معلومات العملاء بعد مغادرة الشركة، ويجب عدم إصدار بيانات علنية نيابة عن إيفرسكوبس بدون تفويض."></span></p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Section 7 -->
-                        <div class="coc-accordion-item">
-                            <button class="coc-accordion-trigger" aria-expanded="false">
-                                <div class="coc-accordion-num">07</div>
-                                <div class="coc-accordion-label tr" data-en="Compliance with Laws and Regulations" data-ar="الامتثال للقوانين واللوائح"></div>
-                                <i class="fas fa-chevron-down coc-accordion-arrow"></i>
-                            </button>
-                            <div class="coc-accordion-body">
-                                <div class="coc-accordion-body-inner">
-                                    <p><span class="tr" data-en="All employees must comply with the Egyptian Real Estate Brokerage regulations, tax and registration requirements applicable to property transactions, consumer protection rules in marketing, and all relevant labor and commercial laws. Employees engaged in licensed brokerage activity must maintain any required registrations or certifications in good standing." data-ar="يجب على جميع الموظفين الامتثال للوائح الوساطة العقارية المصرية ومتطلبات الضرائب والتسجيل المعمول بها في معاملات العقارات وقrules حماية المستهلك في التسويق وجميع قوانين العمل والتجارة ذات الصلة. يجب على الموظفين المشاركين في نشاط الوساطة المرخص الحفاظ على أي تسجيلات أو شهادات مطلوبة بحالة سليمة."></span></p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Section 8 -->
-                        <div class="coc-accordion-item">
-                            <button class="coc-accordion-trigger" aria-expanded="false">
-                                <div class="coc-accordion-num">08</div>
-                                <div class="coc-accordion-label tr" data-en="Raising Concerns and Reporting Violations" data-ar="رفع المخاوف والإبلاغ عن الانتهاكات"></div>
-                                <i class="fas fa-chevron-down coc-accordion-arrow"></i>
-                            </button>
-                            <div class="coc-accordion-body">
-                                <div class="coc-accordion-body-inner">
-                                    <p><span class="tr" data-en="Employees who witness or suspect a violation of this Code — including misrepresentation to a client, undisclosed commissions, or suspicious transactions — must report it promptly through one of the following channels:" data-ar="يجب على الموظفين الذين يشهدون أو يشتبهون في انتهاك لهذه المدونة — بما في ذلك التضليل للعميل أو العمولات غير المعلنة أو المعاملات المشبوهة — الإبلاغ عنه فوراً عبر أحد القنوات التالية:"></span></p>
-                                    <p><span class="tr" data-en="• Their direct Sales Manager or Team Leader
-• The Human Resources Department
-• The Compliance Officer, via the confidential reporting channel" data-ar="• مدير المبيعات المباشر أو قائد الفريق
-• قسم الموارد البشرية
-• مسؤول الامتثال، عبر قناة الإبلاغ السرية"></span></p>
-                                    <p><span class="tr" data-en="Everscops prohibits retaliation against any employee who reports a concern in good faith. Reports are handled with discretion and investigated fairly." data-ar="تحظر إيفرسكوبس الانتقام من أي موظف يبلغ عن مخاوف بحسن نية. تُعامل البلاغات بسرية وتُحقق فيها بعدالة."></span></p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Section 9 -->
-                        <div class="coc-accordion-item">
-                            <button class="coc-accordion-trigger" aria-expanded="false">
-                                <div class="coc-accordion-num">09</div>
-                                <div class="coc-accordion-label tr" data-en="Consequences of Violations" data-ar="عواقب الانتهاكات"></div>
-                                <i class="fas fa-chevron-down coc-accordion-arrow"></i>
-                            </button>
-                            <div class="coc-accordion-body">
-                                <div class="coc-accordion-body-inner">
-                                    <p><span class="tr" data-en="Violations of this Code — particularly those involving client deception, undisclosed commissions, or mishandling of client funds — may result in disciplinary action up to and including termination, forfeiture of commission, and referral to the relevant authorities where the conduct may be unlawful." data-ar="انتهاكات هذه المدونة — خاصة تلك التي تتضمن خداع العميل أو العمولات غير المعلنة أو سوء التعامل مع أموال العملاء — قد تؤدي إلى إجراءات تأديبية تصل إلى وإدراج إنهاء الخدمة ومصادرة العمولة والإحالة إلى الجهات المختصة حيث قد يكون السلوك غير قانوني."></span></p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Section 10 -->
-                        <div class="coc-accordion-item">
-                            <button class="coc-accordion-trigger" aria-expanded="false">
-                                <div class="coc-accordion-num">10</div>
-                                <div class="coc-accordion-label tr" data-en="Acknowledgment" data-ar="الاعتراف"></div>
-                                <i class="fas fa-chevron-down coc-accordion-arrow"></i>
-                            </button>
-                            <div class="coc-accordion-body">
-                                <div class="coc-accordion-body-inner">
-                                    <p><span class="tr" data-en="All employees, including sales consultants and property advisors, must acknowledge this Code upon joining Everscops and on an annual basis thereafter." data-ar="يجب على جميع الموظفين، بما في ذلك مستشاري المبيعات ومستشاري العقارات، الاعتراف بهذه المدونة عند الانضمام إلى إيفرسكوبس وعلى أساس سنوي بعد ذلك."></span></p>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="coc-accordion-item"><button class="coc-accordion-trigger" aria-expanded="false"><div class="coc-accordion-num">01</div><div class="coc-accordion-label tr" data-en="Purpose and Scope" data-ar="الغرض والنطاق"></div><i class="fas fa-chevron-down coc-accordion-arrow"></i></button><div class="coc-accordion-body"><div class="coc-accordion-body-inner"><p><span class="tr" data-en="This Code of Conduct establishes the standards of ethical and professional behavior expected of all Everscops employees, sales consultants, brokers, contractors, and any individual representing Everscops in dealings with clients, property owners, developers, or the public." data-ar="تُنشئ هذه المدونة معايير السلوك الأخلاقي والمهني المتوقع من جميع موظفي إيفرسكوبس ومستشاري المبيعات والوسطاء والمتعاقدين وأي فرد يمثل إيفرسكوبس في تعاملاته مع العملاء أو مالكي العقارات أو المطورين أو الجمهور."></span></p><p><span class="tr" data-en="It applies to all Everscopes offices and to all forms of client interaction, including site visits, phone and WhatsApp communication, social media, and digital marketing. Where Egyptian law sets stricter requirements than this Code, the law prevails." data-ar="تنطبق على جميع مكاتب إيفرسكوبس وعلى جميع أشكال التفاعل مع العملاء، بما في ذلك زيارات المواقع والاتصالات الهاتفية والواتساب ووسائل التواصل الاجتماعي والتسويق الرقمي. عندما تضع القوانين المصرية متطلبات أصرم من هذه المدونة، يسود القانون."></span></p></div></div></div>
+                        <div class="coc-accordion-item"><button class="coc-accordion-trigger" aria-expanded="false"><div class="coc-accordion-num">02</div><div class="coc-accordion-label tr" data-en="Our Core Values" data-ar="قيمنا الأساسية"></div><i class="fas fa-chevron-down coc-accordion-arrow"></i></button><div class="coc-accordion-body"><div class="coc-accordion-body-inner"><div class="coc-core-values-inline"><div class="coc-cv-item"><i class="fas fa-check"></i><span class="tr" data-en="Integrity — Accurate, honest information with no exaggeration" data-ar="النزاهة — معلومات دقيقة وصادقة بدون مبالغة"></span></div><div class="coc-cv-item"><i class="fas fa-check"></i><span class="tr" data-en="Respect — Fairness, courtesy, and professionalism at all times" data-ar="الاحترام — الإنصاف واللباقة والاحترافية دائماً"></span></div><div class="coc-cv-item"><i class="fas fa-check"></i><span class="tr" data-en="Ownership — Following through on commitments and taking responsibility" data-ar="المسؤولية — الوفاء بالالتزامات وتحمل المسؤولية"></span></div><div class="coc-cv-item"><i class="fas fa-check"></i><span class="tr" data-en="Confidentiality — Protecting client info and commercial terms" data-ar="السرية — حماية معلومات العملاء والشروط التجارية"></span></div><div class="coc-cv-item"><i class="fas fa-check"></i><span class="tr" data-en="Compliance — Following Egyptian regulations and company policies" data-ar="الامتثال — اتباع اللوائح المصرية وسياسات الشركة"></span></div><div class="coc-cv-item"><i class="fas fa-check"></i><span class="tr" data-en="Professional Representation — Accurate presentation in every interaction" data-ar="التمثيل الاحترافي — تقديم دقيق في كل تفاعل"></span></div></div></div></div></div>
+                        <div class="coc-accordion-item"><button class="coc-accordion-trigger" aria-expanded="false"><div class="coc-accordion-num">03</div><div class="coc-accordion-label tr" data-en="Integrity in Client and Property Dealings" data-ar="النزاهة في تعاملات العملاء والعقارات"></div><i class="fas fa-chevron-down coc-accordion-arrow"></i></button><div class="coc-accordion-body"><div class="coc-accordion-body-inner"><div class="coc-subsection"><div class="coc-subsection-title tr" data-en="3.1 Honest Marketing and Representation" data-ar="3.1 التسويق والتمثيل الصادق"></div><p><span class="tr" data-en="All property listings, brochures, and advertisements must accurately reflect the property's location, specifications, pricing, payment plans, and delivery dates. Consultants must never overstate a unit's features, fabricate views or finishing levels, or promise delivery dates not confirmed by the developer." data-ar="جميع قوائم العقارات والكتيبات والإعلانات يجب أن تعكس بدقة موقع العقار ومواصفاته وتسعيره وخطط الدفع وتواريخ التسليم. يجب على المستشارين عدم المبالغة في ميزات الوحدة أو اختلاق إطلالات أو مستويات تشطيب أو الوعد بتواريخ تسليم غير مؤكدة من المطور."></span></p></div><div class="coc-subsection"><div class="coc-subsection-title tr" data-en="3.2 Fair Dealing" data-ar="3.2 التعامل العادل"></div><p><span class="tr" data-en="Consultants must disclose all material facts about a property that could affect a client's decision. Consultants must never pressure clients, misrepresent competing offers, or create false urgency." data-ar="يجب على المستشارين الإفصاح عن جميع الحقائق الجوهرية عن العقار التي قد تؤثر على قرار العميل. يجب عدم الضغط على العملاء أو تضليل العروض المنافسة أو خلق إلحاح كاذب."></span></p></div><div class="coc-subsection"><div class="coc-subsection-title tr" data-en="3.3 Conflicts of Interest" data-ar="3.3 تضارب المصالح"></div><p><span class="tr" data-en="Employees must disclose any personal, family, or financial interest in a property or transaction before proceeding. Undisclosed dual representation or self-dealing is strictly prohibited." data-ar="يجب على الموظفين الإفصاح عن أي مصلحة شخصية أو عائلية أو مالية في عقار أو صفقة قبل المضي قدماً. التمثل المزدوج غير المفصح عنه محظور تماماً."></span></p></div><div class="coc-subsection"><div class="coc-subsection-title tr" data-en="3.4 Commissions and Fees" data-ar="3.4 العمولات والرسوم"></div><p><span class="tr" data-en="All commissions and incentives must be disclosed transparently through official channels. Employees must not accept undisclosed side payments or charge clients fees outside Everscops' approved structure." data-ar="جميع العمولات والحوافز يجب الإفصاح عنها بشفافية عبر القنوات الرسمية. يجب عدم قبول مدفوعات جانبية غير معلنة أو فرض رسوم خارج هيكل الرسوم المعتمد."></span></p></div><div class="coc-subsection"><div class="coc-subsection-title tr" data-en="3.5 Anti-Money Laundering (AML)" data-ar="3.5 مكافحة غسل الأموال"></div><p><span class="tr" data-en="Employees must follow Company KYC procedures and immediately report any suspicious transactions, in line with Egyptian anti-money laundering law." data-ar="يجب على الموظفين اتباع إجراءات الشركة لمعرفة العميل والإبلاغ فوراً عن أي معاملات مشبوهة، وفقاً لقانون مكافحة غسل الأموال المصري."></span></p></div><div class="coc-subsection"><div class="coc-subsection-title tr" data-en="3.6 Handling of Client Funds" data-ar="3.6 التعامل مع أموال العملاء"></div><p><span class="tr" data-en="Reservation deposits and contracts must be handled according to Company procedure, recorded promptly, and never held in an employee's personal account." data-ar="يجب التعامل مع ودائع الحجز والعقود وفقاً لإجراءات الشركة وتسجيلها فوراً وعدم الاحتفاظ بها في حساب الموظف الشخصي."></span></p></div></div></div></div>
+                        <div class="coc-accordion-item"><button class="coc-accordion-trigger" aria-expanded="false"><div class="coc-accordion-num">04</div><div class="coc-accordion-label tr" data-en="A Fair and Respectful Workplace" data-ar="بيئة عمل عادلة ومحترمة"></div><i class="fas fa-chevron-down coc-accordion-arrow"></i></button><div class="coc-accordion-body"><div class="coc-accordion-body-inner"><div class="coc-subsection"><div class="coc-subsection-title tr" data-en="4.1 Equal Opportunity" data-ar="4.1 تكافؤ الفرص"></div><p><span class="tr" data-en="Everscopes provides equal opportunity without discrimination based on gender, religion, disability, marital status, or any other characteristic protected under Egyptian Labor Law." data-ar="توفر إيفرسكوبس تكافؤ الفرص بدون تمييز بسبب الجنس أو الدين أو الإعاقة أو الحالة الاجتماعية أو أي سمة أخرى محمية بموجب قانون العمل المصري."></span></p></div><div class="coc-subsection"><div class="coc-subsection-title tr" data-en="4.2 Anti-Harassment" data-ar="4.2 مكافحة التحرش"></div><p><span class="tr" data-en="Harassment, bullying, or inappropriate conduct of any kind is strictly prohibited and will result in disciplinary action." data-ar="التحرش أو التنمر أو السلوك غير اللائق من أي نوع محظور تماماً وسيؤدي إلى إجراءات تأديبية."></span></p></div><div class="coc-subsection"><div class="coc-subsection-title tr" data-en="4.3 Health and Safety" data-ar="4.3 الصحة والسلامة"></div><p><span class="tr" data-en="Employees must follow all applicable safety precautions and never place themselves or clients in unsafe conditions." data-ar="يجب على الموظفين اتباع جميع احتياطات السلامة وعدم تعريض أنفسهم أو عملائهم لظروف غير آمنة."></span></p></div><div class="coc-subsection"><div class="coc-subsection-title tr" data-en="4.4 Sales Floor Conduct" data-ar="4.4 سلوك قسم المبيعات"></div><p><span class="tr" data-en="Undermining colleagues, poaching client relationships, or manipulating the CRM system is a violation of this Code." data-ar="الإضرار بالزملاء أو اختطاف علاقات العملاء أو التلاعب بنظام إدارة العملاء يُعد انتهاكاً لهذه المدونة."></span></p></div></div></div></div>
+                        <div class="coc-accordion-item"><button class="coc-accordion-trigger" aria-expanded="false"><div class="coc-accordion-num">05</div><div class="coc-accordion-label tr" data-en="Confidentiality and Data Protection" data-ar="السرية وحماية البيانات"></div><i class="fas fa-chevron-down coc-accordion-arrow"></i></button><div class="coc-accordion-body"><div class="coc-accordion-body-inner"><p><span class="tr" data-en="Client databases and leads remain Company property and must not be copied or taken upon resignation. Commercial terms and internal data must not be shared outside the Company." data-ar="تظل قواعد بيانات العملاء ملكاً للشركة ولا يجب نسخها أو أخذها عند الاستقالة. يجب عدم مشاركة الشروط التجارية والبيانات الداخلية خارج الشركة."></span></p></div></div></div>
+                        <div class="coc-accordion-item"><button class="coc-accordion-trigger" aria-expanded="false"><div class="coc-accordion-num">06</div><div class="coc-accordion-label tr" data-en="Social Media and Digital Conduct" data-ar="السلوك الرقمي ووسائل التواصل"></div><i class="fas fa-chevron-down coc-accordion-arrow"></i></button><div class="coc-accordion-body"><div class="coc-accordion-body-inner"><p><span class="tr" data-en="Employees must ensure all social media content is accurate and consistent with this Code. Company-owned assets must not be used after leaving, and no public statements without authorization." data-ar="يجب على الموظفين التأكد من أن جميع محتوى وسائل التواصل دقيق ومتسق مع هذه المدونة. لا يجب استخدام أصول الشركة بعد المغادرة، ولا إصدار بيانات علنية بدون تفويض."></span></p></div></div></div>
+                        <div class="coc-accordion-item"><button class="coc-accordion-trigger" aria-expanded="false"><div class="coc-accordion-num">07</div><div class="coc-accordion-label tr" data-en="Compliance with Laws" data-ar="الامتثال للقوانين"></div><i class="fas fa-chevron-down coc-accordion-arrow"></i></button><div class="coc-accordion-body"><div class="coc-accordion-body-inner"><p><span class="tr" data-en="All employees must comply with Egyptian Real Estate Brokerage regulations, tax requirements, consumer protection rules, and all relevant labor and commercial laws." data-ar="يجب على جميع الموظفين الامتثال للوائح الوساطة العقارية المصرية ومتطلبات الضرائب وقواعد حماية المستهلك وجميع قوانين العمل والتجارة ذات الصلة."></span></p></div></div></div>
+                        <div class="coc-accordion-item"><button class="coc-accordion-trigger" aria-expanded="false"><div class="coc-accordion-num">08</div><div class="coc-accordion-label tr" data-en="Raising Concerns" data-ar="رفع المخاوف"></div><i class="fas fa-chevron-down coc-accordion-arrow"></i></button><div class="coc-accordion-body"><div class="coc-accordion-body-inner"><p><span class="tr" data-en="Report violations promptly through: your direct Sales Manager, the HR Department, or the Compliance Officer via the confidential reporting channel. Everscops prohibits retaliation against good-faith reporters." data-ar="أبلغ عن الانتهاكات فوراً عبر: مدير المبيعات المباشر، قسم الموارد البشرية، أو مسؤول الامتثال عبر قناة الإبلاغ السرية. تحظر إيفرسكوبس الانتقام من المبلغين بحسن نية."></span></p></div></div></div>
+                        <div class="coc-accordion-item"><button class="coc-accordion-trigger" aria-expanded="false"><div class="coc-accordion-num">09</div><div class="coc-accordion-label tr" data-en="Consequences of Violations" data-ar="عواقب الانتهاكات"></div><i class="fas fa-chevron-down coc-accordion-arrow"></i></button><div class="coc-accordion-body"><div class="coc-accordion-body-inner"><p><span class="tr" data-en="Violations may result in disciplinary action up to and including termination, forfeiture of commission, and referral to authorities where the conduct may be unlawful." data-ar="الانتهاكات قد تؤدي إلى إجراءات تأديبية تصل إلى إنهاء الخدمة ومصادرة العمولة والإحالة إلى الجهات المختصة حيث قد يكون السلوك غير قانوني."></span></p></div></div></div>
+                        <div class="coc-accordion-item"><button class="coc-accordion-trigger" aria-expanded="false"><div class="coc-accordion-num">10</div><div class="coc-accordion-label tr" data-en="Acknowledgment" data-ar="الاعتراف"></div><i class="fas fa-chevron-down coc-accordion-arrow"></i></button><div class="coc-accordion-body"><div class="coc-accordion-body-inner"><p><span class="tr" data-en="All employees must acknowledge this Code upon joining Everscops and on an annual basis thereafter." data-ar="يجب على جميع الموظفين الاعتراف بهذه المدونة عند الانضمام إلى إيفرسكوبس وعلى أساس سنوي بعد ذلك."></span></p></div></div></div>
                     </div>
                 </div>
             </div>
@@ -1288,7 +1273,7 @@
 
         <div class="section-divider"></div>
 
-        <!-- Why Us Section -->
+        <!-- Why Us -->
         <section class="section" id="why">
             <div class="section-header reveal">
                 <div class="section-label">Why Everscops</div>
@@ -1296,47 +1281,17 @@
                 <p class="section-subtitle tr" data-en="What makes us the ideal destination for ambitious professionals" data-ar="الأسباب التي تجعلنا الوجهة المثالية للموظفين الطموحين"></p>
             </div>
             <div class="why-grid">
-                <div class="why-card reveal">
-                    <div class="why-num">01</div>
-                    <div>
-                        <h4 class="tr" data-en="Career Growth Opportunities" data-ar="فرص نمو وتطور مهني"></h4>
-                        <p class="tr" data-en="Continuous learning and development opportunities through training programs, workshops, and mentoring events that help you advance in your career" data-ar="نقدم فرصاً مستمرة للتعلم والتطور من خلال برامج تدريبية وورش عمل وفعاليات إرشادية تساعدك على التقدم في حياتك المهنية"></p>
-                    </div>
-                </div>
-                <div class="why-card reveal">
-                    <div class="why-num">02</div>
-                    <div>
-                        <h4 class="tr" data-en="Positive &amp; Supportive Environment" data-ar="بيئة عمل إيجابية وداعمة"></h4>
-                        <p class="tr" data-en="We believe in creating a positive work environment where employees feel appreciated and respected, with open communication and genuine collaboration" data-ar="نؤمن بأهمية خلق بيئة عمل إيجابية يشعر فيها الموظفون بالتقدير والاحترام مع تواصل مفتوح وتعاون حقيقي"></p>
-                    </div>
-                </div>
-                <div class="why-card reveal">
-                    <div class="why-num">03</div>
-                    <div>
-                        <h4 class="tr" data-en="Competitive Rewards &amp; Incentives" data-ar="مكافآت وحوافز تنافسية"></h4>
-                        <p class="tr" data-en="A competitive rewards and incentives package that recognizes employees for their contributions, efforts, and outstanding performance" data-ar="نقدم حزمة مكافآت وحوافز تنافسية تكافئ موظفينا على مساهماتهم وجهودهم وأدائهم المتميز"></p>
-                    </div>
-                </div>
-                <div class="why-card reveal">
-                    <div class="why-num">04</div>
-                    <div>
-                        <h4 class="tr" data-en="Impactful Projects" data-ar="المساهمة في مشاريع مؤثرة"></h4>
-                        <p class="tr" data-en="We work on innovative and impactful real estate development projects that contribute to our community's growth — and you are an essential part of this positive change" data-ar="نعمل على مشاريع تطوير عقاري مبتكرة تساهم في نمو وتطور مجتمعنا — وأنت جزء أساسي من هذا التغيير الإيجابي"></p>
-                    </div>
-                </div>
-                <div class="why-card reveal" style="grid-column: 1 / -1;">
-                    <div class="why-num">05</div>
-                    <div>
-                        <h4 class="tr" data-en="Investing in Employee Well-being" data-ar="الاستثمار في رفاهية الموظفين"></h4>
-                        <p class="tr" data-en="We place great importance on employee well-being, providing benefits and services that support their health and comfort — because we believe happy employees are more productive and creative" data-ar="نولي أهمية كبيرة لرفاهية موظفينا ونوفر لهم مزايا وخدمات تدعم صحتهم وراحتهم لأننا نؤمن بأن الموظفين السعداء هم أكثر إنتاجية وإبداعاً"></p>
-                    </div>
-                </div>
+                <div class="why-card reveal"><div class="why-num">01</div><div><h4 class="tr" data-en="Career Growth Opportunities" data-ar="فرص نمو وتطور مهني"></h4><p class="tr" data-en="Continuous learning and development opportunities through training programs, workshops, and mentoring events that help you advance in your career" data-ar="نقدم فرصاً مستمرة للتعلم والتطور من خلال برامج تدريبية وورش عمل وفعاليات إرشادية تساعدك على التقدم في حياتك المهنية"></p></div></div>
+                <div class="why-card reveal"><div class="why-num">02</div><div><h4 class="tr" data-en="Positive &amp; Supportive Environment" data-ar="بيئة عمل إيجابية وداعمة"></h4><p class="tr" data-en="We believe in creating a positive work environment where employees feel appreciated and respected, with open communication and genuine collaboration" data-ar="نؤمن بأهمية خلق بيئة عمل إيجابية يشعر فيها الموظفون بالتقدير والاحترام مع تواصل مفتوح وتعاون حقيقي"></p></div></div>
+                <div class="why-card reveal"><div class="why-num">03</div><div><h4 class="tr" data-en="Competitive Rewards &amp; Incentives" data-ar="مكافآت وحوافز تنافسية"></h4><p class="tr" data-en="A competitive rewards and incentives package that recognizes employees for their contributions, efforts, and outstanding performance" data-ar="نقدم حزمة مكافآت وحوافز تنافسية تكافئ موظفينا على مساهماتهم وجهودهم وأدائهم المتميز"></p></div></div>
+                <div class="why-card reveal"><div class="why-num">04</div><div><h4 class="tr" data-en="Impactful Projects" data-ar="المساهمة في مشاريع مؤثرة"></h4><p class="tr" data-en="We work on innovative and impactful real estate development projects that contribute to our community's growth — and you are an essential part of this positive change" data-ar="نعمل على مشاريع تطوير عقاري مبتكرة تساهم في نمو وتطور مجتمعنا — وأنت جزء أساسي من هذا التغيير الإيجابي"></p></div></div>
+                <div class="why-card reveal" style="grid-column: 1 / -1;"><div class="why-num">05</div><div><h4 class="tr" data-en="Investing in Employee Well-being" data-ar="الاستثمار في رفاهية الموظفين"></h4><p class="tr" data-en="We place great importance on employee well-being, providing benefits and services that support their health and comfort — because we believe happy employees are more productive and creative" data-ar="نولي أهمية كبيرة لرفاهية موظفينا ونوفر لهم مزايا وخدمات تدعم صحتهم وراحتهم لأننا نؤمن بأن الموظفين السعداء هم أكثر إنتاجية وإبداعاً"></p></div></div>
             </div>
         </section>
 
         <div class="section-divider"></div>
 
-        <!-- HR Policies Section -->
+        <!-- HR -->
         <section class="section" id="hr">
             <div class="section-header reveal">
                 <div class="section-label">HR Policies</div>
@@ -1344,91 +1299,83 @@
                 <p class="section-subtitle tr" data-en="Frameworks and regulations ensuring a fair and organized work environment" data-ar="الأطر واللوائح التي تضمن بيئة عمل عادلة ومنظمة"></p>
             </div>
 
-            <div class="reveal" style="margin-bottom: 4rem;">
-                <h3 class="sub-section-title">
-                    <i class="fas fa-route" style="color: var(--orange);"></i>
-                    <span class="tr" data-en="Recruitment Process" data-ar="مراحل التوظيف"></span>
-                </h3>
-                <div class="recruitment-steps">
-                    <div class="rec-step">
-                        <div class="rec-step-num">1</div>
-                        <div class="rec-step-content">
-                            <h4 class="tr" data-en="Application" data-ar="التقديم"></h4>
-                            <p class="tr" data-en="Receiving applications via email and major job platforms such as LinkedIn" data-ar="استقبال الطلبات عبر البريد الإلكتروني ومواقع التوظيف الشهيرة مثل LinkedIn"></p>
+
+
+
+            <!-- ===== JOINING EVER SCOPES (below CEO Message) ===== -->
+            <div class="joining-section reveal">
+                <div class="joining-title">
+                    <span class="tr" data-en="Joining Ever Scopes" data-ar="الانضمام إلى إيفرسكوبس"></span>
+                </div>
+                <div class="joining-grid">
+                    <div class="joining-card">
+                        <div class="joining-card-header">
+                            <div class="joining-card-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <div class="joining-card-title tr" data-en="Training Program" data-ar="برنامج التدريب"></div>
                         </div>
-                        <div class="rec-step-arrow"><i class="fas fa-arrow-right"></i></div>
+                        <ul>
+                            <li>
+                                <i class="fas fa-circle"></i>
+                                <span class="tr" data-en="New joiners take part in a training program designed to build the professional skills and practical experience needed for their target role." data-ar="يخضع الموظفون الجدد لبرنامج تدريبي مصمَّم لبناء المهارات المهنية والخبرة العملية اللازمة للدور الوظيفي المستهدف."></span>
+                            </li>
+                            <li>
+                                <i class="fas fa-circle"></i>
+                                <span class="tr" data-en="Successfully completing the training requirements and final evaluation is one of the factors considered for available positions at the company." data-ar="يُعدّ إتمام متطلبات التدريب والتقييم النهائي بنجاح أحد العوامل التي تُؤخذ في الاعتبار عند توفر الفرص الوظيفية في الشركة."></span>
+                            </li>
+                            <li>
+                                <i class="fas fa-circle"></i>
+                                <span class="tr" data-en="The training period is a qualification and assessment stage." data-ar="فترة التدريب هي مرحلة تأهيل وتقييم."></span>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="rec-step">
-                        <div class="rec-step-num">2</div>
-                        <div class="rec-step-content">
-                            <h4 class="tr" data-en="Screening" data-ar="تصفية الطلبات"></h4>
-                            <p class="tr" data-en="Evaluating applications based on experience, technical and personal skills, and professional principles" data-ar="تقييم الطلبات بناءً على الخبرة والمهارات التقنية والشخصية والمبادئ المهنية"></p>
+                    <div class="joining-card">
+                        <div class="joining-card-header">
+                            <div class="joining-card-icon"><i class="fas fa-file-alt"></i></div>
+                            <div class="joining-card-title tr" data-en="Hiring Documents" data-ar="مستندات التعيين"></div>
                         </div>
-                        <div class="rec-step-arrow"><i class="fas fa-arrow-right"></i></div>
-                    </div>
-                    <div class="rec-step">
-                        <div class="rec-step-num">3</div>
-                        <div class="rec-step-content">
-                            <h4 class="tr" data-en="Assessments" data-ar="الاختبارات"></h4>
-                            <p class="tr" data-en="Conducting technical tests according to job requirements to measure actual competency" data-ar="إجراء اختبارات تقنية حسب متطلبات الوظيفة لقياس الكفاءة الفعلية"></p>
-                        </div>
-                        <div class="rec-step-arrow"><i class="fas fa-arrow-right"></i></div>
-                    </div>
-                    <div class="rec-step">
-                        <div class="rec-step-num">4</div>
-                        <div class="rec-step-content">
-                            <h4 class="tr" data-en="Interviews" data-ar="المقابلات"></h4>
-                            <p class="tr" data-en="Interviews with qualified candidates, with top management involvement in final stages" data-ar="مقابلات مع المرشحين المؤهلين بمشاركة الإدارة العليا في المراحل النهائية"></p>
-                        </div>
-                        <div class="rec-step-arrow"><i class="fas fa-arrow-right"></i></div>
-                    </div>
-                    <div class="rec-step">
-                        <div class="rec-step-num">5</div>
-                        <div class="rec-step-content">
-                            <h4 class="tr" data-en="Hiring" data-ar="التعيين"></h4>
-                            <p class="tr" data-en="Sending a job offer to the successful candidate and starting a 3-month probation period" data-ar="إرسال عرض العمل للمرشح الناجح وبدء فترة اختبار مدتها 3 أشهر"></p>
-                        </div>
+                        <ul>
+                            <li>
+                                <i class="fas fa-circle"></i>
+                                <span class="tr" data-en="On your first day, contact the recruiter who sent you your job offer — they'll guide you through the onboarding process." data-ar="في يوم عملك الأول، تواصل مع مسؤول التوظيف الذي أرسل لك عرض العمل — سيقوم بإرشادك خلال عملية التهيئة."></span>
+                            </li>
+                            <li>
+                                <i class="fas fa-circle"></i>
+                                <span class="tr" data-en="Submit all your hiring documents through your assigned sales admin and share it with the HR Operations team on your first day." data-ar="قدّم جميع مستندات التعيين الخاصة بك من خلال مسؤول الشؤون الإدارية للمبيعات المخصَّص لك، وشاركها مع فريق عمليات الموارد البشرية في يوم عملك الأول."></span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
+
+
+            
+            <b><br><br> </b>
+            <b><br><br> </b>
+
+            <div class="reveal" style="margin-bottom: 4rem;">
+                <h3 class="sub-section-title"><i class="fas fa-route" style="color: var(--orange);"></i><span class="tr" data-en="Recruitment Process" data-ar="مراحل التوظيف"></span></h3>
+                <div class="recruitment-steps">
+                    <div class="rec-step"><div class="rec-step-num">1</div><div class="rec-step-content"><h4 class="tr" data-en="Application" data-ar="التقديم"></h4><p class="tr" data-en="Receiving applications via email and major job platforms such as LinkedIn" data-ar="استقبال الطلبات عبر البريد الإلكتروني ومواقع التوظيف الشهيرة مثل LinkedIn"></p></div><div class="rec-step-arrow"><i class="fas fa-arrow-right"></i></div></div>
+                    <div class="rec-step"><div class="rec-step-num">2</div><div class="rec-step-content"><h4 class="tr" data-en="Screening" data-ar="تصفية الطلبات"></h4><p class="tr" data-en="Evaluating applications based on experience, technical and personal skills, and professional principles" data-ar="تقييم الطلبات بناءً على الخبرة والمهارات التقنية والشخصية والمبادئ المهنية"></p></div><div class="rec-step-arrow"><i class="fas fa-arrow-right"></i></div></div>
+                    <div class="rec-step"><div class="rec-step-num">3</div><div class="rec-step-content"><h4 class="tr" data-en="Assessments" data-ar="الاختبارات"></h4><p class="tr" data-en="Conducting technical tests according to job requirements to measure actual competency" data-ar="إجراء اختبارات تقنية حسب متطلبات الوظيفة لقياس الكفاءة الفعلية"></p></div><div class="rec-step-arrow"><i class="fas fa-arrow-right"></i></div></div>
+                    <div class="rec-step"><div class="rec-step-num">4</div><div class="rec-step-content"><h4 class="tr" data-en="Interviews" data-ar="المقابلات"></h4><p class="tr" data-en="Interviews with qualified candidates, with top management involvement in final stages" data-ar="مقابلات مع المرشحين المؤهلين بمشاركة الإدارة العليا في المراحل النهائية"></p></div><div class="rec-step-arrow"><i class="fas fa-arrow-right"></i></div></div>
+                    <div class="rec-step"><div class="rec-step-num">5</div><div class="rec-step-content"><h4 class="tr" data-en="Hiring" data-ar="التعيين"></h4><p class="tr" data-en="Sending a job offer to the successful candidate and starting a 3-month probation period" data-ar="إرسال عرض العمل للمرشح الناجح وبدء فترة اختبار مدتها 3 أشهر"></p></div></div>
+                </div>
+            </div>
             <div class="policies-grid">
-                <div class="policy-card reveal">
-                    <div class="policy-icon"><i class="fas fa-search"></i></div>
-                    <h4 class="tr" data-en="Talent Discovery" data-ar="اكتشاف المواهب"></h4>
-                    <p class="tr" data-en="A comprehensive strategy to attract the best qualified talent that aligns with our organizational values" data-ar="استراتيجية شاملة لجذب أفضل الكوادر المؤهلة التي تتناسب مع قيمنا التنظيمية"></p>
-                </div>
-                <div class="policy-card reveal">
-                    <div class="policy-icon"><i class="fas fa-chalkboard-teacher"></i></div>
-                    <h4 class="tr" data-en="Training &amp; Development" data-ar="التدريب والتطوير"></h4>
-                    <p class="tr" data-en="Continuous programs to enhance employee efficiency and prepare them for higher positions" data-ar="برامج مستمرة لرفع كفاءة الموظفين وتأهيلهم لمواقع أعلى في المنظمة"></p>
-                </div>
-                <div class="policy-card reveal">
-                    <div class="policy-icon"><i class="fas fa-tasks"></i></div>
-                    <h4 class="tr" data-en="Performance Management" data-ar="إدارة الأداء"></h4>
-                    <p class="tr" data-en="A fair and transparent evaluation system to measure employee performance and identify development opportunities" data-ar="نظام تقييم عادل وشفاف لقياس أداء الموظفين وتحديد فرص التطوير"></p>
-                </div>
-                <div class="policy-card reveal">
-                    <div class="policy-icon"><i class="fas fa-heartbeat"></i></div>
-                    <h4 class="tr" data-en="Health &amp; Safety" data-ar="الصحة والسلامة"></h4>
-                    <p class="tr" data-en="Established procedures to ensure employee safety and comfort in the workplace" data-ar="إجراءات متبعة لضمان سلامة الموظفين وراحتهم في بيئة العمل"></p>
-                </div>
-                <div class="policy-card reveal">
-                    <div class="policy-icon"><i class="fas fa-gift"></i></div>
-                    <h4 class="tr" data-en="Compensation &amp; Benefits" data-ar="المكافآت والمزايا"></h4>
-                    <p class="tr" data-en="Salary and promotion determination based on clear and fair criteria including competitive incentives" data-ar="تحديد الرواتب والترقيات وفق معايير واضحة وعادلة تشمل حوافز تنافسية"></p>
-                </div>
-                <div class="policy-card reveal">
-                    <div class="policy-icon"><i class="fas fa-balance-scale"></i></div>
-                    <h4 class="tr" data-en="Diversity &amp; Inclusion" data-ar="التنوع والشمولية"></h4>
-                    <p class="tr" data-en="Providing equal employment opportunities for all regardless of background, ethnicity, or religion" data-ar="توفير فرص عمل متكافلة للجميع بغض النظر عن الخلفية أو العرق أو الدين"></p>
-                </div>
+                <div class="policy-card reveal"><div class="policy-icon"><i class="fas fa-search"></i></div><h4 class="tr" data-en="Talent Discovery" data-ar="اكتشاف المواهب"></h4><p class="tr" data-en="A comprehensive strategy to attract the best qualified talent that aligns with our organizational values" data-ar="استراتيجية شاملة لجذب أفضل الكوادر المؤهلة التي تتناسب مع قيمنا التنظيمية"></p></div>
+                <div class="policy-card reveal"><div class="policy-icon"><i class="fas fa-chalkboard-teacher"></i></div><h4 class="tr" data-en="Training &amp; Development" data-ar="التدريب والتطوير"></h4><p class="tr" data-en="Continuous programs to enhance employee efficiency and prepare them for higher positions" data-ar="برامج مستمرة لرفع كفاءة الموظفين وتأهيلهم لمواقع أعلى"></p></div>
+                <div class="policy-card reveal"><div class="policy-icon"><i class="fas fa-tasks"></i></div><h4 class="tr" data-en="Performance Management" data-ar="إدارة الأداء"></h4><p class="tr" data-en="A fair and transparent evaluation system to measure performance and identify development opportunities" data-ar="نظام تقييم عادل وشفاف لقياس الأداء وتحديد فرص التطوير"></p></div>
+                <div class="policy-card reveal"><div class="policy-icon"><i class="fas fa-heartbeat"></i></div><h4 class="tr" data-en="Health &amp; Safety" data-ar="الصحة والسلامة"></h4><p class="tr" data-en="Established procedures to ensure employee safety and comfort in the workplace" data-ar="إجراءات متبعة لضمان سلامة الموظفين وراحتهم"></p></div>
+                <div class="policy-card reveal"><div class="policy-icon"><i class="fas fa-gift"></i></div><h4 class="tr" data-en="Compensation &amp; Benefits" data-ar="المكافآت والمزايا"></h4><p class="tr" data-en="Salary and promotion determination based on clear and fair criteria including competitive incentives" data-ar="تحديد الرواتب والترقيات وفق معايير واضحة وعادلة تشمل حوافز تنافسية"></p></div>
+                <div class="policy-card reveal"><div class="policy-icon"><i class="fas fa-balance-scale"></i></div><h4 class="tr" data-en="Diversity &amp; Inclusion" data-ar="التنوع والشمولية"></h4><p class="tr" data-en="Providing equal employment opportunities for all regardless of background, ethnicity, or religion" data-ar="توفير فرص عمل متكافلة للجميع بغض النظر عن الخلفية أو العرق أو الدين"></p></div>
             </div>
         </section>
 
         <div class="section-divider"></div>
 
-        <!-- Culture Section -->
+        <!-- Culture -->
         <section class="section" id="culture">
             <div class="section-header reveal">
                 <div class="section-label">Company Culture</div>
@@ -1436,107 +1383,27 @@
                 <p class="section-subtitle tr" data-en="The motivating environment that makes Everscops an exceptional place to work" data-ar="البيئة المحفزة التي تجعل إيفرسكوبس مكاناً استثنائياً للعمل"></p>
             </div>
             <div class="culture-grid">
-                <div class="culture-card reveal">
-                    <i class="fas fa-trophy"></i>
-                    <h4 class="tr" data-en="Celebrating Achievements" data-ar="الاحتفال بالإنجازات"></h4>
-                    <p class="tr" data-en="Public recognition in meetings, awards for top performers, events celebrating individual and team successes" data-ar="التقدير العلني في الاجتماعات، جوائز للمتميزين، فعاليات للاحتفال بالنجاحات الفردية والجماعية"></p>
-                </div>
-                <div class="culture-card reveal">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h4 class="tr" data-en="Professional Development" data-ar="التطوير الوظيفي"></h4>
-                    <p class="tr" data-en="Continuous training, individual development plans, internal promotion opportunities from within the company" data-ar="تدريب مستمر، خطط تطوير فردية، فرص ترقيات داخلية من داخل الشركة"></p>
-                </div>
-                <div class="culture-card reveal">
-                    <i class="fas fa-clock"></i>
-                    <h4 class="tr" data-en="Work Flexibility" data-ar="المرونة في العمل"></h4>
-                    <p class="tr" data-en="Flexible working hours, remote work options, and shortened workdays when needed" data-ar="ساعات عمل مرنة، خيارات العمل عن بُعد، أيام عمل مختصرة عند الحاجة"></p>
-                </div>
-                <div class="culture-card reveal">
-                    <i class="fas fa-brain"></i>
-                    <h4 class="tr" data-en="Mental Health Support" data-ar="الدعم النفسي"></h4>
-                    <p class="tr" data-en="Mental health support programs, consultations with specialists, stress management workshops" data-ar="برامج دعم الصحة النفسية، استشارات مع متخصصين، ورش عمل لإدارة التوتر"></p>
-                </div>
+                <div class="culture-card reveal"><i class="fas fa-trophy"></i><h4 class="tr" data-en="Celebrating Achievements" data-ar="الاحتفال بالإنجازات"></h4><p class="tr" data-en="Public recognition in meetings, awards for top performers, events celebrating successes" data-ar="التقدير العلني في الاجتماعات، جوائز للمتميزين، فعاليات للاحتفال بالنجاحات"></p></div>
+                <div class="culture-card reveal"><i class="fas fa-graduation-cap"></i><h4 class="tr" data-en="Professional Development" data-ar="التطوير الوظيفي"></h4><p class="tr" data-en="Continuous training, individual development plans, internal promotion opportunities" data-ar="تدريب مستمر، خطط تطوير فردية، فرص ترقيات داخلية"></p></div>
+                <div class="culture-card reveal"><i class="fas fa-clock"></i><h4 class="tr" data-en="Work Flexibility" data-ar="المرونة في العمل"></h4><p class="tr" data-en="Flexible working hours, remote work options, and shortened workdays when needed" data-ar="ساعات عمل مرنة، خيارات العمل عن بُعد، أيام عمل مختصرة"></p></div>
+                <div class="culture-card reveal"><i class="fas fa-brain"></i><h4 class="tr" data-en="Mental Health Support" data-ar="الدعم النفسي"></h4><p class="tr" data-en="Mental health support programs, consultations with specialists, stress management workshops" data-ar="برامج دعم الصحة النفسية، استشارات مع متخصصين، ورش عمل لإدارة التوتر"></p></div>
             </div>
-
             <div style="margin-top: 4rem;">
-                <h3 class="sub-section-title reveal">
-                    <i class="fas fa-building" style="color: var(--orange);"></i>
-                    <span class="tr" data-en="Work Environment" data-ar="بيئة العمل"></span>
-                </h3>
+                <h3 class="sub-section-title reveal"><i class="fas fa-building" style="color: var(--orange);"></i><span class="tr" data-en="Work Environment" data-ar="بيئة العمل"></span></h3>
                 <div class="env-grid">
-                    <div class="env-card reveal">
-                        <div class="env-header">
-                            <div class="env-icon"><i class="fas fa-desktop"></i></div>
-                            <h4 class="tr" data-en="Comfortable Workspaces" data-ar="مساحات عمل مريحة"></h4>
-                        </div>
-                        <p class="tr" data-en="Offices equipped with the latest technologies and modern systems that support productivity and innovation" data-ar="مكاتب مجهزة بأحدث التقنيات والأنظمة الحديثة التي تدعم الإنتاجية والابتكار"></p>
-                        <div class="env-tags">
-                            <span class="env-tag tr" data-en="Modern Tech" data-ar="تقنيات حديثة"></span>
-                            <span class="env-tag tr" data-en="Comfortable Spaces" data-ar="مساحات مريحة"></span>
-                        </div>
-                    </div>
-                    <div class="env-card reveal">
-                        <div class="env-header">
-                            <div class="env-icon"><i class="fas fa-book-reader"></i></div>
-                            <h4 class="tr" data-en="Continuous Support" data-ar="الدعم المستمر"></h4>
-                        </div>
-                        <p class="tr" data-en="Ongoing training and development programs that help every employee reach their full potential" data-ar="برامج تدريب وتطوير مستمرة تساعد كل موظف على الوصول لأقصى إمكاناته"></p>
-                        <div class="env-tags">
-                            <span class="env-tag tr" data-en="Ongoing Training" data-ar="تدريب مستمر"></span>
-                            <span class="env-tag tr" data-en="Professional Growth" data-ar="تطوير مهني"></span>
-                        </div>
-                    </div>
-                    <div class="env-card reveal">
-                        <div class="env-header">
-                            <div class="env-icon"><i class="fas fa-yin-yang"></i></div>
-                            <h4 class="tr" data-en="Work-Life Balance" data-ar="التوازن والحياة"></h4>
-                        </div>
-                        <p class="tr" data-en="Flexible work options to achieve the optimal balance between professional and personal life" data-ar="خيارات عمل مرنة لتحقيق التوازن الأمثل بين الحياة المهنية والشخصية"></p>
-                        <div class="env-tags">
-                            <span class="env-tag tr" data-en="Balance" data-ar="توازن"></span>
-                            <span class="env-tag tr" data-en="Flexibility" data-ar="مرونة"></span>
-                        </div>
-                    </div>
-                    <div class="env-card reveal">
-                        <div class="env-header">
-                            <div class="env-icon"><i class="fas fa-heartbeat"></i></div>
-                            <h4 class="tr" data-en="Healthcare" data-ar="الرعاية الصحية"></h4>
-                        </div>
-                        <p class="tr" data-en="Comprehensive health insurance for employees and their families, with periodic check-ups and awareness programs" data-ar="تأمين صحي شامل للموظفين وأسرهم مع فحوصات دورية وبرامج توعية"></p>
-                        <div class="env-tags">
-                            <span class="env-tag tr" data-en="Full Coverage" data-ar="تأمين شامل"></span>
-                            <span class="env-tag tr" data-en="Periodic Check-ups" data-ar="فحوصات دورية"></span>
-                        </div>
-                    </div>
-                    <div class="env-card reveal">
-                        <div class="env-header">
-                            <div class="env-icon"><i class="fas fa-umbrella-beach"></i></div>
-                            <h4 class="tr" data-en="Trips &amp; Activities" data-ar="الرحلات والأنشطة"></h4>
-                        </div>
-                        <p class="tr" data-en="Regular social and recreational events including trips, family occasions, and celebrations" data-ar="فعاليات اجتماعية وترفيهية دورية تشمل رحلات ومناسبات عائلية واحتفالات"></p>
-                        <div class="env-tags">
-                            <span class="env-tag tr" data-en="Trips" data-ar="رحلات"></span>
-                            <span class="env-tag tr" data-en="Family Events" data-ar="فعاليات عائلية"></span>
-                        </div>
-                    </div>
-                    <div class="env-card reveal">
-                        <div class="env-header">
-                            <div class="env-icon"><i class="fas fa-comments"></i></div>
-                            <h4 class="tr" data-en="Internal Communication" data-ar="التواصل الداخلي"></h4>
-                        </div>
-                        <p class="tr" data-en="Regular meetings, full transparency, and the ability to communicate directly with top management" data-ar="اجتماعات دورية وشفافية كاملة وإمكانية التواصل المباشر مع الإدارة العليا"></p>
-                        <div class="env-tags">
-                            <span class="env-tag tr" data-en="Transparency" data-ar="شفافية"></span>
-                            <span class="env-tag tr" data-en="Open Communication" data-ar="تواصل مفتوح"></span>
-                        </div>
-                    </div>
+                    <div class="env-card reveal"><div class="env-header"><div class="env-icon"><i class="fas fa-desktop"></i></div><h4 class="tr" data-en="Comfortable Workspaces" data-ar="مساحات عمل مريحة"></h4></div><p class="tr" data-en="Offices equipped with the latest technologies and modern systems that support productivity" data-ar="مكاتب مجهزة بأحدث التقنيات والأنظمة الحديثة"></p><div class="env-tags"><span class="env-tag tr" data-en="Modern Tech" data-ar="تقنيات حديثة"></span><span class="env-tag tr" data-en="Comfortable Spaces" data-ar="مساحات مريحة"></span></div></div>
+                    <div class="env-card reveal"><div class="env-header"><div class="env-icon"><i class="fas fa-book-reader"></i></div><h4 class="tr" data-en="Continuous Support" data-ar="الدعم المستمر"></h4></div><p class="tr" data-en="Ongoing training and development programs that help every employee reach their full potential" data-ar="برامج تدريب وتطوير مستمرة تساعد كل موظف على الوصول لأقصى إمكاناته"></p><div class="env-tags"><span class="env-tag tr" data-en="Ongoing Training" data-ar="تدريب مستمر"></span><span class="env-tag tr" data-en="Professional Growth" data-ar="تطوير مهني"></span></div></div>
+                    <div class="env-card reveal"><div class="env-header"><div class="env-icon"><i class="fas fa-yin-yang"></i></div><h4 class="tr" data-en="Work-Life Balance" data-ar="التوازن والحياة"></h4></div><p class="tr" data-en="Flexible work options to achieve the optimal balance between professional and personal life" data-ar="خيارات عمل مرنة لتحقيق التوازن الأمثل بين الحياة المهنية والشخصية"></p><div class="env-tags"><span class="env-tag tr" data-en="Balance" data-ar="توازن"></span><span class="env-tag tr" data-en="Flexibility" data-ar="مرونة"></span></div></div>
+                    <div class="env-card reveal"><div class="env-header"><div class="env-icon"><i class="fas fa-heartbeat"></i></div><h4 class="tr" data-en="Healthcare" data-ar="الرعاية الصحية"></h4></div><p class="tr" data-en="Comprehensive health insurance for employees and their families, with periodic check-ups" data-ar="تأمين صحي شامل للموظفين وأسرهم مع فحوصات دورية"></p><div class="env-tags"><span class="env-tag tr" data-en="Full Coverage" data-ar="تأمين شامل"></span><span class="env-tag tr" data-en="Periodic Check-ups" data-ar="فحوصات دورية"></span></div></div>
+                    <div class="env-card reveal"><div class="env-header"><div class="env-icon"><i class="fas fa-umbrella-beach"></i></div><h4 class="tr" data-en=" Activities" data-ar="الأنشطة الترفيهية"></h4></div><p class="tr" data-en="Regular social and recreational events" data-ar="فعاليات اجتماعية وترفيهية دورية"></p><div class="env-tags"><span class="env-tag tr" data-en="Activities" data-ar="انشطة"></span><span class="env-tag tr" data-en="Entertainment activities" data-ar="فعاليات ترفيهية"></span></div></div>
+                    <div class="env-card reveal"><div class="env-header"><div class="env-icon"><i class="fas fa-comments"></i></div><h4 class="tr" data-en="Internal Communication" data-ar="التواصل الداخلي"></h4></div><p class="tr" data-en="Regular meetings, full transparency, and the ability to communicate directly with top management" data-ar="اجتماعات دورية وشفافية كاملة وإمكانية التواصل المباشر مع الإدارة العليا"></p><div class="env-tags"><span class="env-tag tr" data-en="Transparency" data-ar="شفافية"></span><span class="env-tag tr" data-en="Open Communication" data-ar="تواصل مفتوح"></span></div></div>
                 </div>
             </div>
         </section>
-
+<!--Trips &amp; -->
         <div class="section-divider"></div>
 
-        <!-- Contact Section -->
+        <!-- Contact -->
         <section class="contact-section">
             <div class="section" id="contact">
                 <div class="section-header reveal">
@@ -1544,7 +1411,7 @@
                     <h2 class="section-title tr" data-en="Contact Us" data-ar="تواصل معنا"></h2>
                     <p class="section-subtitle tr" data-en="We're here to help and answer all your inquiries" data-ar="نحن هنا لمساعدتك والإجابة على جميع استفساراتك"></p>
                 </div>
-                <div class="contact-grid">
+                 <div class="contact-grid">
                     <div class="contact-card reveal">
                         <i class="fas fa-map-marker-alt"></i>
                         <h4 class="tr" data-en="Address" data-ar="العنوان"></h4>
@@ -1561,7 +1428,6 @@
                         <a href="mailto:info@everscopes.com">info@everscopes.com</a>
                     </div>
                 </div>
-
                 <div class="reveal" style="text-align: center; margin-top: 4rem; padding: 3rem;">
                     <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">
                         <span class="tr" data-en="Thank You" data-ar="شكراً لكم" style="background: linear-gradient(135deg, var(--orange), var(--gold-light)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"></span>
@@ -1573,221 +1439,65 @@
             </div>
         </section>
 
-        <!-- Footer -->
         <footer class="footer">
             <img src="https://z-cdn-media.chatglm.cn/files/e8b29a55-7616-4655-b8b1-98bb65e1391b.png?auth_key=1882717688-263d2fe5270a4b43b865732bde6ffa7b-0-c100c6a672309a8068e148e91fac5acf" alt="Everscops" class="footer-logo">
             <p>© 2026 <span class="footer-brand">Everscops</span> <span class="tr" data-en="Real Estate Marketing Company — All Rights Reserved" data-ar="للتسويق العقاري — جميع الحقوق محفوظة"></span></p>
         </footer>
     </div>
 
-    <!-- Back to Top -->
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
 
     <script>
-        // ===== LANGUAGE SWITCHING =====
         let currentLang = 'en';
         const langToggle = document.getElementById('langToggle');
-
-        langToggle.addEventListener('click', () => {
-            currentLang = currentLang === 'en' ? 'ar' : 'en';
-            applyLanguage();
-        });
-
+        langToggle.addEventListener('click', () => { currentLang = currentLang === 'en' ? 'ar' : 'en'; applyLanguage(); });
         function applyLanguage() {
             const html = document.documentElement;
-            html.lang = currentLang;
-            html.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
-
-            document.querySelectorAll('.tr').forEach(el => {
-                const text = el.getAttribute('data-' + currentLang);
-                if (text) el.textContent = text;
-            });
-
-            document.querySelectorAll('.rec-step-arrow i').forEach(icon => {
-                icon.className = currentLang === 'ar' ? 'fas fa-arrow-left' : 'fas fa-arrow-right';
-            });
-
-            document.title = currentLang === 'ar'
-                ? 'إيفرسكوبس — دليل الموظفين'
-                : 'Everscops — Employee Handbook';
+            html.lang = currentLang; html.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
+            document.querySelectorAll('.tr').forEach(el => { const t = el.getAttribute('data-' + currentLang); if (t) el.textContent = t; });
+            document.querySelectorAll('.rec-step-arrow i').forEach(icon => { icon.className = currentLang === 'ar' ? 'fas fa-arrow-left' : 'fas fa-arrow-right'; });
+            document.title = currentLang === 'ar' ? 'إيفرسكوبس — دليل الموظفين' : 'Everscops — Employee Handbook';
         }
-
         applyLanguage();
-
-        // ===== LOADER =====
-        window.addEventListener('load', () => {
-            setTimeout(() => {
-                document.getElementById('loader').classList.add('hidden');
-            }, 2000);
-        });
-
-        // ===== NAVBAR SCROLL =====
-        const navbar = document.getElementById('navbar');
-        const backToTop = document.getElementById('backToTop');
-
+        window.addEventListener('load', () => { setTimeout(() => { document.getElementById('loader').classList.add('hidden'); }, 2000); });
+        const navbar = document.getElementById('navbar'), backToTop = document.getElementById('backToTop');
         window.addEventListener('scroll', () => {
             navbar.classList.toggle('scrolled', window.scrollY > 50);
             backToTop.classList.toggle('visible', window.scrollY > 500);
-
             const sections = document.querySelectorAll('.section, .mission-section, .contact-section');
             const navLinksEls = document.querySelectorAll('.nav-links a');
             let current = '';
-
-            sections.forEach(section => {
-                if (window.scrollY >= section.offsetTop - 150) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinksEls.forEach(link => {
-                link.classList.toggle('active', link.getAttribute('href') === '#' + current);
-            });
+            sections.forEach(s => { if (window.scrollY >= s.offsetTop - 150) current = s.getAttribute('id'); });
+            navLinksEls.forEach(l => { l.classList.toggle('active', l.getAttribute('href') === '#' + current); });
         });
-
-        backToTop.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-
-        // ===== MOBILE NAV =====
-        const navToggleBtn = document.getElementById('navToggle');
-        const navLinksMenu = document.getElementById('navLinks');
-
-        navToggleBtn.addEventListener('click', () => {
-            navToggleBtn.classList.toggle('active');
-            navLinksMenu.classList.toggle('open');
-        });
-
-        navLinksMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                navToggleBtn.classList.remove('active');
-                navLinksMenu.classList.remove('open');
-            });
-        });
-
-        // ===== SCROLL REVEAL =====
-        const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) entry.target.classList.add('visible');
-            });
-        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-
+        backToTop.addEventListener('click', () => { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+        const navToggleBtn = document.getElementById('navToggle'), navLinksMenu = document.getElementById('navLinks');
+        navToggleBtn.addEventListener('click', () => { navToggleBtn.classList.toggle('active'); navLinksMenu.classList.toggle('open'); });
+        navLinksMenu.querySelectorAll('a').forEach(l => { l.addEventListener('click', () => { navToggleBtn.classList.remove('active'); navLinksMenu.classList.remove('open'); }); });
+        const revealObserver = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
         document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
-
-        // ===== 3D TILT ON CARDS =====
         document.querySelectorAll('.value-card, .policy-card, .culture-card, .contact-card, .env-card').forEach(card => {
             card.addEventListener('mousemove', (e) => {
-                const rect = card.getBoundingClientRect();
-                const rotateX = ((e.clientY - rect.top) - rect.height / 2) / 20;
-                const rotateY = (rect.width / 2 - (e.clientX - rect.left)) / 20;
-                card.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px)`;
+                const r = card.getBoundingClientRect();
+                card.style.transform = `perspective(800px) rotateX(${((e.clientY - r.top) - r.height/2)/20}deg) rotateY(${(r.width/2 - (e.clientX - r.left))/20}deg) translateY(-8px)`;
             });
             card.addEventListener('mouseleave', () => { card.style.transform = ''; });
         });
-
-        // ===== CODE OF CONDUCT ACCORDION =====
         document.querySelectorAll('.coc-accordion-trigger').forEach(trigger => {
             trigger.addEventListener('click', () => {
-                const item = trigger.closest('.coc-accordion-item');
-                const body = item.querySelector('.coc-accordion-body');
-                const isOpen = item.classList.contains('open');
-
-                // Close all
-                document.querySelectorAll('.coc-accordion-item').forEach(i => {
-                    i.classList.remove('open');
-                    i.querySelector('.coc-accordion-trigger').setAttribute('aria-expanded', 'false');
-                    i.querySelector('.coc-accordion-body').style.maxHeight = null;
-                });
-
-                // Open clicked if it was closed
-                if (!isOpen) {
-                    item.classList.add('open');
-                    trigger.setAttribute('aria-expanded', 'true');
-                    body.style.maxHeight = body.scrollHeight + 'px';
-                }
+                const item = trigger.closest('.coc-accordion-item'), body = item.querySelector('.coc-accordion-body'), isOpen = item.classList.contains('open');
+                document.querySelectorAll('.coc-accordion-item').forEach(i => { i.classList.remove('open'); i.querySelector('.coc-accordion-trigger').setAttribute('aria-expanded', 'false'); i.querySelector('.coc-accordion-body').style.maxHeight = null; });
+                if (!isOpen) { item.classList.add('open'); trigger.setAttribute('aria-expanded', 'true'); body.style.maxHeight = body.scrollHeight + 'px'; }
             });
         });
-
-        // ===== PARTICLES CANVAS =====
-        const canvas = document.getElementById('particles-canvas');
-        const ctx = canvas.getContext('2d');
-        let particles = [];
-        let animationId;
-
-        function resizeCanvas() {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-        }
-        resizeCanvas();
-        window.addEventListener('resize', resizeCanvas);
-
-        class Particle {
-            constructor() { this.reset(); }
-            reset() {
-                this.x = Math.random() * canvas.width;
-                this.y = Math.random() * canvas.height;
-                this.size = Math.random() * 2 + 0.5;
-                this.speedX = (Math.random() - 0.5) * 0.3;
-                this.speedY = (Math.random() - 0.5) * 0.3;
-                this.opacity = Math.random() * 0.3 + 0.05;
-                this.color = Math.random() > 0.5 ? '255, 107, 0' : '212, 165, 116';
-            }
-            update() {
-                this.x += this.speedX;
-                this.y += this.speedY;
-                if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) this.reset();
-            }
-            draw() {
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-                ctx.fillStyle = `rgba(${this.color}, ${this.opacity})`;
-                ctx.fill();
-            }
-        }
-
-        const particleCount = Math.min(60, Math.floor(window.innerWidth / 25));
-        for (let i = 0; i < particleCount; i++) particles.push(new Particle());
-
-        function animateParticles() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            particles.forEach(p => { p.update(); p.draw(); });
-            for (let i = 0; i < particles.length; i++) {
-                for (let j = i + 1; j < particles.length; j++) {
-                    const dx = particles[i].x - particles[j].x;
-                    const dy = particles[i].y - particles[j].y;
-                    const dist = Math.sqrt(dx * dx + dy * dy);
-                    if (dist < 150) {
-                        ctx.beginPath();
-                        ctx.moveTo(particles[i].x, particles[i].y);
-                        ctx.lineTo(particles[j].x, particles[j].y);
-                        ctx.strokeStyle = `rgba(255, 107, 0, ${0.03 * (1 - dist / 150)})`;
-                        ctx.lineWidth = 0.5;
-                        ctx.stroke();
-                    }
-                }
-            }
-            animationId = requestAnimationFrame(animateParticles);
-        }
+        const canvas = document.getElementById('particles-canvas'), ctx = canvas.getContext('2d'); let particles = [], animationId;
+        function resizeCanvas() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; } resizeCanvas(); window.addEventListener('resize', resizeCanvas);
+        class Particle { constructor() { this.reset(); } reset() { this.x = Math.random()*canvas.width; this.y = Math.random()*canvas.height; this.size = Math.random()*2+0.5; this.speedX = (Math.random()-0.5)*0.3; this.speedY = (Math.random()-0.5)*0.3; this.opacity = Math.random()*0.3+0.05; this.color = Math.random()>0.5?'255, 107, 0':'212, 165, 116'; } update() { this.x+=this.speedX; this.y+=this.speedY; if(this.x<0||this.x>canvas.width||this.y<0||this.y>canvas.height) this.reset(); } draw() { ctx.beginPath(); ctx.arc(this.x,this.y,this.size,0,Math.PI*2); ctx.fillStyle=`rgba(${this.color},${this.opacity})`; ctx.fill(); } }
+        const pCount = Math.min(60,Math.floor(window.innerWidth/25)); for(let i=0;i<pCount;i++) particles.push(new Particle());
+        function animateParticles() { ctx.clearRect(0,0,canvas.width,canvas.height); particles.forEach(p=>{p.update();p.draw();}); for(let i=0;i<particles.length;i++){for(let j=i+1;j<particles.length;j++){const dx=particles[i].x-particles[j].x,dy=particles[i].y-particles[j].y,dist=Math.sqrt(dx*dx+dy*dy); if(dist<150){ctx.beginPath();ctx.moveTo(particles[i].x,particles[i].y);ctx.lineTo(particles[j].x,particles[j].y);ctx.strokeStyle=`rgba(255,107,0,${0.03*(1-dist/150)})`;ctx.lineWidth=0.5;ctx.stroke();}}} animationId=requestAnimationFrame(animateParticles); }
         animateParticles();
-
-        // ===== SMOOTH SCROLL =====
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 80, behavior: 'smooth' });
-                }
-            });
-        });
-
-        // ===== REDUCE MOTION =====
-        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-            cancelAnimationFrame(animationId);
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
-        }
+        document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){e.preventDefault();const t=document.querySelector(this.getAttribute('href'));if(t)window.scrollTo({top:t.getBoundingClientRect().top+window.scrollY-80,behavior:'smooth'});});});
+        if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){cancelAnimationFrame(animationId);ctx.clearRect(0,0,canvas.width,canvas.height);document.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'));}
     </script>
 </body>
 </html>
