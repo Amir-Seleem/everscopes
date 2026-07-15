@@ -2,6 +2,26 @@
    EverScopes — Pure JavaScript
    ============================================ */
 
+
+
+
+
+
+ // --- 3D Hero Parallax Effect ---
+        document.addEventListener('mousemove', (e) => {
+            const cubes = document.querySelectorAll('.cube');
+            const x = (window.innerWidth / 2 - e.pageX) / 30;
+            const y = (window.innerHeight / 2 - e.pageY) / 30;
+            
+            cubes.forEach(cube => {
+                cube.style.transform = `translateX(${x}px) translateY(${y}px)`;
+            });
+        });
+
+
+
+
+
 // ===== DATA =====
 const developers = [
   { 
