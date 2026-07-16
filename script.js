@@ -6,8 +6,7 @@
 
 
 
-
- // --- 3D Hero Parallax Effect ---
+   // --- 3D Hero Parallax Effect ---
         document.addEventListener('mousemove', (e) => {
             const cubes = document.querySelectorAll('.cube');
             const x = (window.innerWidth / 2 - e.pageX) / 30;
@@ -22,6 +21,7 @@
 
 
 
+        
 // ===== DATA =====
 const developers = [
   { 
@@ -178,8 +178,8 @@ const projects = [
   {
     id: "p3", title: "West View", titleAr: "ويست فيو",
     developer: "mountain View", developerId: "mountain-view",
-    image: "https://sfile.chatglm.cn/images-ppt/53f691544a4b.jpg",
-    images: ["https://sfile.chatglm.cn/images-ppt/53f691544a4b.jpg","https://sfile.chatglm.cn/images-ppt/43514bd4d496.jpg","https://sfile.chatglm.cn/images-ppt/3ce26d8a1676.jpg"],
+    image: "https://flatandvilla.com/wp-content/uploads/2024/11/%D9%85%D8%AF%D8%AE%D9%84-%D9%83%D9%85%D8%A8%D9%88%D9%86%D8%AF-%D9%88%D9%8A%D8%B3%D8%AA-%D9%81%D9%8A%D9%88-%D8%B1%D9%8A%D8%B2%D9%8A%D8%AF%D9%86%D8%B3-%D8%B2%D8%A7%D9%8A%D8%AF.webp",
+    images: ["https://flatandvilla.com/wp-content/uploads/2024/11/%D9%85%D8%AF%D8%AE%D9%84-%D9%83%D9%85%D8%A8%D9%88%D9%86%D8%AF-%D9%88%D9%8A%D8%B3%D8%AA-%D9%81%D9%8A%D9%88-%D8%B1%D9%8A%D8%B2%D9%8A%D8%AF%D9%86%D8%B3-%D8%B2%D8%A7%D9%8A%D8%AF.webp","https://sfile.chatglm.cn/images-ppt/43514bd4d496.jpg","https://sfile.chatglm.cn/images-ppt/3ce26d8a1676.jpg"],
     location: "Sheikh Zayed", locationAr: "الشيخ زايد", type: "Residential Compound",
     priceFrom: "5,800,000 EGP", area: "150 - 400 sqm",
     unitTypes: ["Apartments","Duplexes","Twin Houses","Villas"],
@@ -192,8 +192,8 @@ const projects = [
   {
     id: "p4", title: "Village View", titleAr: "فيلاج فيو",
     developer: "mountain View", developerId: "mountain-view",
-    image: "https://sfile.chatglm.cn/images-ppt/27eca4abfe1c.jpg",
-    images: ["https://sfile.chatglm.cn/images-ppt/27eca4abfe1c.jpg","https://sfile.chatglm.cn/images-ppt/53f691544a4b.jpg","https://sfile.chatglm.cn/images-ppt/54d8170e22a5.jpg"],
+    image: "https://prod-images.nawy.com/processed/compound_image/image/11655/high.webp",
+    images: ["https://prod-images.nawy.com/processed/compound_image/image/11655/high.webp","https://prod-images.nawy.com/processed/compound_image/image/11655/high.webp","https://prod-images.nawy.com/processed/compound_image/image/11654/high.webp"],
     location: "6th of October City", locationAr: "السادس من أكتوبر", type: "Residential Compound",
     priceFrom: "4,200,000 EGP", area: "130 - 300 sqm",
     unitTypes: ["Apartments","Duplexes","Townhouses"],
@@ -234,8 +234,8 @@ const projects = [
   {
     id: "p7", title: "Uptown Cairo", titleAr: "أب تاون القاهرة",
     developer: "Emaar Misr", developerId: "emaar-misr",
-    image: "https://sfile.chatglm.cn/images-ppt/5604f5f9b031.jpg",
-    images: ["https://sfile.chatglm.cn/images-ppt/5604f5f9b031.jpg","https://sfile.chatglm.cn/images-ppt/ef8de0de4f15.jpg","https://sfile.chatglm.cn/images-ppt/4137d8ce5b7a.jpg"],
+    image: "https://mir-s3-cdn-cf.behance.net/projects/404/29b2ab239382999.Y3JvcCwxMTkyLDkzMywxMDMsMA.jpg",
+    images: ["https://lacosta-realestate.com/wp-content/uploads/2024/08/Uptown-Cairo-Compound-27.jpg","https://lacosta-realestate.com/wp-content/uploads/2024/08/Uptown-Cairo-Compound-2.jpg","https://sfile.chatglm.cn/images-ppt/4137d8ce5b7a.jpg"],
     location: "Mokattam", locationAr: "المقطم", type: "Luxury Residential",
     priceFrom: "8,500,000 EGP", area: "160 - 500 sqm",
     unitTypes: ["Apartments","Duplexes","Penthouses","Villas"],
@@ -248,8 +248,8 @@ const projects = [
   {
     id: "p8", title: "Marassi", titleAr: "ماراسي",
     developer: "Emaar Misr", developerId: "emaar-misr",
-    image: "https://sfile.chatglm.cn/images-ppt/3ce26d8a1676.jpg",
-    images: ["https://sfile.chatglm.cn/images-ppt/3ce26d8a1676.jpg","https://sfile.chatglm.cn/images-ppt/bf524cd6fcd9.jpg","https://sfile.chatglm.cn/images-ppt/6fa30e92eddf.jpg"],
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMrYd1n8a57haV_uNo8RSf99HBHtP58AZT9T935Qizs6Svssps4O4IJ3iG&s=10",
+    images: ["https://cf.bstatic.com/xdata/images/hotel/max1024x768/676367058.jpg?k=d46788020fb63d5f051886527d721bff854e67c76522e9666a027900341a9030&o=","https://sfile.chatglm.cn/images-ppt/bf524cd6fcd9.jpg","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMrYd1n8a57haV_uNo8RSf99HBHtP58AZT9T935Qizs6Svssps4O4IJ3iG&s=10"],
     location: "North Coast", locationAr: "الساحل الشمالي", type: "Beachfront Resort",
     priceFrom: "7,200,000 EGP", area: "100 - 350 sqm",
     unitTypes: ["Chalets","Apartments","Townhouses","Villas"],
