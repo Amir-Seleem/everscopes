@@ -137,7 +137,7 @@
             display: flex; align-items: center; gap: 0.25rem; list-style: none;
         }
         .nav-links a {
-            text-decoration: none; color: var(--text-muted);
+            text-decoration: none; color: #ffffff;
             font-size: 0.85rem; font-weight: 500;
             padding: 0.5rem 1rem; border-radius: 8px;
             transition: all 0.3s ease; position: relative;
@@ -162,7 +162,7 @@
 
         .hero {
             min-height: 92vh; display: flex; align-items: center; justify-content: center;
-            padding: 6rem 2rem; position: relative; overflow: hidden;
+            padding: 3rem 2rem; position: relative; overflow: hidden;
         }
         .hero-inner { text-align: center; max-width: 900px; perspective: 1000px; }
 
@@ -918,11 +918,58 @@
         }
         @media (max-width: 768px) {
             .nav-links {
-                position: fixed; top: 72px; left: 0; right: 0; bottom: 0;
-                background: rgba(10, 10, 20, 0.98); backdrop-filter: blur(20px);
-                flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem;
+
+
+
+                
+              position: fixed; 
+        top: 70px; 
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 70px); 
+        background-color: #1a1a1ae4 !important; 
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        
+        /* تقليل الـ padding العلوي قليلاً وإضافة padding سفلي لتجنب التصاق العناصر بأسفل الشاشة */
+        padding-top: 8rem; 
+        padding-bottom: 6rem; 
+        gap: 2rem;
+        
+        z-index: 9999;
+        
+        /* السر هنا: تفعيل السكرول العمودي عند زيادة العناصر عن حجم الشاشة */
+        overflow-y: auto; backdrop-filter: blur(20px);
+                flex-direction: column; align-items: center; justify-content: center; gap: 2rem;
                 opacity: 0; visibility: hidden; transform: translateY(-20px); transition: all 0.4s ease;
             }
+
+
+            .nav-links::-webkit-scrollbar {
+        width: 6px; 
+    }
+
+    /* خلفية مسار السكرول بار */
+    .nav-links::-webkit-scrollbar-track {
+        background: #1a1a1a; 
+    }
+
+    /* الجزء المتحرك من السكرول (باللون البرتقالي) */
+    .nav-links::-webkit-scrollbar-thumb {
+        background: #ff6b00; 
+        border-radius: 10px;
+    }
+
+    /* لون السكرول بار عند التمرير عليه */
+    .nav-links::-webkit-scrollbar-thumb:hover {
+        background: #e65c00; 
+    }
+
+
+
             .nav-links.open { opacity: 1; visibility: visible; transform: translateY(0); }
             .nav-links a { font-size: 1.2rem; padding: 0.8rem 2rem; }
             .nav-toggle { display: flex; }
@@ -1019,7 +1066,7 @@
             <li><a href="#contact"><span class="tr" data-en="Contact" data-ar="تواصل"></span></a></li>
 
 
-            <div class="about-stat-value">
+                  <div class="about-stat-value">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <style>
@@ -1035,7 +1082,7 @@
   </style>
 
   <a href="../index.html" class="btn-orange-lang">
-    <i class="fas fa-home"></i>
+    <i class="fas fa-globe"></i>
     <span data-i18n="hero_cta3">HOME</span>
   </a>
 </div>
@@ -1043,7 +1090,16 @@
 
             
         </ul>
+
+        
+        
         <div class="nav-right">
+
+            
+      
+
+
+
             <button class="lang-toggle" id="langToggle" aria-label="Switch language">
                 <i class="fas fa-globe"></i>
                 <span class="lang-full tr" data-en="العربية" data-ar="English"></span>
