@@ -57,7 +57,7 @@
 
   <style>
     .btn-orange-lang {
-      align-items: center; display: flex; gap: 10px; padding: 6px 18px;
+      align-items: center; gap: 10px; padding: 6px 18px;
       color: #ff6b00; border: 2px solid #ff7711; border-radius: 20px;
       font-family: sans-serif; font-size: 14px; font-weight: bold; cursor: pointer;
       transition: all 0.3s ease; text-decoration: none;
@@ -121,7 +121,8 @@
 
   <style>
     .btn-orange-lang {
-      align-items: center; gap: 10px; padding: 6px 18px;
+      align-items: center;
+      display: flex; gap: 10px; padding: 6px 18px;
       color: #ff6b00; border: 2px solid #ff7711; border-radius: 20px;
       font-family: sans-serif; font-size: 14px; font-weight: bold; cursor: pointer;
       transition: all 0.3s ease; text-decoration: none;
@@ -477,30 +478,41 @@
 </script>
 
     <!-- ======== PROJECTS ======== -->
-    <section class="projects" id="projects">
-      <div class="projects-blob-1"></div>
-      <div class="projects-blob-2"></div>
-      <div class="container" style="position:relative; z-index:1;">
-        <div class="reveal" style="text-align:center; margin-bottom:3rem;">
-          <div class="section-badge">
-            <span class="section-badge-dot"></span>
-            <span class="section-badge-text" data-i18n="proj_badge">Our Projects</span>
-          </div>
-          <h2 class="section-title" style="text-align:center;">
-            <span data-i18n="proj_title_1">Explore Premium </span>
-            <span class="section-title-accent" data-i18n="proj_title_2">Properties</span>
-          </h2>
-          <p class="section-desc" style="text-align:center; margin:1rem auto 0;" data-i18n="proj_desc">Discover handpicked properties from Egypt's top developers. Each project is carefully selected to meet the highest standards of quality and investment potential.</p>
-        </div>
-
-        <!-- Filter Tabs -->
-        <div class="filter-tabs reveal" id="filterTabs"></div>
-
-        <!-- Projects Grid -->
-        <div class="projects-grid" id="projectsGrid"></div>
-        <div class="projects-empty" id="projectsEmpty" style="display:none;" data-i18n="proj_empty">No projects found for this developer yet.</div>
+    <!-- قسم المشاريع الخاص بك -->
+<section class="projects" id="projects">
+  <div class="projects-blob-1"></div>
+  <div class="projects-blob-2"></div>
+  <div class="container" style="position:relative; z-index:1;">
+    <div class="reveal" style="text-align:center; margin-bottom:3rem;">
+      <div class="section-badge">
+        <span class="section-badge-dot"></span>
+        <span class="section-badge-text" data-i18n="proj_badge">Our Projects</span>
       </div>
-    </section>
+      <h2 class="section-title" style="text-align:center;">
+        <span data-i18n="proj_title_1">Explore Premium </span>
+        <span class="section-title-accent" data-i18n="proj_title_2">Properties</span>
+      </h2>
+      <p class="section-desc" style="text-align:center; margin:1rem auto 0;" data-i18n="proj_desc">
+        Discover handpicked properties from Egypt's top developers. Each project is carefully selected to meet the highest standards of quality and investment potential.
+      </p>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="filter-tabs reveal" id="filterTabs"></div>
+
+    <!-- Projects Grid -->
+    <div class="projects-grid" id="projectsGrid"></div>
+    <div class="projects-empty" id="projectsEmpty" style="display:none;" data-i18n="proj_empty">No projects found for this developer yet.</div>
+  </div>
+</section>
+
+<!-- 🌟 هيكل الـ Modal المخصص لعرض التفاصيل وصور المعرض 🌟 -->
+<div class="modal-backdrop" id="modalBackdrop" onclick="closeModal()"></div>
+<div class="modal" id="projectModal">
+  <div class="modal-content" id="modalContent">
+    <!-- يتم بناء التفاصيل والصور ديناميكياً بواسطة الجافاسكريبت هنا -->
+  </div>
+</div>
 
     <!-- ======== SERVICES ======== -->
     <section class="services" id="services">
