@@ -25,6 +25,15 @@
 // ===== DATA =====
 const developers = [
   { 
+    id: "arabia-holding", 
+    name: "Arabia Holding", 
+    nameAr: "أرابيا هولدنج", 
+    logo: "https://aqarmisr.com.eg/wp-content/uploads/2022/08/%D8%B4%D8%B1%D9%83%D8%A9-%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9.png",
+    projects: ["Sun Capital", "Galleria Moon Valley"]
+  },
+
+
+  { 
     id: "tatweer-misr", 
     name: "Tatweer Misr", 
     nameAr: "تطوير مصر", 
@@ -38,13 +47,7 @@ const developers = [
     logo: "https://invest-gate.me/wp-content/uploads/2023/01/mountain-view-750x500.png",
     projects: ["Creek View", "Mountain View New Cairo", "Aliva", "Crysta"]
   },
-  { 
-    id: "arabia-holding", 
-    name: "Arabia Holding", 
-    nameAr: "أرابيا هولدنج", 
-    logo: "https://aqarmisr.com.eg/wp-content/uploads/2022/08/%D8%B4%D8%B1%D9%83%D8%A9-%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9.png",
-    projects: ["Sun Capital", "Galleria Moon Valley"]
-  },
+  
   { 
     id: "ora-developers", 
     name: "Ora Developers", 
@@ -59,13 +62,7 @@ const developers = [
     logo: "https://www.palmhillsdevelopments.com/assets/images/header/Logo.svg",
     projects: ["Hacienda Ras El Hekma", "The Crown"]
   },
-  { 
-    id: "emaar-misr", 
-    name: "Emaar Misr", 
-    nameAr: "إعمار مصر", 
-    logo: "https://blogs.realestate.gov.eg/wp-content/uploads/2024/11/Emaar-Misr.png",
-    projects: [] 
-  },
+  
   { 
     id: "hyde-park", 
     name: "Hyde Park", 
@@ -81,14 +78,14 @@ const developers = [
     projects: ["June", "The Estates"]
   },
   { 
-    id: "ahly-sabbour", 
+    id: "al-ahly-sabbour", 
     name: "Ahly Sabbour", 
     nameAr: "الأهلي صبور", 
     logo: "https://blogs.realestate.gov.eg/wp-content/uploads/2024/11/Al-Ahly-Sabbour.webp",
     projects: ["Gaia", "At East", "The Mornings"]
   },
   { 
-    id: "mnhd", 
+    id: "madinet-masr", 
     name: "MNHD (Madinet Masr)", 
     nameAr: "مدينة مصر", 
     logo: "https://prod-images.nawy.com/processed/developer/logo_image/54/medium.webp",
@@ -102,14 +99,14 @@ const developers = [
     projects: ["Solare", "Kai", "Vinci"]
   },
   { 
-    id: "lavista", 
+    id: "la-vista", 
     name: "La Vista", 
     nameAr: "لافيستا", 
     logo: "https://tibascape.ca/wp-content/uploads/2022/05/Lavista-developments-logo.png",
     projects: ["Patio Vida", "La Vista City", "Patio Hills"]
   },
   { 
-    id: "madaar", 
+    id: "madaar-developments", 
     name: "Madaar", 
     nameAr: "مدار", 
     logo: "https://cdn.prod.website-files.com/685968882d1c97d0b4926080/685d9fae5aa33f340b3a5218_logo%20brown.svg",
@@ -148,117 +145,1557 @@ const developers = [
 
 const projects = [
   {
-    id: "p1", title: "IL Monte Galala", titleAr: "إل مونتي جلالة",
-    developer: "Tatweer Misr", developerId: "tatweer-misr",
-    image: "https://sfile.chatglm.cn/images-ppt/4137d8ce5b7a.jpg",
-    images: ["https://sfile.chatglm.cn/images-ppt/4137d8ce5b7a.jpg","https://sfile.chatglm.cn/images-ppt/bf524cd6fcd9.jpg","https://sfile.chatglm.cn/images-ppt/5604f5f9b031.jpg"],
-    location: "Ain Sokhna", locationAr: "السخنة", type: "Resort & Residential",
-    priceFrom: "4,500,000 EGP", area: "120 - 350 sqm",
-    unitTypes: ["Studios","Apartments","Townhouses","Villas"],
-    description: "IL Monte Galala is an iconic mountain-top destination by Tatweer Misr, inspired by the Mediterranean charm of Italy. This world-class resort community perched on the Sokhna mountains offers breathtaking Red Sea views, a crystal lagoon, premium F&B outlets, and an unparalleled lifestyle experience. The project features a unique cliffside design with cascading architecture that harmonizes with the natural mountain terrain.",
-    descriptionAr: "إل مونتي جلالة هو وجهة جبلية أيقونية من تطوير مصر، مستوحاة من سحر البحر المتوسط بإيطاليا. توفر هذه المجتمع الراقي المطل على جبال السخنة إطلالات خلابة على البحر الأحمر.",
-    features: ["Mountain-top location with Red Sea views","Crystal lagoon and private beaches","Italian-inspired architecture","World-class dining and retail","Kids' areas and family entertainment","24/7 security and concierge"],
-    amenities: ["Crystal Lagoon","Private Beach","Swimming Pools","Gym & Spa","Restaurants & Cafes","Kids Playground","Jogging Tracks","Commercial Area"],
-    deliveryDate: "2027", downPayment: "10%", installmentYears: "7 Years", status: "selling-fast"
-  },
+  id: "p1",
+  title: "El Patio Vida",
+  titleAr: "الباتيو فيدا",
+  developer: "La Vista Developments",
+  developerId: "la-vista",
+  image: "https://gprproperty.com/wp-content/uploads/2025/01/El-Patio-Vida-New-Cairo-6.jpg",
+  images: [
+    "https://gprproperty.com/wp-content/uploads/2025/01/El-Patio-Vida-New-Cairo-6.jpg",
+    "https://aldiyaralasrea.com/wp-content/uploads/2025/02/%D9%83%D9%85%D8%A8%D9%88%D9%86%D8%AF-%D8%A7%D9%84%D8%A8%D8%A7%D8%AA%D9%8A%D9%88-%D9%81%D9%8A%D8%AF%D8%A7-El-Patio-Vida.png",
+    "https://gprproperty.com/wp-content/uploads/2025/01/El-Patio-Vida-New-Cairo-1.jpg",
+    "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/property_image/image/651946/Patio_Vida__5_.jpg",
+    "https://elbayt.com/assets/uploads/images/29577/94ac53f8a2ef35cc120a50d84a1cd492/el-patio-vida-new-cairo-la-vista-dev1jpg-1200x900.jpg"
+  ],
+  location: "6th Settlement, New Cairo",
+  locationAr: "التجمع السادس - القاهرة الجديدة",
+  type: "Residential Compound",
+  priceFrom: "11,500,000 EGP",
+  area: "158 sqm+",
+  unitTypes: ["3 Bedrooms", "4 Bedrooms", "5 Bedrooms Duplex"],
+  description: "El Patio Vida by La Vista Developments is a premier residential compound located in the heart of the 6th Settlement, New Cairo. Designed to provide maximum accessibility and seamless connectivity, the project offers a luxurious living experience with state-of-the-art facilities, lush landscapes, and modern architectural design.",
+  descriptionAr: "كمبوند الباتيو فيدا من شركة لا فيستا للتطوير العقاري هو مجتمع سكني راقٍ يقع في قلب التجمع السادس بالقاهرة الجديدة. يتميز المشروع بموقع استراتيجي وسهولة الوصول إليه، ويوفر أسلوب حياة فاخر مع مرافق متكاملة وتصميمات معمارية حديثة.",
+  features: [
+    "Prime strategic location in 6th Settlement",
+    "Exceptional accessibility and connectivity",
+    "Developed by industry leader La Vista",
+    "Flexible payment plans up to 10 years",
+    "3 fully equipped clubhouses for residents"
+  ],
+  amenities: [
+    "Commercial Area",
+    "Kids Play Areas",
+    "Gym & Fitness Center",
+    "Jogging Tracks",
+    "3 Clubhouses"
+  ],
+  deliveryDate: "3 Years",
+  downPayment: "5% (2.5% after 3 months, 2.5% after 6 months)",
+  installmentYears: "8 Years (or 10 Years with 6% interest/year)",
+  status: "new-launch"
+},
+
+
   {
-    id: "p2", title: "Downtown Galala", titleAr: "داون تاون جلالة",
-    developer: "Tatweer Misr", developerId: "tatweer-misr",
-    image: "https://sfile.chatglm.cn/images-ppt/6fa30e92eddf.jpg",
-    images: ["https://sfile.chatglm.cn/images-ppt/6fa30e92eddf.jpg","https://sfile.chatglm.cn/images-ppt/ef8de0de4f15.jpg","https://sfile.chatglm.cn/images-ppt/54d8170e22a5.jpg"],
-    location: "Ain Sokhna", locationAr: "السخنة", type: "Commercial & Residential",
-    priceFrom: "3,200,000 EGP", area: "80 - 250 sqm",
-    unitTypes: ["Studios","Apartments","Duplexes","Commercial Units"],
-    description: "Downtown Galala is Tatweer Misr's vibrant mixed-use hub within IL Monte Galala, offering a perfect blend of residential and commercial spaces. This dynamic neighborhood features pedestrian-friendly streets, modern retail outlets, co-working spaces, and entertainment venues, creating a self-sufficient community that lives and breathes energy.",
-    descriptionAr: "داون تاون جلالة هو المحور الحيوي المتعدد الاستخدامات داخل إل مونتي جلالة، يقدم مزيجاً مثالياً من المساحات السكنية والتجارية.",
-    features: ["Mixed-use urban living","Pedestrian-friendly design","Integrated retail and dining","Smart home technology","Proximity to the crystal lagoon","Sustainable architecture"],
-    amenities: ["Commercial Strip","Food Court","Co-working Spaces","Fitness Center","Swimming Pools","Kids Zone","Parking Garage","Green Spaces"],
-    deliveryDate: "2026", downPayment: "10%", installmentYears: "6 Years", status: "under-construction"
-  },
+  id: "p3",
+  title: "La Vista City",
+  titleAr: "لا فيستا سيتي",
+  developer: "La Vista Developments",
+  developerId: "la-vista",
+  image: "https://static.shared.propertyfinder.eg/media/images/listing/83H0JHK6JNQMXNTY912YAB7ETM/e46cdd97-8b91-44bd-80aa-ed69f8964965/668x452.jpg",
+  images: [
+    "https://lavista-developments.com/wp-content/uploads/2024/04/city.jpg",
+    "https://lavista-developments.com/wp-content/uploads/2023/11/c6.jpg",
+    "https://lavista-developments.com/wp-content/uploads/2024/04/city2.jpg"
+  ],
+  location: "New Administrative Capital",
+  locationAr: "العاصمة الإدارية الجديدة",
+  type: "Villas Compound",
+  priceFrom: "31,000,000 EGP",
+  area: "228 sqm+",
+  unitTypes: ["Townhouses", "Twin Houses", "Stand-alone Villas"],
+  description: "La Vista City is a flagship villa-only compound strategically positioned in the New Administrative Capital. Developed by La Vista Developments, this exclusive fully finished, Ready-To-Move (RTM) community offers supreme privacy, vibrant neighborhoods, and high-end living backed by world-class security and facilities.",
+  descriptionAr: "لا فيستا سيتي هو مجتمع سكني حصري للفيلات فقط من شركة لا فيستا للتطوير العقاري، يقع في موقع استراتيجي بالعاصمة الإدارية الجديدة. يتميز المشروع بكونه جاهزاً للتقسيم والسكن الفوري units تشطيب كامل، مع أعلى درجات الخصوصية والأمان ومجتمع حيوي مأهول بالفعل.",
+  features: [
+    "Exclusive standalone and attached villas community",
+    "Ready to Move (RTM) & fully finished units",
+    "Established, lively compound with high occupancy rate",
+    "Double-gated layout for maximum security and privacy",
+    "Strategic prime location in the New Capital"
+  ],
+  amenities: [
+    "4 Clubhouses",
+    "Double Gated Security",
+    "Commercial & Retail Zones",
+    "Sports Courts & Gyms",
+    "Swimming Pools",
+    "Green Spaces & Parks"
+  ],
+  deliveryDate: "Ready To Move (RTM)",
+  downPayment: "10%",
+  installmentYears: "8 Years",
+  status: "ready-to-move"
+},
   {
-    id: "p3", title: "West View", titleAr: "ويست فيو",
-    developer: "mountain View", developerId: "mountain-view",
-    image: "https://flatandvilla.com/wp-content/uploads/2024/11/%D9%85%D8%AF%D8%AE%D9%84-%D9%83%D9%85%D8%A8%D9%88%D9%86%D8%AF-%D9%88%D9%8A%D8%B3%D8%AA-%D9%81%D9%8A%D9%88-%D8%B1%D9%8A%D8%B2%D9%8A%D8%AF%D9%86%D8%B3-%D8%B2%D8%A7%D9%8A%D8%AF.webp",
-    images: ["https://flatandvilla.com/wp-content/uploads/2024/11/%D9%85%D8%AF%D8%AE%D9%84-%D9%83%D9%85%D8%A8%D9%88%D9%86%D8%AF-%D9%88%D9%8A%D8%B3%D8%AA-%D9%81%D9%8A%D9%88-%D8%B1%D9%8A%D8%B2%D9%8A%D8%AF%D9%86%D8%B3-%D8%B2%D8%A7%D9%8A%D8%AF.webp","https://sfile.chatglm.cn/images-ppt/43514bd4d496.jpg","https://sfile.chatglm.cn/images-ppt/3ce26d8a1676.jpg"],
-    location: "Sheikh Zayed", locationAr: "الشيخ زايد", type: "Residential Compound",
-    priceFrom: "5,800,000 EGP", area: "150 - 400 sqm",
-    unitTypes: ["Apartments","Duplexes","Twin Houses","Villas"],
-    description: "West View by mountain View is a premium residential compound in Sheikh Zayed offering luxurious living spaces with panoramic views and lush green landscapes. The development features contemporary architecture, spacious floor plans, and world-class amenities designed for families seeking an elevated lifestyle in one of Cairo's most prestigious areas.",
-    descriptionAr: "ويست فيو من ماونتن فيو هو كمبوند سكني راقٍ في الشيخ زايد يقدم مساحات معيشية فاخرة مع إطلالات بانورامية ومناظر خضراء خلابة.",
-    features: ["Panoramic landscape views","Contemporary architectural design","Spacious floor plans","Premium finishing quality","Family-oriented community","Strategic location in Sheikh Zayed"],
-    amenities: ["Large Central Park","Swimming Pools","Sports Club","Kids Area","Jogging & Cycling Tracks","Clubhouse","Security & Surveillance","Retail Outlets"],
-    deliveryDate: "2027", downPayment: "15%", installmentYears: "8 Years", status: "selling-fast"
-  },
+  id: "p4",
+  title: "El Patio Hills",
+  titleAr: "الباتيو هيلز",
+  developer: "La Vista Developments",
+  developerId: "la-vista",
+  image: "https://www.newcairo-projects.com/wp-content/uploads/2025/04/%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D8%A7%D9%84%D8%A8%D8%A7%D8%AA%D9%8A%D9%88-%D9%87%D9%8A%D9%84%D8%B2-%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9.jpg",
+  images: [
+    "https://lavista-developments.com/wp-content/uploads/2025/05/hills2.jpg",
+    "https://lavista-developments.com/wp-content/uploads/2025/05/hills-8.jpg",
+    "https://lavista-developments.com/wp-content/uploads/2025/05/hill-7.jpg",
+    "https://lavista-developments.com/wp-content/uploads/2025/05/hills1.jpg",
+    "https://lavista-developments.com/wp-content/uploads/2025/05/hills4.jpg",
+    "https://lavista-developments.com/wp-content/uploads/2025/05/hills6.jpg"
+  ],
+  location: "6th Settlement, New Cairo",
+  locationAr: "التجمع السادس - القاهرة الجديدة",
+  type: "Villas Compound",
+  priceFrom: "20,900,000 EGP",
+  area: "180 sqm+",
+  unitTypes: ["Townhouses", "Stand-alone Villas"],
+  description: "El Patio Hills by La Vista Developments is an upmarket villa compound strategically situated in the 6th Settlement, New Cairo. Boasting unmatched location and accessibility, the development features stylish townhouses and standalone villas surrounded by serene landscapes, private recreational zones, and comprehensive lifestyle amenities.",
+  descriptionAr: "كمبوند الباتيو هيلز من شركة لا فيستا للتطوير العقاري هو مجتمع فاخر مخصص للفيلات يقع في موقع استراتيجي بالتجمع السادس بالقاهرة الجديدة. يتميز المشروع بسهولة الوصول إليه وتصميماته المعمارية الراقية، ويوفر تاون هاوس وفيلات مستقلة محاطة بالمساحات الخضراء والمرافق الترفيهية المتكاملة.",
+  features: [
+    "Prime location in 6th Settlement with easy accessibility",
+    "Exclusive community offering Townhouses and Stand-alone Villas",
+    "Developed by industry leader La Vista Developments",
+    "Flexible payment options over 8 years",
+    "Integrated lifestyle amenities including sports and commercial zones"
+  ],
+  amenities: [
+    "2 Clubhouses",
+    "Sports Area",
+    "Swimming Pools",
+    "Commercial Zone",
+    "Green Spaces",
+    "24/7 Security"
+  ],
+  deliveryDate: "3.5 Years",
+  downPayment: "5% (2.5% after 3 months, 2.5% after 6 months)",
+  installmentYears: "8 Years",
+  status: "new-launch"
+},
+
+
+
+
   {
-    id: "p4", title: "Village View", titleAr: "فيلاج فيو",
-    developer: "mountain View", developerId: "mountain-view",
-    image: "https://prod-images.nawy.com/processed/compound_image/image/11655/high.webp",
-    images: ["https://prod-images.nawy.com/processed/compound_image/image/11655/high.webp","https://prod-images.nawy.com/processed/compound_image/image/11655/high.webp","https://prod-images.nawy.com/processed/compound_image/image/11654/high.webp"],
-    location: "6th of October City", locationAr: "السادس من أكتوبر", type: "Residential Compound",
-    priceFrom: "4,200,000 EGP", area: "130 - 300 sqm",
-    unitTypes: ["Apartments","Duplexes","Townhouses"],
-    description: "Village View by mountain View is a tranquil residential enclave in 6th of October City, offering a serene escape from the city bustle while maintaining excellent connectivity. The compound features thoughtfully designed living spaces surrounded by greenery, with amenities that cater to modern family living.",
-    descriptionAr: "فيلاج فيو من ماونتن فيو هو جو سكني هادئ في مدينة السادس من أكتوبر، يوفر ملاذاً هادئاً بعيداً عن صخب المدينة مع الحفاظ على اتصال ممتاز.",
-    features: ["Serene green environment","Smart home ready","Modern layouts","Community-centric design","Close to major highways","Affordable luxury segment"],
-    amenities: ["Landscaped Gardens","Swimming Pool","Gymnasium","Children's Play Area","BBQ Zones","Walking Paths","24/7 Security","Parking Areas"],
-    deliveryDate: "2026", downPayment: "10%", installmentYears: "7 Years", status: "under-construction"
-  },
+  id: "p5",
+  title: "Hyde Park New Cairo",
+  titleAr: "هايد بارك القاهرة الجديدة",
+  developer: "Hyde Park Developments",
+  developerId: "hyde-park",
+  image: "https://example.com/images/hyde-park-nc-main.jpg",
+  images: [
+    "https://hyd.hydeepark.net/images/new%20cairo/CAM12-AERIAL%20SPORTS%20CLUB.jpg",
+    "https://www.hydeparkdevelopments.com/_next/image?url=https%3A%2F%2Fassets.live.beyond-creation.net%2Fhydepark%2Fgardenville_slider_11zon_e8ea95d953.jpg&w=1920&q=75",
+    "https://www.hydeparkdevelopments.com/_next/image?url=https%3A%2F%2Fassets.live.beyond-creation.net%2Fhydepark%2Fmediamob_copy_278a6075fd.jpg&w=1200&q=75",
+    "https://www.hydeparkdevelopments.com/_next/image?url=https%3A%2F%2Fassets.live.beyond-creation.net%2Fhydepark%2FGrand_Park_residents_slider_11zon_410df43a6d.jpg&w=1920&q=75"
+  ],
+  location: "Directly on Road 90, New Cairo",
+  locationAr: "مباشرة على شارع التسعين - القاهرة الجديدة",
+  type: "Mixed-Use Compound",
+  priceFrom: "10,300,000 EGP",
+  area: "Up to 900 sqm",
+  unitTypes: [
+    "1 Bedroom",
+    "2 Bedrooms",
+    "3 Bedrooms",
+    "Townhouses",
+    "Stand-alone Villas"
+  ],
+  description: "Hyde Park New Cairo is a prestigious, large-scale flagship compound located directly on the main Road 90. Backed by top financial and governmental housing institutions, this mega-development seamlessly combines residential luxury, lush expansive landscapes, a massive commercial center, and a dedicated business hub.",
+  descriptionAr: "كمبوند هايد بارك القاهرة الجديدة هو مجتمع متكامل راقٍ يقع بموقع استراتيجي فريد مباشرة على شارع التسعين الرئيسي. بتطوير مدعوم من كبرى المؤسسات المصرفية والعمرانية، يضم المشروع مساحات خضراء شاسعة، إلى جانب منطقة أعمال ومركز تجاري ضخم وخدمات رياضية وطبية متكاملة.",
+  features: [
+    "Prime iconic location directly on Road 90",
+    "Strong backing by Housing & Development Bank and NUCA",
+    "Flexible finishing options (Core & Shell / Fully Finished)",
+    "Massive scale featuring huge commercial and business zones",
+    "Diverse housing options from 1-bedroom apartments to large villas"
+  ],
+  amenities: [
+    "27-Acre Business Park",
+    "75-Acre Commercial Mall",
+    "Sports Club",
+    "Medical Zones",
+    "Clubhouse",
+    "24/7 Security"
+  ],
+  deliveryDate: "1.5 Years (Core & Shell) / 2.5 Years (Finished)",
+  downPayment: "10% for Villas / 5% + 5% for Apartments",
+  installmentYears: "6 Years (Villas) / 8 Years (Apartments)",
+  status: "selling-fast"
+},
+
+
+
   {
-    id: "p5", title: "Zoya", titleAr: "زويا",
-    developer: "Ora Developers", developerId: "ora-developers",
-    image: "https://sfile.chatglm.cn/images-ppt/ef8de0de4f15.jpg",
-    images: ["https://sfile.chatglm.cn/images-ppt/ef8de0de4f15.jpg","https://sfile.chatglm.cn/images-ppt/4137d8ce5b7a.jpg","https://sfile.chatglm.cn/images-ppt/5604f5f9b031.jpg"],
-    location: "New Cairo", locationAr: "القاهرة الجديدة", type: "Ultra-Luxury Residential",
-    priceFrom: "12,000,000 EGP", area: "200 - 600 sqm",
-    unitTypes: ["Apartments","Duplexes","Penthouses","Villas"],
-    description: "Zoya by Ora Developers is an ultra-luxury residential masterpiece in the heart of New Cairo. Designed by world-renowned architects, Zoya offers an exclusive collection of residences with exceptional craftsmanship, private gardens, and unparalleled amenities. The development embodies sophisticated living with expansive green spaces and water features that create an oasis of tranquility.",
-    descriptionAr: "زويا من أورا ديفيلوبرز هي تحفة سكنية فائقة الفخامة في قلب القاهرة الجديدة. صممها مهندسون معماريون عالميون لتقدم مجموعة حصرية من المساكن.",
-    features: ["Ultra-luxury specifications","World-class architectural design","Expansive private gardens","Smart home systems","Exclusive community","Prime New Cairo location"],
-    amenities: ["Infinity Pools","Spa & Wellness Center","Fine Dining","Concierge Service","Valet Parking","Private Cinema","Sports Facilities","Landscaped Gardens"],
-    deliveryDate: "2028", downPayment: "20%", installmentYears: "10 Years", status: "selling-fast"
-  },
+  id: "p6",
+  title: "Hyde Park Central",
+  titleAr: "هايد بارك سنترال",
+  developer: "Hyde Park Developments",
+  developerId: "hyde-park",
+  image: "https://example.com/images/hyde-park-central-main.jpg",
+  images: [
+    "https://example.com/images/hyde-park-central-1.jpg",
+    "https://example.com/images/hyde-park-central-2.jpg",
+    "https://example.com/images/hyde-park-central-3.jpg"
+  ],
+  location: "6th Settlement (Next to Zed East), New Cairo",
+  locationAr: "التجمع السادس (بجوار زد إيست) - القاهرة الجديدة",
+  type: "Mixed-Use Compound",
+  priceFrom: "4,500,000 EGP",
+  area: "Up to 220 sqm",
+  unitTypes: [
+    "1 Bedroom",
+    "2 Bedrooms",
+    "3 Bedrooms",
+    "Quattro Units",
+    "Townhouses",
+    "Stand-alone Villas"
+  ],
+  description: "Hyde Park Central is a vibrant modern compound situated in the promising 6th Settlement, directly adjacent to Zed East. Developed by Hyde Park Developments and supported by leading banking and housing entities, it offers a versatile residential mix, extended payment plans, and top-tier amenities including an outdoor cinema and a large commercial sector.",
+  descriptionAr: "كمبوند هايد بارك سنترال هو مجتمع سكني حديث ومميز يقع في التجمع السادس بجوار مشروع زد إيست مباشرة. يقدم المشروع بتطوير من هايد بارك تنوعاً كبيراً في الوحدات بأسعار تنافسية وخطة سداد تصل إلى 10 سنوات، إلى جانب خدمات متكاملة تشمل سينما خارجية ومنطقة تجارية واسعة.",
+  features: [
+    "Strategic prime location in 6th Settlement attached to Zed East",
+    "Backed by Housing & Development Bank and NUCA",
+    "Long-term flexible payment plan up to 10 years",
+    "Wide range of unit types from 1-bedroom apartments to standalone villas",
+    "Unique leisure amenities like outdoor cinema and extensive commercial area"
+  ],
+  amenities: [
+    "Commercial Area (14% of Project Area)",
+    "Clubhouses",
+    "Outdoor Cinema",
+    "Kids Play Areas",
+    "Green Spaces",
+    "24/7 Security"
+  ],
+  deliveryDate: "4 Years",
+  downPayment: "5%",
+  installmentYears: "10 Years",
+  status: "new-launch"
+},
+
+
+
   {
-    id: "p6", title: "Palm Hills New Cairo", titleAr: "بالم هيلز القاهرة الجديدة",
-    developer: "Palm Hills", developerId: "palm-hills",
-    image: "https://sfile.chatglm.cn/images-ppt/bf524cd6fcd9.jpg",
-    images: ["https://sfile.chatglm.cn/images-ppt/bf524cd6fcd9.jpg","https://sfile.chatglm.cn/images-ppt/3ce26d8a1676.jpg","https://sfile.chatglm.cn/images-ppt/54d8170e22a5.jpg"],
-    location: "New Cairo", locationAr: "القاهرة الجديدة", type: "Integrated Community",
-    priceFrom: "6,500,000 EGP", area: "140 - 450 sqm",
-    unitTypes: ["Apartments","Duplexes","Townhouses","Villas"],
-    description: "Palm Hills New Cairo is a premium integrated community by Palm Hills Developments, offering a sophisticated blend of residential, commercial, and recreational spaces. Set across 500 acres, the development features lush landscapes, a championship golf course, and an array of amenities designed for modern family living in New Cairo's most desirable location.",
-    descriptionAr: "بالم هيلز القاهرة الجديدة هي مجتمع متكامل راقٍ من بالم هيلز ديفيلوبمنتس، يقدم مزيجاً متطوراً من المساحات السكنية والتجارية والترفيهية.",
-    features: ["500-acre master-planned community","Championship golf course","Multiple residential zones","Commercial and retail district","Extensive green spaces","Premium location on 90th Street"],
-    amenities: ["Golf Course","Clubhouse","Swimming Pools","Sports Complex","Retail Boulevard","Schools & Nurseries","Medical Center","Parks & Gardens"],
-    deliveryDate: "2027", downPayment: "15%", installmentYears: "8 Years", status: "under-construction"
-  },
+  id: "p7",
+  title: "Seashore",
+  titleAr: "سي شور",
+  developer: "Hyde Park Developments",
+  developerId: "hyde-park",
+  image: "https://example.com/images/seashore-main.jpg",
+  images: [
+    "https://example.com/images/seashore-1.jpg",
+    "https://example.com/images/seashore-2.jpg",
+    "https://example.com/images/seashore-3.jpg"
+  ],
+  location: "Kilo 207, Ras El Hekma",
+  locationAr: "الكيلو 207 - رأس الحكمة",
+  type: "Coastal Resort",
+  priceFrom: "8,410,000 EGP",
+  area: "240 Feddans Total Area",
+  unitTypes: [
+    "1 Bedroom",
+    "2 Bedrooms",
+    "3 Bedrooms",
+    "Townhouses"
+  ],
+  description: "Seashore by Hyde Park Developments is a premier coastal resort spanning 240 feddans in the prime location of Ras El Hekma (Kilo 207). Supported by leading national institutions, this vibrant beachfront destination features a magnificent green spine, multiple beach entrances, lagunar swimming pools, and flexible long-term payment options.",
+  descriptionAr: "منتجع سي شور من هايد بارك للتطوير العقاري هو مشروع ساحلي فاخر يمتد على مساحة 240 فداناً في قلب منطقة رأس الحكمة الفريدة (الكيلو 207). يتميز المشروع بتصميم مائي وطبيعي خلاب يضم حزاماً أخضراً ممتداً (Green Spine) وأكثر من 25 حمام سباحة بمداخل شاطئية، مع خطط سداد مرنة تصل إلى 10 سنوات.",
+  features: [
+    "Prime beachfront location in Ras El Hekma (Kilo 207)",
+    "Expansive 240-feddan coastal masterplan",
+    "Backed by major financial and real estate institutions",
+    "Quick delivery timeline within 18 months",
+    "Extensive water features with 25 beach-entry pools"
+  ],
+  amenities: [
+    "Beach Clubhouses",
+    "Green Spine",
+    "25 Beach-Entry Swimming Pools",
+    "Commercial & Dining Area",
+    "Kids Areas",
+    "24/7 Security & Maintenance"
+  ],
+  deliveryDate: "18 Months",
+  downPayment: "5%",
+  installmentYears: "8 to 10 Years",
+  status: "selling-fast"
+},
+
+
+
   {
-    id: "p7", title: "Uptown Cairo", titleAr: "أب تاون القاهرة",
-    developer: "Emaar Misr", developerId: "emaar-misr",
-    image: "https://mir-s3-cdn-cf.behance.net/projects/404/29b2ab239382999.Y3JvcCwxMTkyLDkzMywxMDMsMA.jpg",
-    images: ["https://lacosta-realestate.com/wp-content/uploads/2024/08/Uptown-Cairo-Compound-27.jpg","https://lacosta-realestate.com/wp-content/uploads/2024/08/Uptown-Cairo-Compound-2.jpg","https://sfile.chatglm.cn/images-ppt/4137d8ce5b7a.jpg"],
-    location: "Mokattam", locationAr: "المقطم", type: "Luxury Residential",
-    priceFrom: "8,500,000 EGP", area: "160 - 500 sqm",
-    unitTypes: ["Apartments","Duplexes","Penthouses","Villas"],
-    description: "Uptown Cairo by Emaar Misr is a prestigious hilltop community offering panoramic views of Cairo. This world-class development spans 4 million square meters and features luxury residences, a vibrant town center, international schools, and unparalleled amenities. Perched on the Mokattam plateau, Uptown Cairo combines exclusivity with convenience, offering residents a self-contained lifestyle destination.",
-    descriptionAr: "أب تاون القاهرة من إعمار مصر هي مجتمع مرموق على قمة التل يوفر إطلالات بانورامية على القاهرة. يمتد هذا التطوير العالمي على 4 ملايين متر مربع.",
-    features: ["Hilltop panoramic Cairo views","4 million sqm master development","International school campus","Vibrant town center","Multiple residential phases","Emaar's global quality standards"],
-    amenities: ["Town Center","International Schools","Healthcare Center","Sports Club","Swimming Pools","Parks & Trails","Retail Outlets","Dining Venues"],
-    deliveryDate: "Ready", downPayment: "25%", installmentYears: "5 Years", status: "ready"
-  },
+  id: "p8",
+  title: "Park Central",
+  titleAr: "بارك سنترال",
+  developer: "Hassan Allam Properties",
+  developerId: "hassan-allam",
+  image: "https://example.com/images/park-central-main.jpg",
+  images: [
+    "https://example.com/images/park-central-1.jpg",
+    "https://example.com/images/park-central-2.jpg",
+    "https://example.com/images/park-central-3.jpg"
+  ],
+  location: "Mostakbal City",
+  locationAr: "مستقبل سيتي",
+  type: "Mixed-Use Compound",
+  priceFrom: "8,300,000 EGP",
+  area: "81 - 100 sqm+",
+  unitTypes: [
+    "1 Bedroom",
+    "2 Bedrooms",
+    "3 Bedrooms",
+    "3BR Penthouse",
+    "3BR Duplex",
+    "Townhouses",
+    "Twin Houses",
+    "One-Story Villas"
+  ],
+  description: "Park Central is a prestigious residential flagship community by Hassan Allam Properties located in Mostakbal City. Built on a rich history of development excellence and premium construction quality, Park Central offers a close-knit community setting centered around expansive green spines, a central park, and world-class commercial outlets.",
+  descriptionAr: "كمبوند بارك سنترال من شركة حسن علام العقارية هو مجتمع سكني بارز يقع في مستقبل سيتي. يستند المشروع إلى إرث عريق من الجودة العالية والخبرة، ويوفر بيئة مجتمعية راقية تحيط بها متنزهات مركزية ومساحات خضراء ممتدة ومرافق تجارية وترفيهية متكاملة.",
+  features: [
+    "Strategic prime location in Mostakbal City",
+    "Developed by industry pioneer Hassan Allam Properties",
+    "Extensive unit variety from 1-bedroom apartments to standalone villas",
+    "Flexible 10-year payment plan with only 5% down payment",
+    "Centered around vast nature, parks, and lush green spines"
+  ],
+  amenities: [
+    "Central Park",
+    "Green Spine",
+    "F&B & Dining Outlets",
+    "Kids Play Area",
+    "BBQ Areas",
+    "24/7 Security"
+  ],
+  deliveryDate: "4 Years",
+  downPayment: "5%",
+  installmentYears: "10 Years",
+  status: "new-launch"
+},
+
+
+
   {
-    id: "p8", title: "Marassi", titleAr: "ماراسي",
-    developer: "Emaar Misr", developerId: "emaar-misr",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMrYd1n8a57haV_uNo8RSf99HBHtP58AZT9T935Qizs6Svssps4O4IJ3iG&s=10",
-    images: ["https://cf.bstatic.com/xdata/images/hotel/max1024x768/676367058.jpg?k=d46788020fb63d5f051886527d721bff854e67c76522e9666a027900341a9030&o=","https://sfile.chatglm.cn/images-ppt/bf524cd6fcd9.jpg","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMrYd1n8a57haV_uNo8RSf99HBHtP58AZT9T935Qizs6Svssps4O4IJ3iG&s=10"],
-    location: "North Coast", locationAr: "الساحل الشمالي", type: "Beachfront Resort",
-    priceFrom: "7,200,000 EGP", area: "100 - 350 sqm",
-    unitTypes: ["Chalets","Apartments","Townhouses","Villas"],
-    description: "Marassi by Emaar Misr is a stunning beachfront destination on Egypt's North Coast, offering an unparalleled coastal lifestyle. This iconic development stretches across 6.5 million square meters of pristine coastline, featuring crystal-clear lagoons, private beaches, luxury residences, and a vibrant social scene. Marassi redefines beachside living with its Mediterranean-inspired architecture and world-class amenities.",
-    descriptionAr: "ماراسي من إعمار مصر هي وجهة ساحلية مذهلة على الساحل الشمالي لمصر، تقدم أسلوب حياة ساحلي لا مثيل له.",
-    features: ["6.5 million sqm beachfront","Crystal lagoons system","Private beach access","Mediterranean architecture","Vibrant social scene","Multiple residential clusters"],
-    amenities: ["Private Beaches","Crystal Lagoons","Beach Club","Water Sports","Retail District","F&B Outlets","Spa & Wellness","Entertainment Zone"],
-    deliveryDate: "2026", downPayment: "15%", installmentYears: "7 Years", status: "selling-fast"
-  }
+  id: "p9",
+  title: "Swanlake Residences",
+  titleAr: "سوان ليك ريزيدنسز",
+  developer: "Hassan Allam Properties",
+  developerId: "hassan-allam",
+  image: "https://example.com/images/swanlake-residences-main.jpg",
+  images: [
+    "https://example.com/images/swanlake-residences-1.jpg",
+    "https://example.com/images/swanlake-residences-2.jpg",
+    "https://example.com/images/swanlake-residences-3.jpg"
+  ],
+  location: "Directly on Cairo - Suez Road, New Cairo",
+  locationAr: "مباشرة على طريق القاهرة - السويس - القاهرة الجديدة",
+  type: "Luxury Villas & Residential Compound",
+  priceFrom: "105,000,000 EGP",
+  area: "311 - 459 sqm",
+  unitTypes: [
+    "Twin Houses",
+    "Stand-alone Villas"
+  ],
+  description: "Swanlake Residences is an iconic landmark development by Hassan Allam Properties, strategically located directly on the Cairo-Suez Road. Renowned for its heritage, ultra-premium quality, and exclusive community, the project features sprawling green spines, high-end sporting facilities, and lavish standalone villas and twin houses designed for refined living.",
+  descriptionAr: "كمبوند سوان ليك ريزيدنسز من شركة حسن علام العقارية هو أحد أرقى المشاريع السكنية ذات الموقع الاستراتيجي الفاخر مباشرة على طريق القاهرة - السويس. يعكس المشروع تاريخاً عريقاً في الجودة العالية والإنشاءات الفاخرة، ويضم مساحات خضراء ممتدة ونادياً رياضياً ومجتمعاً حصرياً راقياً.",
+  features: [
+    "Prime iconic location directly on Cairo - Suez Road",
+    "Developed by industry leader Hassan Allam Properties",
+    "Ultra-exclusive luxury community with standalone and twin villas",
+    "Comprehensive sports and lifestyle infrastructure",
+    "Quick delivery timeline within 2.5 years"
+  ],
+  amenities: [
+    "Sports Club",
+    "Green Spine",
+    "Commercial Hub",
+    "Fine Dining & Retail Outlets",
+    "Lush Landscaping & Water Features",
+    "24/7 Gated Security"
+  ],
+  deliveryDate: "2.5 Years",
+  downPayment: "5% (5% after 3 months)",
+  installmentYears: "6 Years",
+  status: "selling-fast"
+},
+
+{
+  id: "p10",
+  title: "Haptown",
+  titleAr: "هاب تاون",
+  developer: "Hassan Allam Properties",
+  developerId: "hassan-allam",
+  image: "https://example.com/images/haptown-main.jpg",
+  images: [
+    "https://example.com/images/haptown-1.jpg",
+    "https://example.com/images/haptown-2.jpg",
+    "https://example.com/images/haptown-3.jpg"
+  ],
+  location: "Mostakbal City",
+  locationAr: "مستقبل سيتي",
+  type: "Residential Compound",
+  priceFrom: "11,200,000 EGP",
+  area: "130 sqm+",
+  unitTypes: [
+    "2 Bedrooms",
+    "3 Bedrooms",
+    "3BR Penthouse"
+  ],
+  description: "Haptown by Hassan Allam Properties is a flagship residential community in Mostakbal City. Known for its heritage, strong community feel, and high quality of finishing, the project features a massive 3-acre non-swimmable lagoon, expansive distances between buildings (62m to 293m), and stunning water views for over 62% of its units.",
+  descriptionAr: "كمبوند هاب تاون من شركة حسن علام العقارية هو مجتمع سكني بارز يقع في مستقبل سيتي. يستند المشروع إلى إرث الجودة والتميز المعماري، ويتميز بوجود لاجون على مساحة 3 أفدنة، ومسافات بينية واسعة جداً بين المباني تمتد من 62 إلى 293 متراً، مع إطلالات مباشرة على المياه لأكثر من 62% من الوحدات.",
+  features: [
+    "Prime strategic location in Mostakbal City",
+    "Developed by industry leader Hassan Allam Properties",
+    "62% of units feature breathtaking lagoon views",
+    "Generous distance between buildings (62m to 293m) for maximum privacy",
+    "3-acre picturesque central lagoon"
+  ],
+  amenities: [
+    "3-Acre Non-Swimmable Lagoon",
+    "Social Club (Separate Membership Fees)",
+    "Commercial & Retail Outlets",
+    "Green Landscapes & Walking Paths",
+    "Kids Play Areas",
+    "24/7 Security & Gated Community"
+  ],
+  deliveryDate: "3 Years",
+  downPayment: "5%",
+  installmentYears: "8 Years",
+  status: "selling-fast"
+},
+
+
+{
+  id: "p11",
+  title: "Sa'ada New Cairo",
+  titleAr: "سعادة القاهرة الجديدة",
+  developer: "Horizon Egypt Developments",
+  developerId: "horizon",
+  image: "https://example.com/images/saada-main.jpg",
+  images: [
+    "https://example.com/images/saada-1.jpg",
+    "https://example.com/images/saada-2.jpg",
+    "https://example.com/images/saada-3.jpg"
+  ],
+  location: "Directly on Suez Road, New Cairo",
+  locationAr: "مباشرة على طريق السويس - القاهرة الجديدة",
+  type: "Ultra-Luxury Villa Compound",
+  priceFrom: "40,000,000 EGP",
+  area: "300 sqm+",
+  unitTypes: [
+    "Villas (Currently On Hold)"
+  ],
+  description: "Sa'ada New Cairo is an ultra-luxury residential landmark by Horizon Egypt Developments, situated in a prime position directly on the Suez Road. Combining world-class architecture with hospitality excellence, the development features an exclusive 7-star luxury hotel, opulent community amenities, and flexible international payment structures.",
+  descriptionAr: "كمبوند سعادة القاهرة الجديدة من شركة هورايزون للتطوير العقاري هو مجتمع سكني فاخر يقع بموقع استراتيجي فريد مباشرة على طريق السويس. يتميز المشروع بوجود فندق عالمي 7 نجوم، ومرافق ترفيهية وتجارية متكاملة، بالإضافة إلى خيارات سداد مرنة بالدولار.",
+  features: [
+    "Direct strategic access on Cairo - Suez Road",
+    "Developed by Horizon Egypt Developments",
+    "Integrated 7-Star luxury hotel within the compound",
+    "USD payment acceptance for down payment",
+    "Fast-track 2-year delivery schedule"
+  ],
+  amenities: [
+    "7-Star Luxury Hotel",
+    "Exclusive Clubhouse",
+    "Commercial Hub",
+    "F&B Outlets & Dining",
+    "Mosque",
+    "24/7 Gated Security & Concierge"
+  ],
+  deliveryDate: "2 Years",
+  downPayment: "USD (Dollar Payment)",
+  installmentYears: "6 Years",
+  status: "on-hold"
+},
+
+
+{
+  id: "p12",
+  title: "Sa'ada Boutique",
+  titleAr: "سعادة بوتيك",
+  developer: "Horizon Egypt Developments",
+  developerId: "horizon",
+  image: "https://example.com/images/saada-boutique-main.jpg",
+  images: [
+    "https://example.com/images/saada-boutique-1.jpg",
+    "https://example.com/images/saada-boutique-2.jpg",
+    "https://example.com/images/saada-boutique-3.jpg"
+  ],
+  location: "6th of October City",
+  locationAr: "مدينة السادس من أكتوبر",
+  type: "Boutique Residential Compound",
+  priceFrom: "7,600,000 EGP",
+  area: "75 sqm+",
+  unitTypes: [
+    "Apartments",
+    "Townhouses",
+    "Standalone Villas"
+  ],
+  description: "Sa'ada Boutique by Horizon Egypt Developments brings ultra-luxury living to 6th of October City. Designed as a high-end boutique destination, the project features luxury branding, premium F&B offerings, two exclusive clubhouses, and a comprehensive retail hub, complemented by flexible 9-year payment plans.",
+  descriptionAr: "كمبوند سعادة بوتيك من شركة هورايزون للتطوير العقاري يقدم مفهوم الحياة السكنية الفاخرة في مدينة 6 أكتوبر. يتألق المشروع بتصميم بوتيك راقٍ بعلامات تجارية عالمية ومطاعم فاخرة، بالإضافة إلى 2 كلوب هاوس، ومنطقة تجارية، ومسارات لركوب الدراجات.",
+  features: [
+    "Prime strategic location in 6th of October City",
+    "Developed by Horizon Egypt Developments",
+    "High-end luxury brand associations and fine dining options",
+    "Diverse unit mix from boutique apartments to standalone villas",
+    "Flexible 9-year installment plan with only 5% down payment"
+  ],
+  amenities: [
+    "2 Exclusive Clubhouses",
+    "Commercial & Retail Hub",
+    "Luxury F&B Outlets",
+    "Cycling Track",
+    "Lush Landscaping & Greenery",
+    "24/7 Gated Security & Concierge"
+  ],
+  deliveryDate: "3 Years",
+  downPayment: "5%",
+  installmentYears: "9 Years",
+  status: "selling-fast"
+},
+
+{
+  id: "p13",
+  title: "Sa'ada Sahel",
+  titleAr: "سعادة الساحل",
+  developer: "Horizon Egypt Developments",
+  developerId: "horizon",
+  image: "https://example.com/images/saada-sahel-main.jpg",
+  images: [
+    "https://example.com/images/saada-sahel-1.jpg",
+    "https://example.com/images/saada-sahel-2.jpg",
+    "https://example.com/images/saada-sahel-3.jpg"
+  ],
+  location: "Kilo 183, Ras El Hekma",
+  locationAr: "الكيلو 183 - رأس الحكمة",
+  type: "Luxury Coastal Resort",
+  priceFrom: "21,500,000 EGP",
+  area: "149 sqm+",
+  unitTypes: [
+    "Chalets",
+    "Townhouses",
+    "Standalone Villas"
+  ],
+  description: "Sa'ada Sahel is a premier beachfront sanctuary by Horizon Egypt Developments located at Kilo 183 in Ras El Hekma. Designed for high-end coastal living, the resort features an exclusive 5-star hotel, a private marina, high-end F&B venues, and a beachfront clubhouse, backed by a generous 9-year payment structure.",
+  descriptionAr: "منتجع سعادة الساحل من شركة هورايزون للتطوير العقاري هو وجهة ساحلية فاخرة في الكيلو 183 بمنطقة رأس الحكمة. يجمع المشروع بين أسلوب الحياة الرفيع ووجود فندق 5 نجوم، ومارينا خاصة، ومطاعم فاخرة، وكلوب هاوس، مع أنظمة سداد مرنة تمتد حتى 9 سنوات.",
+  features: [
+    "Prime beachfront location in Ras El Hekma (Kilo 183)",
+    "Developed by Horizon Egypt Developments",
+    "Integrated 5-star luxury hotel on-site",
+    "Private marina and premium dining options",
+    "Extended 9-year installment schedule with 5% down payment"
+  ],
+  amenities: [
+    "Private Marina",
+    "5-Star Hotel",
+    "Clubhouse",
+    "Luxury F&B Outlets",
+    "Swimming Pools & Lagoons",
+    "24/7 Beachfront Security & Concierge"
+  ],
+  deliveryDate: "4 Years",
+  downPayment: "5%",
+  installmentYears: "9 Years",
+  status: "new-launch"
+},
+
+
+{
+  id: "p14",
+  title: "Sarai",
+  titleAr: "سراي",
+  developer: "Madinet Masr (MNHD)",
+  developerId: "madinet-masr",
+  image: "https://example.com/images/sarai-main.jpg",
+  images: [
+    "https://example.com/images/sarai-1.jpg",
+    "https://example.com/images/sarai-2.jpg",
+    "https://example.com/images/sarai-3.jpg"
+  ],
+  location: "Intersection of Suez Road & Hope Axis (El Amal Axis), New Cairo",
+  locationAr: "تقاطع طريق السويس مع محور الأمل - القاهرة الجديدة",
+  type: "Mixed-Use Mega City",
+  priceFrom: "3,800,000 EGP",
+  area: "50 sqm+",
+  unitTypes: [
+    "1 Bedroom",
+    "2 Bedrooms",
+    "3 Bedrooms",
+    "Townhouses",
+    "S-Villas",
+    "Standalone Villas"
+  ],
+  description: "Sarai is an iconic mega-city by Madinet Masr (formerly MNHD), strategically located at the intersection of Suez Road and El Amal Axis. Developed by one of Egypt's oldest state-backed public companies (est. 1959), Sarai spans vast land bank assets and offers a full-fledged ecosystem featuring international schools, hospitals, a 5-star hotel, and unmatched 12-year flexible payment structures.",
+  descriptionAr: "مشروع سراي هو مجتمع سكني وعمراني متكامل من شركة مدينة مصر (مدينة نصر للإسكان والتعمير سابقاً)، بموقع استراتيجي على طريق السويس ومحور الأمل. تمتاز الشركة بتاريخ عريق يمتد لعام 1959، وتوفر في سراي مدينة متكاملة الخدمات تضم مدارس دولية، مستشفى، فندق 5 نجوم، ونادي كايان، مع خطط سداد مرنة تصل إلى 12 سنة.",
+  features: [
+    "Backed by Madinet Masr — EGX-listed industry pioneer since 1959",
+    "Prime axis intersection on Suez Road & El Amal Axis",
+    "Green contract land ownership (عقد أخضر) with total financial security",
+    "Ultra-flexible payment terms up to 12 years (with a 5% discount per reduced year)",
+    "Self-sustained mega-project with all phases fully gated"
+  ],
+  amenities: [
+    "2 International Schools",
+    "Hospital & Medical Center",
+    "5-Star Hotel",
+    "Kayan Club & Multiple Clubhouses",
+    "Gas Station",
+    "Commercial & Retail Area",
+    "Extensive Landscapes & Water Features",
+    "24/7 Gated Security"
+  ],
+  deliveryDate: "4.5 Years",
+  downPayment: "1.5% (Backloaded) or 5% (Equal Installments)",
+  installmentYears: "12 Years",
+  status: "selling-fast"
+},
+
+
+
+{
+  id: "p15",
+  title: "Butterfly",
+  titleAr: "باترفلاي",
+  developer: "Madinet Masr (MNHD)",
+  developerId: "madinet-masr",
+  image: "https://example.com/images/butterfly-main.jpg",
+  images: [
+    "https://example.com/images/butterfly-1.jpg",
+    "https://example.com/images/butterfly-2.jpg",
+    "https://example.com/images/butterfly-3.jpg"
+  ],
+  location: "Mostakbal City",
+  locationAr: "مستقبل سيتي",
+  type: "Residential Compound",
+  priceFrom: "5,000,000 EGP",
+  area: "50 sqm+",
+  unitTypes: [
+    "1 Bedroom",
+    "2 Bedrooms",
+    "3 Bedrooms",
+    "Townhouses",
+    "S-Villas",
+    "Standalone Villas"
+  ],
+  description: "Butterfly is a boutique residential flagship project in Mostakbal City developed by Madinet Masr (MNHD). Backed by an iconic legacy dating back to 1959, Butterfly combines ultra-modern residential design with lush green landscapes, access to Kayan Club, and generous 12-year payment plans with a low 5% down payment.",
+  descriptionAr: "كمبوند باترفلاي هو مجتمع سكني فاخر في قلب مستقبل سيتي من تطوير شركة مدينة مصر (مدينة نصر للإسكان والتعمير سابقاً). يجمع المشروع بين التصميم العصر الراقي والمسطحات الخضراء الممتدة، مع إمكانية الاستمتاع بنادي كايان ونادي اجتماعي، وأنظمة سداد ميسرة تصل إلى 12 سنة.",
+  features: [
+    "Prime central location in Mostakbal City",
+    "Developed by Madinet Masr — EGX-listed pioneer since 1959",
+    "Secured registered land ownership (عقد أخضر)",
+    "Wide unit diversity from 1-bedroom apartments to standalone villas",
+    "Extended 12-year installment schedule with only 5% down payment"
+  ],
+  amenities: [
+    "Clubhouses",
+    "Kayan Club Membership",
+    "Commercial & F&B Hub",
+    "Landscaped Gardens & Walkways",
+    "Children's Play Areas",
+    "24/7 Gated Security"
+  ],
+  deliveryDate: "4.5 Years",
+  downPayment: "5%",
+  installmentYears: "12 Years",
+  status: "new-launch"
+},
+
+{
+  id: "p16",
+  title: "Bloomfields",
+  titleAr: "بلومفيلدز",
+  developer: "Tatweer Misr",
+  developerId: "tatweer-misr",
+  image: "https://example.com/images/bloomfields-main.jpg",
+  images: [
+    "https://example.com/images/bloomfields-1.jpg",
+    "https://example.com/images/bloomfields-2.jpg",
+    "https://example.com/images/bloomfields-3.jpg"
+  ],
+  location: "Mostakbal City",
+  locationAr: "مستقبل سيتي",
+  type: "Integrated Mixed-Use City",
+  priceFrom: "5,800,000 EGP",
+  area: "416 sqm (Masterplan / Unit variations)",
+  unitTypes: [
+    "1 Bedroom",
+    "2 Bedrooms",
+    "3 Bedrooms",
+    "Duplexes",
+    "Townhouses",
+    "Twin Houses",
+    "Standalone Villas"
+  ],
+  description: "Bloomfields by Tatweer Misr is a double-gated, mega green city in Mostakbal City, led by industry visionaries Samer Aref, Ahmed Dawood, and Ashraf Arafat. Designed as Egypt's premier education and Innovation Hub, it offers flexible delivery options ranging from ready-to-move (RTM) to 2 and 4-year timelines, paired with 10-year payment plans.",
+  descriptionAr: "مشروع بلومفيلدز من شركة تطوير مصر هو مجتمع سكني وعمراني مزدوج البوابات يقع في موقع استراتيجي بقلب مستقبل سيتي، بتأسيس وإدارة من قادة المجال سامر عارف وأحمد داوود وأشرف عرفات. يقدم المشروع خيارات استلام متعددة (جاهز للانتقال / سنتين / 4 سنوات) مع خطط سداد مرنة تصل إلى 10 سنوات.",
+  features: [
+    "Strategic prime location with a double-gated layout in Mostakbal City",
+    "Developed by Tatweer Misr leadership (Samer Aref, Ahmed Dawood, Ashraf Arafat)",
+    "Flexible delivery options: RTM (Ready to Move), 2 Years, or 4 Years",
+    "Comprehensive unit types ranging from 1-bedroom apartments to standalone villas",
+    "10-year long-term installment plan starting with a 5% down payment"
+  ],
+  amenities: [
+    "Multiple Clubhouses",
+    "Dedicated Jogging & Cycling Tracks",
+    "Commercial & Retail Hub",
+    "Educational & Innovation Zone",
+    "Lush Landscaping & Water Features",
+    "24/7 Double-Gated Security"
+  ],
+  deliveryDate: "RTM / 2 Years / 4 Years",
+  downPayment: "5%",
+  installmentYears: "10 Years",
+  status: "selling-fast"
+},
+
+
+{
+  id: "p17",
+  title: "Salt",
+  titleAr: "سالت",
+  developer: "Tatweer Misr",
+  developerId: "tatweer-misr",
+  image: "https://example.com/images/salt-main.jpg",
+  images: [
+    "https://example.com/images/salt-1.jpg",
+    "https://example.com/images/salt-2.jpg",
+    "https://example.com/images/salt-3.jpg"
+  ],
+  location: "Kilo 185, Ras El Hekma",
+  locationAr: "الكيلو 185 - رأس الحكمة",
+  type: "Coastal Resort",
+  priceFrom: "8,600,000 EGP",
+  area: "265 sqm+",
+  unitTypes: [
+    "1 Bedroom",
+    "2 Bedrooms",
+    "3 Bedrooms",
+    "Townhouses",
+    "Standalone Villas"
+  ],
+  description: "Salt by Tatweer Misr is a premier beachfront destination situated at Kilo 185 in Ras El Hekma. Led by industry visionaries Samer Aref, Ahmed Dawood, and Ashraf Arafat, Salt offers a world-class coastal experience featuring a private marina, a 5-star international hotel, multiple clubhouses, and transparent 8-year payment plans.",
+  descriptionAr: "منتجع سالت من شركة تطوير مصر هو وجهة ساحلية ساحرة تقع عند الكيلو 185 بمنطقة رأس الحكمة، بتأسيس وإدارة من قادة المجال سامر عارف وأحمد داوود وأشرف عرفات. يمتلك المشروع إطلالات مائية خلابة ويقدم تجربة منتجع عالمي مع مارينا خاصة، وفندق 5 نجوم، وكلوب هاوس، وأنظمة سداد تمتد حتى 8 سنوات.",
+  features: [
+    "Prime beachfront location at Kilo 185 in Ras El Hekma",
+    "Developed by Tatweer Misr leadership (Samer Aref, Ahmed Dawood, Ashraf Arafat)",
+    "Exclusive marina lifestyle with premier water access",
+    "Integrated 5-star international luxury hotel",
+    "Flexible 8-year payment plan with only 5% down payment"
+  ],
+  amenities: [
+    "Private Marina",
+    "5-Star Luxury Hotel",
+    "Multiple Clubhouses",
+    "Commercial & Retail Outlets",
+    "Lagoons & Swimming Pools",
+    "24/7 Beachfront Security"
+  ],
+  deliveryDate: "4 Years",
+  downPayment: "5%",
+  installmentYears: "8 Years",
+  status: "selling-fast"
+},
+
+
+
+{
+  id: "p18",
+  title: "Scenes",
+  titleAr: "سينز",
+  developer: "Tatweer Misr",
+  developerId: "tatweer-misr",
+  image: "https://example.com/images/scenes-main.jpg",
+  images: [
+    "https://example.com/images/scenes-1.jpg",
+    "https://example.com/images/scenes-2.jpg",
+    "https://example.com/images/scenes-3.jpg"
+  ],
+  location: "Mostakbal City",
+  locationAr: "مستقبل سيتي",
+  type: "Luxury Residential Compound",
+  priceFrom: "14,800,000 EGP",
+  area: "100 sqm+",
+  unitTypes: [
+    "Townhouses",
+    "Twin Houses",
+    "Standalone Villas"
+  ],
+  description: "Scenes is an exclusive villa-centric community in Mostakbal City, developed by Tatweer Misr under the leadership of Samer Aref, Ahmed Dawood, and Ashraf Arafat. Designed with a focus on holistic living, cultural immersion, and well-being, Scenes features a dedicated wellness hub, a central park, and a cultural house, paired with a low 5% down payment and 10-year installment plans.",
+  descriptionAr: "مشروع سينز هو مجتمع سكني راقٍ مخصص للفيلا بالكامل في مستقبل سيتي من تطوير شركة تطوير مصر، بقيادة سامر عارف وأحمد داوود وأشرف عرفات. يركز المشروع على مفهوم الصحة وجودة الحياة من خلال مركز عافية مخصص، سنترال بارك ممتد، وبيت ثقافي، مع تقديم أنظمة سداد تصل إلى 10 سنوات بمقدم 5% فقط.",
+  features: [
+    "Exclusive villa community in prime Mostakbal City",
+    "Developed by Tatweer Misr leadership (Samer Aref, Ahmed Dawood, Ashraf Arafat)",
+    "Strong focus on health, culture, and lifestyle integration",
+    "Fast-track 2-year delivery schedule",
+    "10-year extended payment plan with only 5% down payment"
+  ],
+  amenities: [
+    "Wellness Hub",
+    "Cultural House",
+    "Central Park & Extensive Greenery",
+    "Clubhouse",
+    "Walking & Recreation Trails",
+    "24/7 Gated Security"
+  ],
+  deliveryDate: "2 Years",
+  downPayment: "5%",
+  installmentYears: "10 Years",
+  status: "new-launch"
+},
+
+
+
+{
+  id: "p19",
+  title: "Solare",
+  titleAr: "سولاري",
+  developer: "Misr Italia Properties",
+  developerId: "misr-italia",
+  image: "https://example.com/images/solare-main.jpg",
+  images: [
+    "https://example.com/images/solare-1.jpg",
+    "https://example.com/images/solare-2.jpg",
+    "https://example.com/images/solare-3.jpg"
+  ],
+  location: "Kilo 199, Ras El Hekma, North Coast",
+  locationAr: "الكيلو 199 - رأس الحكمة - الساحل الشمالي",
+  type: "Coastal Resort",
+  priceFrom: "6,000,000 EGP",
+  area: "66 sqm+",
+  unitTypes: [
+    "1 Bedroom",
+    "2 Bedrooms",
+    "3 Bedrooms",
+    "4 Bedrooms"
+  ],
+  description: "Solare North Coast by Misr Italia Properties is an Italian-inspired coastal sanctuary located at Kilo 199 in Ras El Hekma. Spanning vibrant landscapes and clear water lagoons, Solare offers an Italian coastal lifestyle with a downtown commercial hub, 90,000 sqm of swimmable lagoons, multiple clubhouses, and flexible payment options ranging up to 10 years.",
+  descriptionAr: "منتجع سولاري الساحل الشمالي من شركة مصر إيطاليا العقارية هو مجتمع ساحلي بالطابع الإيطالي الفاخر عند الكيلو 199 بمنطقة رأس الحكمة. يتميز المشروع بـ 90,000 متر مربع من الكريستال لاجونز، منطقة داون تاون تجارية، وكلوب هاوس على الشاطئ واللاجون، مع خيارات سداد مرنة تصل إلى 10 سنوات.",
+  features: [
+    "Prime strategic location at Kilo 199 in heart of Ras El Hekma",
+    "Signature Italian architecture and coastal design concept",
+    "Massive water coverage with 90,000 sqm of swimmable crystal lagoons",
+    "Dedicated Downtown commercial district",
+    "Ultra-flexible payment schedules spanning 6, 8, or 10 years"
+  ],
+  amenities: [
+    "Downtown Commercial Area",
+    "Boutique / Luxury Hotel",
+    "Sports Complex & Sports Area",
+    "90,000 sqm Crystal Lagoons",
+    "20 Swimming Pools",
+    "Lagoon Clubhouse",
+    "Beach Clubhouse",
+    "24/7 Resort Security"
+  ],
+  deliveryDate: "4 Years",
+  downPayment: "5% (+ 5% after 3 months)",
+  installmentYears: "6, 8, or 10 Years",
+  status: "selling-fast"
+},
+
+
+{
+  id: "p20",
+  title: "Kai",
+  titleAr: "كاي",
+  developer: "Misr Italia Properties",
+  developerId: "misr-italia",
+  image: "https://example.com/images/kai-main.jpg",
+  images: [
+    "https://example.com/images/kai-1.jpg",
+    "https://example.com/images/kai-2.jpg",
+    "https://example.com/images/kai-3.jpg"
+  ],
+  location: "Kilo 100, Zafarana Road, Ain Sokhna",
+  locationAr: "الكيلو 100 - طريق الزعفرانة - العين السخنة",
+  type: "Beachfront Resort",
+  priceFrom: "8,000,000 EGP",
+  area: "83 sqm+",
+  unitTypes: [
+    "1 Bedroom",
+    "2 Bedrooms",
+    "3 Bedrooms",
+    "4 Bedrooms"
+  ],
+  description: "Kai Sokhna by Misr Italia Properties (led by Karim El Assal) is an upscale coastal haven situated at Kilo 100 on Zafarana Road. Featuring Asian-inspired boutique architecture, all units come fully finished. The resort boasts swimmable crystal lagoons, luxury hospitality by TLT Concepts including Can Limón Boutique Hotel, and a signature 5-star beachfront experience, supported by 8-year payment plans.",
+  descriptionAr: "منتجع كاي السخنة من شركة مصر إيطاليا العقارية (بقيادة المهندس كريم العسال) هو مجتمع ساحلي راقٍ عند الكيلو 100 على طريق الزعفرانة. تتميز جميع الوحدات بتشطيب كامل وتصميم آسيوي استوائي، ويضم المشروع كريستال لاجونز قابلة للسباحة، مع خدمات ضيافة فاخرة شائعة من TLT Concepts تشمل فندق Can Limón ومطعم Origins، بخصائص سداد تمتد حتى 8 سنوات.",
+  features: [
+    "Prime coastal spot at Kilo 100 on Zafarana Road, Ain Sokhna",
+    "Developed by Misr Italia Properties (Karim El Assal)",
+    "All units delivered fully finished",
+    "High-end hospitality partners including TLT Concepts",
+    "Near-term delivery timeline within 1.5 years",
+    "Flexible 8-year payment plan with 5% down payment (+ 5% after 3 months)"
+  ],
+  amenities: [
+    "Swimmable Crystal Lagoons",
+    "Can Limón Boutique Hotel (by TLT Concepts)",
+    "The Origins Beach Restaurant & Bar (by TLT Concepts)",
+    "5-Star Beach Resort Facilities",
+    "Commercial Strip & Retail Area",
+    "24/7 Gated Beachfront Security"
+  ],
+  deliveryDate: "1.5 Years",
+  downPayment: "5% (+ 5% after 3 months)",
+  installmentYears: "8 Years",
+  status: "selling-fast"
+},
+
+
+{
+  id: "p21",
+  title: "Vinci",
+  titleAr: "فينشي",
+  developer: "Misr Italia Properties",
+  developerId: "misr-italia",
+  image: "https://example.com/images/vinci-main.jpg",
+  images: [
+    "https://example.com/images/vinci-1.jpg",
+    "https://example.com/images/vinci-2.jpg",
+    "https://example.com/images/vinci-3.jpg"
+  ],
+  location: "R7 District, New Administrative Capital",
+  locationAr: "الخي الحي السكني السابع R7 - العاصمة الإدارية الجديدة",
+  type: "Luxury Residential Compound",
+  priceFrom: "8,600,000 EGP",
+  area: "135 sqm+",
+  unitTypes: [
+    "2 Bedrooms",
+    "3 Bedrooms",
+    "Standalone Villas",
+    "Townhouses",
+    "Twin Houses"
+  ],
+  description: "Vinci by Misr Italia Properties (led by Karim El Assal) is an upscale boutique compound located in the prime R7 district of the New Administrative Capital. Designed with an art-inspired boutique concept, Vinci offers Ready-To-Move (RTM) units with 0% down payment options. The project features a massive 24-acre clubhouse, swimmable lagoons, a 4-building commercial strip, and flexible payment plans up to 10 years.",
+  descriptionAr: "كمبوند فينشي من شركة مصر إيطاليا العقارية (بقيادة المهندس كريم العسال) هو مجتمع سكني فاخر يقع في أرقى أحياء R7 بالعاصمة الإدارية الجديدة. يتميز المشروع بتصميمات معمارية مستوحاة من الفنون العصرية، ويقدم وحدات جاهزة للاستلام (RTM) بمقدم 0%، مع كلوب هاوس ممتد على مساحة 24 فداناً، ولاجون قابل للسباحة، ومنطقة تجارية مكونة من 4 مبانٍ، وأنظمة سداد تصل إلى 10 سنوات.",
+  features: [
+    "Prime strategic location in the prestigious R7 district of the New Capital",
+    "Developed by Misr Italia Properties (Karim El Assal)",
+    "Ready to Move (RTM) units available immediately",
+    "Exclusive 0% down payment plan available",
+    "Artistic boutique compound design with low-density residential zoning",
+    "Flexible installment structures spanning 6 or 10 years"
+  ],
+  amenities: [
+    "24-Acre Massive Clubhouse",
+    "Swimmable Lagoons & Water Features",
+    "4-Building Commercial Strip & Retail Promenade",
+    "Community Center",
+    "Boutique Hotel",
+    "Nursery & Kids Educational Facilities",
+    "24/7 Gated Security & Surveillance"
+  ],
+  deliveryDate: "Ready To Move (RTM)",
+  downPayment: "0%",
+  installmentYears: "6 or 10 Years",
+  status: "ready-to-move"
+},
+
+
+{
+  id: "p22",
+  title: "Crysta",
+  titleAr: "كريستا",
+  developer: "Mountain View (DMG)",
+  developerId: "mountain-view",
+  image: "https://example.com/images/crysta-main.jpg",
+  images: [
+    "https://example.com/images/crysta-1.jpg",
+    "https://example.com/images/crysta-2.jpg",
+    "https://example.com/images/crysta-3.jpg"
+  ],
+  location: "Kilo 123, Sidi Abdel Rahman, North Coast",
+  locationAr: "الكيلو 123 - سيدي عبد الرحمن - الساحل الشمالي",
+  type: "Coastal Resort",
+  priceFrom: "On Hold",
+  area: "On Hold",
+  unitTypes: [
+    "On Hold"
+  ],
+  description: "Crysta is a high-end coastal project by Mountain View located at Kilo 123 in the highly coveted Sidi Abdel Rahman bay. Highlighted by crystal clear lagoons, luxury international hotel hospitality, and quick delivery timelines within 2 years, Crysta offers signature Mountain View architecture on the Mediterranean shore.",
+  descriptionAr: "مشروع كريستا هو أحدث الوجهات الساحلية من شركة ماونتن فيو، ويقع عند الكيلو 123 بمنطقة سيدي عبد الرحمن الشهيرة بالساحل الشمالي. يمتاز المشروع بوجود كريستال لاجونز وسلسلة فنادق عالمية فاخرة، إضافة إلى الاستلام السريع خلال سنتين مع توفير أسلوب الحياة المميز لمشاريع ماونتن فيو.",
+  features: [
+    "Prime beachfront positioning at Kilo 123 in Sidi Abdel Rahman",
+    "Developed by industry leader Mountain View (DMG)",
+    "Early delivery timeline within 2 years",
+    "Stunning crystal lagoon access throughout the development",
+    "World-class international hotel hospitality integration"
+  ],
+  amenities: [
+    "Crystal Lagoons",
+    "International Luxury Hotels",
+    "Multiple Clubhouses",
+    "Commercial & Dining Hub",
+    "Swimming Pools & Water Sports",
+    "24/7 Gated Security"
+  ],
+  deliveryDate: "2 Years",
+  downPayment: "10%",
+  installmentYears: "On Hold",
+  status: "on-hold"
+},
+
+
+{
+  id: "p23",
+  title: "Aliva",
+  titleAr: "أليفا",
+  developer: "Mountain View (DMG)",
+  developerId: "mountain-view",
+  image: "https://example.com/images/aliva-main.jpg",
+  images: [
+    "https://example.com/images/aliva-1.jpg",
+    "https://example.com/images/aliva-2.jpg",
+    "https://example.com/images/aliva-3.jpg"
+  ],
+  location: "Mostakbal City",
+  locationAr: "مستقبل سيتي",
+  type: "Integrated Residential City",
+  priceFrom: "13,342,000 EGP",
+  area: "130 sqm+",
+  unitTypes: [
+    "2 Bedrooms",
+    "3 Bedrooms",
+    "iVilla",
+    "Townhouses",
+    "Twin Houses",
+    "Standalone Villas"
+  ],
+  description: "Aliva is Mountain View's largest mega-city in Mostakbal City, centered on experiential living and vibrant community hubs. Featuring diverse phases offering both Fully Finished (F.F) and Core & Shell options, Aliva stands out with its ultra-long 12-year payment plan starting with an exceptional 1.5% down payment.",
+  descriptionAr: "مشروع أليفا هو أضخم مجتمع سكني من شركة ماونتن فيو في قلب مستقبل سيتي، والمبني على مفهوم التفاعل وتعدد التجارب السكنية. يضم المشروع مراحل متنوعة تتراوح بين التشطيب الكامل (Fully Finished) وبدون تشطيب (Core & Shell)، ويتميز بخطة سداد ممتدة حتى 12 سنة بمقدم يبدأ من 1.5% فقط.",
+  features: [
+    "Mega residential city development in prime Mostakbal City",
+    "Developed by industry leader Mountain View (DMG)",
+    "Diverse phases offering both Fully Finished and Core & Shell units",
+    "Ultra-long flexible payment schedule spanning up to 12 years",
+    "Low barrier to entry with a 1.5% initial down payment structure"
+  ],
+  amenities: [
+    "Multiple Concept Clubhouses",
+    "Fully Finished & Shell Options",
+    "Commercial & Retail Parks",
+    "Central Park & Experiential Zones",
+    "Sports & Wellness Facilities",
+    "24/7 Gated Security & Smart Access"
+  ],
+  deliveryDate: "4 Years",
+  downPayment: "1.5% (+ 1.5% structure)",
+  installmentYears: "12 Years",
+  status: "selling-fast"
+},
+
+
+{
+  id: "p24",
+  title: "MV iCity New Cairo",
+  titleAr: "ماونتن فيو آي سيتي القاهرة الجديدة",
+  developer: "Mountain View (DMG)",
+  developerId: "mountain-view",
+  image: "https://example.com/images/mv-icity-main.jpg",
+  images: [
+    "https://example.com/images/mv-icity-1.jpg",
+    "https://example.com/images/mv-icity-2.jpg",
+    "https://example.com/images/mv-icity-3.jpg"
+  ],
+  location: "Directly on Middle Ring Road, Adjacent to Palm Hills New Cairo (PHNC)",
+  locationAr: "مباشرة على الطريق الدائري الأوسطي - ملاصق لكمبوند بالم هيلز القاهرة الجديدة",
+  type: "Fully Integrated Smart City",
+  priceFrom: "15,593,000 EGP",
+  area: "140 sqm+",
+  unitTypes: [
+    "Garden Apartments",
+    "iVilla Roof",
+    "Standalone Villas",
+    "Palaces"
+  ],
+  description: "MV iCity New Cairo by Mountain View is a flagship, fully inhabited, and thriving mega-city strategically located right on the Middle Ring Road, sharing borders with Palm Hills New Cairo. Offering Ready-To-Move (RTM) inventory with immediate/near delivery, it features 4-tiered innovative urban zoning, underground parking networks, and flexible payment plans up to 9 years with a 10% down payment.",
+  descriptionAr: "مشروع ماونتن فيو آي سيتي القاهرة الجديدة هو مجتمع سكني متكامل حي ومأهول بالكامل، يقع بموقع استراتيجي فريد على الطريق الدائري الأوسطي مباشرة بجوار بالم هيلز. يمنح المشروع فرصة استلام فوري/قريب (RTM) في كمبوند يعتمد على نظام الطرق المبتكرة تحت الأرض مع توفير أعلى معدلات الأمان، وبخطط سداد تصل إلى 9 سنوات بمقدم 10%.",
+  features: [
+    "Prime accessibility directly on the Middle Ring Road, adjacent to Palm Hills New Cairo",
+    "Developed by industry leader Mountain View (DMG)",
+    "Thriving, fully vibrant, and inhabited compound (مشروع عالي الإشغال والسكن)",
+    "Ready to Move (RTM) / immediate delivery units available",
+    "Innovative 4-tiered masterplan separating cars from pedestrian areas",
+    "Extended installment terms up to 8 or 9 years with only 10% down payment"
+  ],
+  amenities: [
+    "Exclusive Clubhouses",
+    "Underground Parking Network",
+    "Central Park & Green Sports Parks",
+    "Commercial & Dining Hubs",
+    "Jogging & Cycling Tracks",
+    "24/7 Gated Security & Smart Surveillance"
+  ],
+  deliveryDate: "Ready To Move (RTM)",
+  downPayment: "10%",
+  installmentYears: "8 or 9 Years",
+  status: "ready-to-move"
+},
+
+
+{
+  id: "p25",
+  title: "Creek View",
+  titleAr: "كريك فيو",
+  developer: "Mountain View (DMG)",
+  developerId: "mountain-view",
+  image: "https://example.com/images/creek-view-main.jpg",
+  images: [
+    "https://example.com/images/creek-view-1.jpg",
+    "https://example.com/images/creek-view-2.jpg",
+    "https://example.com/images/creek-view-3.jpg"
+  ],
+  location: "5th Settlement, New Cairo (Adjacent to Hyde Park)",
+  locationAr: "التجمع الخامس - القاهرة الجديدة (بجوار هايد بارك)",
+  type: "Residential Community",
+  priceFrom: "6,791,000 EGP",
+  area: "70 sqm+",
+  unitTypes: [
+    "1 Bedroom",
+    "2 Bedrooms",
+    "3 Bedrooms",
+    "iVilla"
+  ],
+  description: "Creek View is an accessible entry-point project by Mountain View situated in the heart of the 5th Settlement, right next to Hyde Park. Notable for offering highly competitive meter pricing in a prime New Cairo location, it provides flexible living spaces ranging from 1-bedroom apartments to iVillas with low 5% down payment options extending up to 10 years.",
+  descriptionAr: "مشروع كريك فيو من ماونتن فيو يقع في قلب التجمع الخامس بجوار هايد بارك مباشرة. يتميز المشروع بتقديم أسباب استثمارية وسكنية قوية عبر سعر متر تنافسي جداً لموقعه الحيوي، مع تنوع في الوحدات بدءاً من غرفة واحدة وحتى الـ iVilla بمقدم 5% وأنظمة سداد تصل إلى 10 سنوات.",
+  features: [
+    "Strategic location in 5th Settlement, right next to Hyde Park",
+    "Developed by industry leader Mountain View (DMG)",
+    "Highly competitive square-meter pricing for central New Cairo",
+    "Compact & versatile unit layouts starting from 70 sqm",
+    "Low 5% entry down payment with flexible long-term plans"
+  ],
+  amenities: [
+    "Clubhouse",
+    "Extensive Landscape & Greenery",
+    "Walking & Cycling Paths",
+    "Commercial Units & Retail Facilities",
+    "24/7 Gated Security & Gated Entrance"
+  ],
+  deliveryDate: "4 Years",
+  downPayment: "5%",
+  installmentYears: "6, 8, or 10 Years",
+  status: "selling-fast"
+},
+
+
+{
+  id: "p26",
+  title: "GAIA",
+  titleAr: "جايا",
+  developer: "Al Ahly Sabbour Developments",
+  developerId: "al-ahly-sabbour",
+  image: "https://example.com/images/gaia-main.jpg",
+  images: [
+    "https://example.com/images/gaia-1.jpg",
+    "https://example.com/images/gaia-2.jpg",
+    "https://example.com/images/gaia-3.jpg"
+  ],
+  location: "Kilo 193, Ras El Hekma, North Coast",
+  locationAr: "الكيلو 193 - رأس الحكمة - الساحل الشمالي",
+  type: "Coastal Resort & Beachfront Compound",
+  priceFrom: "22,000,000 EGP",
+  area: "182 sqm+",
+  unitTypes: [
+    "Duplex",
+    "Townhouses",
+    "Standalone Villas"
+  ],
+  description: "GAIA North Coast by Al Ahly Sabbour is a premier coastal destination situated at Kilo 193 in the prestigious Ras El Hekma bay. Renowned for its avant-garde architectural design, direct Mediterranean sea views, and attractive ticket pricing, GAIA offers quick delivery within 1 year alongside full hospitality services and an 8-year payment plan with only 5% down payment.",
+  descriptionAr: "قرية جايا الساحل الشمالي من شركة الأهلي صبور للتطوير العقاري تقع في الكيلو 193 بقلب خليج رأس الحكمة. تشتهر بتصاميمها المعمارية العصرية المبتكرة وإطلالاتها المباشرة على البحر مع أسعار افتتاحية ممتازة، وتوفر استلاماً سريعاً خلال سنة واحدة فقط مع خدمات الفندقة الكاملة ونظام سداد يصل إلى 8 سنوات بمقدم 5%.",
+  features: [
+    "Prime beachfront positioning at Kilo 193 in Ras El Hekma Bay",
+    "Developed by leading developer Al Ahly Sabbour",
+    "Distinctive architectural layout with direct Mediterranean water access",
+    "Competitive ticket pricing for prime Ras El Hekma real estate",
+    "Fast delivery timeframe within 1 year",
+    "Flexible 8-year installment scheme starting with a 5% down payment"
+  ],
+  amenities: [
+    "Serviced Apartments & Hospitality Units",
+    "Beachfront Clubhouse",
+    "Swimming Pools & Water Features",
+    "Commercial & Dining Outlets",
+    "24/7 Gated Security & Resort Services"
+  ],
+  deliveryDate: "1 Year",
+  downPayment: "5%",
+  installmentYears: "8 Years",
+  status: "selling-fast"
+},
+
+{
+  id: "p27",
+  title: "At East",
+  titleAr: "أت إيست",
+  developer: "Al Ahly Sabbour Developments",
+  developerId: "al-ahly-sabbour",
+  image: "https://example.com/images/at-east-main.jpg",
+  images: [
+    "https://example.com/images/at-east-1.jpg",
+    "https://example.com/images/at-east-2.jpg",
+    "https://example.com/images/at-east-3.jpg"
+  ],
+  location: "New Cairo",
+  locationAr: "القاهرة الجديدة",
+  type: "Residential Community & Mixed-Use Development",
+  priceFrom: "5,000,000 EGP",
+  area: "65 sqm+",
+  unitTypes: [
+    "Apartments",
+    "Townhouses",
+    "Twin Houses",
+    "One-Story Standalone Villas"
+  ],
+  description: "At East is a versatile residential community developed by Al Ahly Sabbour in a highly strategic New Cairo location. Offering an accessible entry price point starting at 5 million EGP, the project features diverse options ranging from efficient 65 sqm apartments to exclusive single-story standalone villas. Supported by an 8-year payment scheme with a 5% down payment and essential daily life amenities.",
+  descriptionAr: "مشروع أت إيست من شركة الأهلي صبور يقع في موقع استراتيجي بقلب القاهرة الجديدة. يقدم المشروع فرصة ممتازة بأسعار تبدأ من 5 ملايين جنيه وتنوع كبير في المساحات من الشقق بـ 65 متر مربع وحتى الفيلات الخصوصية من دور واحد (One-Story Standalone)، مع تسهيلات سداد تمتد إلى 8 سنوات ومقدم 5% فقط مع توافر جميع الخدمات الأساسية والتجارية.",
+  features: [
+    "Strategic location within central New Cairo",
+    "Developed by leading developer Al Ahly Sabbour",
+    "Accessible entry ticket price starting from 5 Million EGP",
+    "Diverse layout options including rare single-story standalone villas",
+    "Flexible 8-year payment schedule with a low 5% down payment"
+  ],
+  amenities: [
+    "Clubhouse",
+    "Commercial Strip & Retail Outlets",
+    "Supermarket",
+    "Mosque",
+    "Landscaped Green Zones",
+    "24/7 Gated Security & Controlled Access"
+  ],
+  deliveryDate: "4 Years",
+  downPayment: "5%",
+  installmentYears: "8 Years",
+  status: "selling-fast"
+},
+
+{
+  id: "p28",
+  title: "The Morning",
+  titleAr: "ذا مورنينج",
+  developer: "Al Ahly Sabbour Developments",
+  developerId: "al-ahly-sabbour",
+  image: "https://example.com/images/the-morning-main.jpg",
+  images: [
+    "https://example.com/images/the-morning-1.jpg",
+    "https://example.com/images/the-morning-2.jpg",
+    "https://example.com/images/the-morning-3.jpg"
+  ],
+  location: "Al Yasmine Neighborhood, New Cairo",
+  locationAr: "حي الياسمين - القاهرة الجديدة",
+  type: "Mixed-Use Development (Residential & Commercial)",
+  priceFrom: "4,700,000 EGP",
+  area: "50 sqm+",
+  unitTypes: [
+    "Apartments",
+    "Administrative Offices",
+    "Medical Clinics"
+  ],
+  description: "The Morning by Al Ahly Sabbour is a boutique mixed-use project strategically situated in the well-established Al Yasmine neighborhood of New Cairo. Offering compact, high-efficiency spaces starting from 50 sqm for residential, office, and medical use, it is highlighted by proximity to Manchester School and wellness-focused amenities. Available with a low 5% down payment and 8-year payment plans.",
+  descriptionAr: "مشروع ذا مورنينج من شركة الأهلي صبور هو مجتمع متعدد الاستخدامات يقع بموقع استراتيجي مميز في حي الياسمين بالقاهرة الجديدة. يضم المشروع شققاً سكنية ومكاتب إدارية وعيادات طبية بمساحات تبدأ من 50 متراً مربعاً، ويتميز بقربه من مدرسة مانشستر وتوفير مرافق مخصصة للاسترخاء واللياقة البدنية، مع خطة سداد على 8 سنوات ومقدم 5% فقط.",
+  features: [
+    "Prime strategic positioning in Al Yasmine district, New Cairo",
+    "Developed by leading developer Al Ahly Sabbour",
+    "Adjacent to prestigious educational institution (Manchester School)",
+    "Versatile mixed-use inventory: Residential, Administrative, and Medical clinics",
+    "Highly accessible starting price point at 4.7M EGP for 50 sqm units",
+    "Flexible 8-year installment schedule with a low 5% down payment"
+  ],
+  amenities: [
+    "Yoga Lawn & Meditation Zones",
+    "Outdoor Fitness & Gym",
+    "Commercial & Retail Outlets",
+    "Professional Administrative & Medical Hub",
+    "24/7 Gated Security & Property Management"
+  ],
+  deliveryDate: "4 Years",
+  downPayment: "5%",
+  installmentYears: "8 Years",
+  status: "selling-fast"
+},
+
+{
+  id: "p29",
+  title: "June",
+  titleAr: "جون",
+  developer: "SODIC",
+  developerId: "sodic",
+  image: "https://example.com/images/june-main.jpg",
+  images: [
+    "https://example.com/images/june-1.jpg",
+    "https://example.com/images/june-2.jpg",
+    "https://example.com/images/june-3.jpg"
+  ],
+  location: "Kilo 193, Ras El Hekma, North Coast",
+  locationAr: "الكيلو 193 - رأس الحكمة - الساحل الشمالي",
+  type: "Coastal Resort & Beachfront Compound",
+  priceFrom: "19,000,000 EGP",
+  area: "102 sqm+",
+  unitTypes: [
+    "2-Bedroom Lofts",
+    "Twin Houses",
+    "Standalone Villas"
+  ],
+  description: "June by SODIC is an Miami-inspired coastal community located at Kilo 193 in Ras El Hekma. Known for high build quality, prime location, and top-tier operational management, all units come fully finished with air conditioning installed. The project features a pristine sandy beach, 25 acres of lagoons and swimming pools, with options for Ready-To-Move (RTM) or 2-year delivery, and payment plans extending up to 10 years.",
+  descriptionAr: "مشروع جون من شركة سوديك هو مجتمع ساحلي فاخر بتصميم مستوحى من طراز مايامي، يقع في الكيلو 193 بقلب رأس الحكمة. يتميز بجودة تنفيذ عالية، موقع ممتاز، وإدارة تشغيلية على أعلى مستوى، وتسلم جميع الوحدات كاملة التشطيب بالتكييفات. يضم المشروع شاطئاً رملياً، و25 فداناً من اللاجونز وحمامات السباحة، مع خيارات استلام فوري (RTM) أو خلال سنتين، وأنظمة سداد تصل إلى 10 سنوات.",
+  features: [
+    "Prime beachfront positioning at Kilo 193 in Ras El Hekma",
+    "Developed by premium developer SODIC",
+    "High build quality and top-tier operational management",
+    "Units delivered Fully Finished with ACs included",
+    "Flexible payment options: 0% down payment over 8 years OR 5% down payment over 10 years",
+    "Near-term delivery options available (RTM to 2 years)"
+  ],
+  amenities: [
+    "Pristine Sandy Beach",
+    "25 Acres of Lagoons & Swimming Pools",
+    "Beachfront Clubhouse",
+    "Commercial & Retail Outlets",
+    "24/7 Gated Security & Property Management"
+  ],
+  deliveryDate: "RTM / 2 Years",
+  downPayment: "0% or 5%",
+  installmentYears: "8 or 10 Years",
+  status: "selling-fast"
+},
+
+{
+  id: "p30",
+  title: "The Estates",
+  titleAr: "ذا إستيتس",
+  developer: "SODIC",
+  developerId: "sodic",
+  image: "https://example.com/images/the-estates-main.jpg",
+  images: [
+    "https://example.com/images/the-estates-1.jpg",
+    "https://example.com/images/the-estates-2.jpg",
+    "https://example.com/images/the-estates-3.jpg"
+  ],
+  location: "New Zayed",
+  locationAr: "زايد الجديدة",
+  type: "Ultra-Luxury Residential Compound",
+  priceFrom: "58,000,000 EGP",
+  area: "308 sqm+",
+  unitTypes: [
+    "Flat Villas",
+    "Twin Houses",
+    "Standalone Villas"
+  ],
+  description: "The Estates by SODIC is an ultra-luxury residential flagship compound situated in New Zayed. Renowned for its premium SODIC build quality, seamless operational management, and prime location, the project offers Ready-To-Move (RTM) high-end living. Units feature spacious layouts starting from 308 sqm, backed by comprehensive facility management, dedicated commercial and office zones, and an 8-year structured payment plan.",
+  descriptionAr: "مشروع ذا إستيتس من شركة سوديك هو مجتمع سكني شديد الفخامة يقع في قلب زايد الجديدة. يشتهر بأسلوب ماستر بلان راقٍ، جودة بناء سوديك العالية، وإدارة تشغيلية ممتازة. يوفر المشروع وحدات جاهزة للاستلام (RTM) بمساحات كبيرة تبدأ من 308 أمتار مربعة، مع توافر خدمات إدارة المرافق المتقدمة، مناطق تجارية ومكاتب إدارية، ونظام سداد هيكلي ممتد على 8 سنوات.",
+  features: [
+    "Prime strategic positioning in upscale New Zayed",
+    "Developed by top-tier developer SODIC",
+    "Ready to Move (RTM) units for immediate high-end occupancy",
+    "Exceptional build quality, design, and long-term operational execution",
+    "Structured payment plan: 5% DP + 5% after 3 months + 8% after 9 months over 8 years"
+  ],
+  amenities: [
+    "Luxury Clubhouse",
+    "Commercial Strip & Retail Outlets",
+    "Administrative & Office Spaces",
+    "Comprehensive Facility Management Services",
+    "Landscaped Parks & Water Features",
+    "24/7 Gated Security & Smart Perimeter Protection"
+  ],
+  deliveryDate: "Ready To Move (RTM)",
+  downPayment: "5% (+5% after 3m, +8% after 9m)",
+  installmentYears: "8 Years",
+  status: "ready-to-move"
+},
+
+
+{
+  id: "p31",
+  title: "Azha North Coast",
+  titleAr: "أزها الساحل الشمالي",
+  developer: "Madaar Developments",
+  developerId: "madaar-developments",
+  image: "https://example.com/images/azha-sahel-main.jpg",
+  images: [
+    "https://example.com/images/azha-sahel-1.jpg",
+    "https://example.com/images/azha-sahel-2.jpg",
+    "https://example.com/images/azha-sahel-3.jpg"
+  ],
+  location: "Kilo 214, Ras El Hekma, North Coast",
+  locationAr: "الكيلو 214 - رأس الحكمة - الساحل الشمالي",
+  type: "Luxury Coastal Resort",
+  priceFrom: "12,000,000 EGP",
+  area: "62 sqm+",
+  unitTypes: [
+    "1 Bedroom",
+    "2 Bedrooms",
+    "3 Bedrooms",
+    "Townhouses",
+    "Twin Houses",
+    "Standalone Villas"
+  ],
+  description: "Azha North Coast by Madaar Developments (founded by Hossam El Shaer) is a flagship resort spread across a masterfully planned coastal site at Kilo 214. Built on elevated tiered terraces to ensure uninterrupted views of the sea and lagoons, the project features an 800-meter private sandy beachfront, 45 acres of Crystal Lagoons, a 5-star seafront hotel, and a private marina. All units are delivered fully finished with ACs and kitchen cabinets.",
+  descriptionAr: "قرية أزها الساحل الشمالي من شركة مدار للتطوير العقاري (تأسيس حسام الشاعر) هي مجتمع ساحلي فاخر يقع عند الكيلو 214. صُمم المشروع على مصاطب متدرجة لضمان إطلالات مباشرة ومفتوحة على البحر واللاجون، ويتميز بشاطئ رملي خاص بعرض 800 متر، و45 فداناً من الكريستال لاجونز، وفندق 5 نجوم على البحر مباشرة، ومارينا خاصة. تُسلم جميع الوحدات كاملة التشطيب بالتكييفات وخزائن المطبخ.",
+  features: [
+    "Prime Ras El Hekma positioning at Kilo 214",
+    "Developed by Madaar Developments (Hossam El Shaer)",
+    "800-meter private beachfront with natural sandy access",
+    "Elevated tiered terraces ensuring panoramic sea and lagoon views for units",
+    "Fully finished delivery complete with ACs and kitchen cabinets",
+    "Delivery windows within 2 to 4 years"
+  ],
+  amenities: [
+    "45 Acres of Crystal Lagoons",
+    "800m Private Sandy Beach",
+    "5-Star Seafront Hotel",
+    "Private Marina",
+    "Lagoon Clubhouses",
+    "Sports Club & Courts",
+    "Commercial Strip & Retail Promenade",
+    "24/7 Gated Security & Resort Services"
+  ],
+  deliveryDate: "2 to 4 Years",
+  downPayment: "5%",
+  installmentYears: "8 to 10 Years",
+  status: "selling-fast"
+},
+
+{
+  id: "p32",
+  title: "Azha Ain Sokhna",
+  titleAr: "أزها العين السخنة",
+  developer: "Madaar Developments",
+  developerId: "madaar-developments",
+  image: "https://example.com/images/azha-sokhna-main.jpg",
+  images: [
+    "https://example.com/images/azha-sokhna-1.jpg",
+    "https://example.com/images/azha-sokhna-2.jpg",
+    "https://example.com/images/azha-sokhna-3.jpg"
+  ],
+  location: "Kilo 126, Ain Sokhna (11 km from Sokhna Toll Gates)",
+  locationAr: "الكيلو 126 - العين السخنة (على بعد 11 كم من البوابات)",
+  type: "Luxury Waterfront Resort",
+  priceFrom: "40,000,000 EGP",
+  area: "312 sqm+",
+  unitTypes: [
+    "Standalone Villas"
+  ],
+  description: "Azha Ain Sokhna by Madaar Developments is a premier year-round luxury coastal destination master-planned by world-renowned Barton Willmore. Situated just 11 km from the Sokhna gates, the resort offers expansive standalone villas with a 700-meter sandy beach, 150 acres of swimmable Crystal Lagoons, 5-star hotels including the Tanoak Hotel, and the vibrant Downtown Azha commercial hub. All units are handed over fully finished with ACs and kitchen cabinets.",
+  descriptionAr: "مشروع أزها العين السخنة من شركة مدار للتطوير العقاري هو منتجع ساحلي فاخر يعمل طوال العام، تم تخطيطه بواسطة مكتب التخطيط العالمي بارتون ويلمور. يقع على بعد 11 كم فقط من بوابات السخنة، ويوفر فيلات مستقلة فاخرة مع شاطئ رملي بطول 700 متر، و150 فداناً من الكريستال لاجونز القابلة للسباحة، وفنادق 5 نجوم من بينها فندق تانووك (Tanoak)، بالإضافة إلى منطقة داون تاون أزها التجارية. تسلم جميع الوحدات تشطيب كامل بالتكييفات وخزائن المطبخ.",
+  features: [
+    "Master-planned by international urban designers Barton Willmore",
+    "Prime accessibility: Kilo 126 and only 11 km from Sokhna Toll Gates",
+    "Developed by top developer Madaar Developments (Hossam El Shaer)",
+    "700-meter pristine natural sandy beachfront",
+    "Units delivered Fully Finished complete with ACs and kitchen cabinets",
+    "Structured payment plan: 5% DP + 5% after 6 months over 9 years"
+  ],
+  amenities: [
+    "150 Acres of Swimmable Crystal Lagoons",
+    "700m Pristine Sandy Beach",
+    "5-Star Hotels (Including Tanoak Hotel)",
+    "Downtown Azha Commercial & Retail Hub",
+    "Multiple Community Clubhouses",
+    "Central Park & Green Open Spaces",
+    "24/7 Gated Security & Resort Services"
+  ],
+  deliveryDate: "3 Years",
+  downPayment: "5% (+5% after 6 months)",
+  installmentYears: "9 Years",
+  status: "selling-fast"
+},
+
+{
+  id: "p33",
+  title: "Hacienda Ras El Hekma",
+  titleAr: "هاسيندا رأس الحكمة",
+  developer: "Palm Hills Developments",
+  developerId: "palm-hills",
+  image: "https://example.com/images/hacienda-ras-el-hekma-main.jpg",
+  images: [
+    "https://example.com/images/hacienda-ras-el-hekma-1.jpg",
+    "https://example.com/images/hacienda-ras-el-hekma-2.jpg",
+    "https://example.com/images/hacienda-ras-el-hekma-3.jpg"
+  ],
+  location: "Kilo 240, Ras El Hekma, North Coast",
+  locationAr: "الكيلو 240 - رأس الحكمة - الساحل الشمالي",
+  type: "Mega Coastal Resort & Beachfront City",
+  priceFrom: "11,736,000 EGP",
+  area: "65 sqm+",
+  unitTypes: [
+    "1 Bedroom Chalets",
+    "2 Bedroom Chalets",
+    "3 Bedroom Chalets",
+    "Beach Houses",
+    "Twin Houses",
+    "Standalone Villas"
+  ],
+  description: "Hacienda Ras El Hekma by Palm Hills Developments is a flagship coastal mega-project located at Kilo 240 in Ras El Hekma. Spanning a massive 4,800-meter beachfront footprint, the resort features 5 international luxury hotels, an international marina, swimmable lagoons, and multiple community clubhouses. Designed as a fully integrated seaside destination, it offers flexible living units starting from 65 sqm with 10-year installment options.",
+  descriptionAr: "مشروع هاسيندا رأس الحكمة من شركة بالم هيلز للتعمير هو مدينة ساحلية فاخرة تقع في الكيلو 240 بمنطقة رأس الحكمة. يتميز المشروع بواجهة شاطئية ضخمة تمتد بطول 4800 متر، ويضم 5 فنادق عالمية، مارينا دولية، بحيرات كريستالية قابلة للسباحة، وأندية اجتماعية متعددة (Clubhouses). يقدم المشروع تنوعاً واسعاً في الوحدات تبدأ من 65 متراً مربعاً مع أنظمة سداد ممتدة حتى 10 سنوات.",
+  features: [
+    "Prime Ras El Hekma location at Kilo 240",
+    "Developed by top-tier developer Palm Hills Developments",
+    "Massive 4,800-meter beachfront coastline",
+    "Includes 5 international luxury hospitality brands and hotels",
+    "World-class international marina for yachts and watercraft",
+    "Long-term payment structure: 10% down payment with installments up to 10 years"
+  ],
+  amenities: [
+    "4,800m Sandy Beachfront",
+    "International Marina",
+    "5 International Hotels",
+    "Swimmable Lagoons & Swimming Pools",
+    "Multiple Beach & Community Clubhouses",
+    "Commercial Outlets & Promenade",
+    "24/7 Resort Security & Integrated Facility Services"
+  ],
+  deliveryDate: "4 Years",
+  downPayment: "10%",
+  installmentYears: "10 Years",
+  status: "selling-fast"
+},
+
+{
+  id: "p34",
+  title: "The Crown",
+  titleAr: "ذا كراون",
+  developer: "Palm Hills Developments",
+  developerId: "palm-hills",
+  image: "https://example.com/images/the-crown-main.jpg",
+  images: [
+    "https://example.com/images/the-crown-1.jpg",
+    "https://example.com/images/the-crown-2.jpg",
+    "https://example.com/images/the-crown-3.jpg"
+  ],
+  location: "Palm Hills Plateau, 6th of October City",
+  locationAr: "هضبة بالم هيلز - مدينة 6 أكتوبر",
+  type: "Boutique Luxury Villa Compound",
+  priceFrom: "29,480,000 EGP",
+  area: "212 sqm+",
+  unitTypes: [
+    "Family Houses",
+    "Standalone Villas"
+  ],
+  description: "The Crown by Palm Hills Developments is an exclusive villa-only residential compound situated at the prestigious Palm Hills Plateau in 6th of October City. Designed with a low-density community blueprint to ensure maximum privacy and tranquil landscapes, the project features spacious family houses and standalone villas starting from 212 sqm, complemented by luxury clubhouses and an 8-year payment plan.",
+  descriptionAr: "مشروع ذا كراون من شركة بالم هيلز للتعمير هو مجتمع سكني حصري يقتصر على الفيلات فقط، يقع على هضبة بالم هيلز الشهيرة بمدينة 6 أكتوبر. صُمم المشروع بكثافة سكانية منخفضة لضمان الخصوصية التامة والهدوء وسط المساحات الخضراء، ويضم بيوتاً عائلية (Family Houses) وفيلات مستقلة بمساحات تبدأ من 212 متراً مربعاً، مع توفر أندية اجتماعية وخطة سداد ممتدة على 8 سنوات.",
+  features: [
+    "Prestigious positioning on the iconic Palm Hills Plateau",
+    "Developed by leading developer Palm Hills Developments",
+    "Exclusive villa-only community ensuring ultra-low density and high privacy",
+    "Spacious Family House layouts starting at 212 sqm",
+    "Structured payment plan: 5% DP + 5% follow-up over 8 years"
+  ],
+  amenities: [
+    "Exclusive Community Clubhouses",
+    "Landscaped Gardens & Green Ribbons",
+    "Sports Courts & Recreational Facilities",
+    "Commercial & Dining Hub",
+    "24/7 Gated Security & Smart Access Control"
+  ],
+  deliveryDate: "4 Years",
+  downPayment: "5% (+5% follow-up)",
+  installmentYears: "8 Years",
+  status: "selling-fast"
+},
+
+
 ];
 
 const stats = [
@@ -729,26 +2166,34 @@ function populateCareerPositionSelect() {
   sel.value = val;
 }
 
-// ===== MODAL =====
+// ===== MODAL FUNCTIONS =====
+
 function openModal(projectId) {
   const p = projects.find(x => x.id === projectId);
   if (!p) return;
+  
   const dev = developers.find(d => d.id === p.developerId);
   const title = currentLang === "ar" ? p.titleAr : p.title;
   const loc = currentLang === "ar" ? p.locationAr : p.location;
   const desc = currentLang === "ar" ? p.descriptionAr : p.description;
   const t = i18n[currentLang];
 
-  const galleryHtml = p.images.length > 1 ? `
+  // كود معرض الصور المصغرة
+  const galleryHtml = (p.images && p.images.length > 1) ? `
     <div class="modal-gallery">
-      ${p.images.map((img, i) => `<div class="modal-gallery-item"><img src="${img}" alt="${title} ${i+1}" loading="lazy"></div>`).join("")}
+      ${p.images.map((img, i) => `
+        <div class="modal-gallery-item ${i === 0 ? 'active' : ''}" onclick="switchModalImage('${img}', this)">
+          <img src="${img}" alt="${title} ${i+1}" loading="lazy">
+        </div>
+      `).join("")}
     </div>` : "";
 
   const content = document.getElementById("modalContent");
   content.innerHTML = `
     <button class="modal-close" onclick="closeModal()">${SVG.x}</button>
     <div class="modal-hero">
-      <img src="${p.images[0]}" alt="${title}">
+      <!-- 🌟 تم إضافة id="modalMainImg" هنا حتى تتمكن الدالة من استهدافه وتغييره 🌟 -->
+      <img id="modalMainImg" src="${p.image || p.images[0]}" alt="${title}">
       <div class="modal-hero-overlay"></div>
       <div class="modal-hero-info">
         <div class="modal-hero-badges">
@@ -759,7 +2204,9 @@ function openModal(projectId) {
         <p class="modal-hero-dev">by ${p.developer}</p>
       </div>
     </div>
+    
     ${galleryHtml}
+    
     <div class="modal-body">
       <div class="modal-quick-stats">
         <div class="modal-stat-box">${SVG.dollar}<p class="modal-stat-box-label">${t.modal_starting_price}</p><p class="modal-stat-box-value">${p.priceFrom}</p></div>
@@ -767,10 +2214,12 @@ function openModal(projectId) {
         <div class="modal-stat-box">${SVG.calendar}<p class="modal-stat-box-label">${t.modal_delivery}</p><p class="modal-stat-box-value">${p.deliveryDate}</p></div>
         <div class="modal-stat-box">${SVG.check}<p class="modal-stat-box-label">${t.modal_down_payment}</p><p class="modal-stat-box-value">${p.downPayment}</p></div>
       </div>
+      
       <div class="modal-tabs">
         <button class="modal-tab active" onclick="switchTab('overview', this)">${t.modal_overview}</button>
         <button class="modal-tab" onclick="switchTab('amenities', this)">${t.modal_amenities}</button>
       </div>
+      
       <div class="tab-panel active" id="tab-overview">
         <p class="modal-desc">${desc}</p>
         <h4 class="modal-section-title">${t.modal_unit_types}</h4>
@@ -778,9 +2227,11 @@ function openModal(projectId) {
         <h4 class="modal-section-title">${t.modal_features}</h4>
         <div class="features-grid">${p.features.map(f => `<div class="feature-item">${SVG.check}<span>${f}</span></div>`).join("")}</div>
       </div>
+      
       <div class="tab-panel" id="tab-amenities">
         <div class="amenities-grid">${p.amenities.map(a => `<div class="amenity-card"><p>${a}</p></div>`).join("")}</div>
       </div>
+      
       <div class="modal-footer">
         ${dev ? `<div class="modal-developer">
           ${dev.logo ? `<img src="${dev.logo}" alt="${dev.name}">` : ""}
@@ -795,6 +2246,22 @@ function openModal(projectId) {
   document.body.style.overflow = "hidden";
 }
 
+// دالة تبديل الصورة المكبرة عند الضغط على الصورة المصغرة
+function switchModalImage(imgSrc, thumbnailElement) {
+  const mainImg = document.getElementById('modalMainImg');
+  if (mainImg) {
+    mainImg.src = imgSrc;
+  }
+
+  // تمييز العنصر المختار بـ Active Class
+  const allThumbnails = document.querySelectorAll('.modal-gallery-item');
+  allThumbnails.forEach(item => item.classList.remove('active'));
+  
+  if (thumbnailElement) {
+    thumbnailElement.classList.add('active');
+  }
+} 
+
 function closeModal() {
   document.getElementById("modalBackdrop").classList.remove("active");
   document.getElementById("projectModal").classList.remove("active");
@@ -807,6 +2274,8 @@ function switchTab(tab, btn) {
   btn.classList.add("active");
   document.getElementById("tab-" + tab).classList.add("active");
 }
+
+
 
 // ===== ANIMATED COUNTERS =====
 function initCounters() {
