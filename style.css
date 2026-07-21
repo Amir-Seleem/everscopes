@@ -4,7 +4,7 @@
 
 /* ---------- CSS Variables ---------- */
 :root {
-  --es-orange: #FF5700;
+  --es-orange: #ff4d00;
   --es-orange-dark: #E64D00;
   --es-orange-light: #FF7A33;
   --es-dark: #000000;
@@ -131,7 +131,7 @@ input, select, textarea { font: inherit; }
   letter-spacing: -0.02em; color: var(--es-orange); transition: color 0.3s;
 }
 .navbar:not(.scrolled) .nav-logo-ever,
-.navbar:not(.scrolled) .nav-logo-scopes { color: #ff6600; text-shadow: 3px 2px 0 rgba(0,0,0,0.4); }
+.navbar:not(.scrolled) .nav-logo-scopes { color: #ff4d00; text-shadow: 3px 2px 0 rgba(0,0,0,0.4); }
 .navbar.scrolled .nav-logo-ever { color: #000; text-shadow: 3px 2px 0 rgba(0, 0, 0, 0.4); }
 .navbar.scrolled .nav-logo-scopes { color: var(--es-orange); text-shadow: 3px 2px 0 rgba(0, 0, 0, 0.4);; }
 .nav-logo-sub {
@@ -316,13 +316,13 @@ input, select, textarea { font: inherit; }
   perspective: 800px;
 }
 .hero-logo-text {
-  color: #ff5700;
+  color: #ff4d00;
     text-shadow: rgb(0, 0, 0) 6px 6px, rgba(0, 0, 0, 0.6) 6px 6px, rgba(0, 0, 0, 0.3) 8px 8px 12px;
     letter-spacing: -0.02em;
     font-weight: 900;
     padding-top: 0cqb;
     font-size: 500%;
-
+  
 }
 .hero-tagline-main {
   color: rgba(255,255,255,0.7); font-size: clamp(1.25rem, 3vw, 1.875rem);
