@@ -280,12 +280,12 @@ const projects = [
   titleAr: "هايد بارك القاهرة الجديدة",
   developer: "Hyde Park Developments",
   developerId: "hyde-park",
-  image: "https://example.com/images/hyde-park-nc-main.jpg",
+  image: "https://hyd.hydeepark.net/images/new%20cairo/CAM12-AERIAL%20SPORTS%20CLUB.jpg",
   images: [
     "https://hyd.hydeepark.net/images/new%20cairo/CAM12-AERIAL%20SPORTS%20CLUB.jpg",
-    "https://www.hydeparkdevelopments.com/_next/image?url=https%3A%2F%2Fassets.live.beyond-creation.net%2Fhydepark%2Fgardenville_slider_11zon_e8ea95d953.jpg&w=1920&q=75",
-    "https://www.hydeparkdevelopments.com/_next/image?url=https%3A%2F%2Fassets.live.beyond-creation.net%2Fhydepark%2Fmediamob_copy_278a6075fd.jpg&w=1200&q=75",
-    "https://www.hydeparkdevelopments.com/_next/image?url=https%3A%2F%2Fassets.live.beyond-creation.net%2Fhydepark%2FGrand_Park_residents_slider_11zon_410df43a6d.jpg&w=1920&q=75"
+    "https://www.nawy.com/blog/wp-content/uploads/2022/04/Hyde-Park-New-Cairo-apartments-scaled.jpg",
+    "https://elbayt.com/assets/uploads/images/9681/c023d0504306af44bc082bf6641dcaf3/exterior--hyde-park-standalone-villas-new-cairojpeg-1200x900.jpg",
+    "https://www.nawy.com/blog/wp-content/uploads/2022/04/hyde-park-new-cairo-facilities.png"
   ],
   location: "Directly on Road 90, New Cairo",
   locationAr: "مباشرة على شارع التسعين - القاهرة الجديدة",
@@ -330,11 +330,12 @@ const projects = [
   titleAr: "هايد بارك سنترال",
   developer: "Hyde Park Developments",
   developerId: "hyde-park",
-  image: "https://example.com/images/hyde-park-central-main.jpg",
+  image: "https://blureg.com/wp-content/uploads/2025/05/Screenshot-2025-05-13-113850.webp",
   images: [
-    "https://example.com/images/hyde-park-central-1.jpg",
-    "https://example.com/images/hyde-park-central-2.jpg",
-    "https://example.com/images/hyde-park-central-3.jpg"
+    "https://blureg.com/wp-content/uploads/2025/05/Screenshot-2025-05-13-113850.webp",
+    "https://img-4.aqarmap.com.eg/new-aqarmap-media/large/2503/67d2d00410855566578171.jpg",
+    "https://egyprop.com/wp-content/uploads/2025/03/%D9%85%D8%A7%D8%B3%D8%AA%D8%B1-%D8%A8%D9%84%D8%A7%D9%86-%D9%87%D8%A7%D9%8A%D8%AF-%D8%A8%D8%A7%D8%B1%D9%83-%D8%B3%D9%86%D8%AA%D8%B1%D8%A7%D9%84.webp",
+    "https://estsmararabe.com/wp-content/uploads/2026/01/IMG-20260115-WA0007.jpg"
   ],
   location: "6th Settlement (Next to Zed East), New Cairo",
   locationAr: "التجمع السادس (بجوار زد إيست) - القاهرة الجديدة",
@@ -380,11 +381,13 @@ const projects = [
   titleAr: "سي شور",
   developer: "Hyde Park Developments",
   developerId: "hyde-park",
-  image: "https://example.com/images/seashore-main.jpg",
+  image: "https://fld.eg/images/1200-90/688f5d18c62d1.webp",
   images: [
-    "https://example.com/images/seashore-1.jpg",
-    "https://example.com/images/seashore-2.jpg",
-    "https://example.com/images/seashore-3.jpg"
+    "https://fld.eg/images/1200-90/688f5d18c62d1.webp",
+    "https://fld.eg/images/1200-90/688f694989753.webp",
+    "https://developers-eg.com/wp-content/uploads/2025/04/Seashore-Hyde-Park-North-Coast.jpg",
+    "https://invest-gate.me/wp-content/uploads/2024/08/Image-7-750x500.jpeg",
+    "https://bluerock-eg.com/images/project/670/seashore-1714483503_2.webp"
   ],
   location: "Kilo 207, Ras El Hekma",
   locationAr: "الكيلو 207 - رأس الحكمة",
@@ -428,11 +431,14 @@ const projects = [
   titleAr: "بارك سنترال",
   developer: "Hassan Allam Properties",
   developerId: "hassan-allam",
-  image: "https://example.com/images/park-central-main.jpg",
+  image: "https://developers-eg.com/wp-content/uploads/2024/10/Park-Central-Mostakbal-City.jpg",
   images: [
-    "https://example.com/images/park-central-1.jpg",
-    "https://example.com/images/park-central-2.jpg",
-    "https://example.com/images/park-central-3.jpg"
+    "https://developers-eg.com/wp-content/uploads/2024/10/Park-Central-Mostakbal-City.jpg",
+    "https://diarnaegypt.com/wp-content/uploads/WPL/6789/img_cb417e3c-acb6-40f8-bc20-471ee8480340.jpg",
+    "https://egyprop.com/wp-content/uploads/2025/02/%D9%83%D9%85%D8%A8%D9%88%D9%86%D8%AF-park-central-mostakbal-city.webp",
+    "https://developers-eg.com/wp-content/uploads/2024/09/Park-Central-Mostakbal-City-Compound.jpg",
+    "https://developers-eg.com/wp-content/uploads/2024/09/Details-About-Park-Central-Mostakbal-City-Compound.jpg",
+    "https://newcairo-developments.com/wp-content/uploads/2024/09/Apartments-For-Sale-in-Park-Central-Mostakbal-City.jpg"
   ],
   location: "Mostakbal City",
   locationAr: "مستقبل سيتي",
@@ -480,11 +486,14 @@ const projects = [
   titleAr: "سوان ليك ريزيدنسز",
   developer: "Hassan Allam Properties",
   developerId: "hassan-allam",
-  image: "https://example.com/images/swanlake-residences-main.jpg",
+  image: "https://elmanzoma.com/wp-content/uploads/2025/09/swan-lake-new-cairo.jpg",
   images: [
-    "https://example.com/images/swanlake-residences-1.jpg",
-    "https://example.com/images/swanlake-residences-2.jpg",
-    "https://example.com/images/swanlake-residences-3.jpg"
+    "https://elmanzoma.com/wp-content/uploads/2025/09/swan-lake-new-cairo.jpg",
+    "https://hap-medias.lon1.digitaloceanspaces.com/large_1_ba389e238d.jpg",
+    "https://hap-medias.lon1.digitaloceanspaces.com/large_7_255db5e32a.jpg",
+    "https://hap-medias.lon1.digitaloceanspaces.com/large_9_118810bfb5.jpg",
+    "https://hap-medias.lon1.digitaloceanspaces.com/large_1_Ghazy_to_make_it_lighter_4228d9967e.jpg",
+    "https://hap-medias.lon1.digitaloceanspaces.com/large_8_8390b302d6.jpg"
   ],
   location: "Directly on Cairo - Suez Road, New Cairo",
   locationAr: "مباشرة على طريق القاهرة - السويس - القاهرة الجديدة",
@@ -524,11 +533,11 @@ const projects = [
   titleAr: "هاب تاون",
   developer: "Hassan Allam Properties",
   developerId: "hassan-allam",
-  image: "https://example.com/images/haptown-main.jpg",
+  image: "https://hap-medias.lon1.digitaloceanspaces.com/large_4_ead3771d81.jpg",
   images: [
-    "https://example.com/images/haptown-1.jpg",
-    "https://example.com/images/haptown-2.jpg",
-    "https://example.com/images/haptown-3.jpg"
+    "https://hap-medias.lon1.digitaloceanspaces.com/large_7_1fdb9cb4d0.jpg",
+    "https://realestate.eg/images/project-g/2019/08/207/residential-in-mostakbal-city-haptown-compound-68722e13cbdff.webp",
+    "https://realestate.eg/images/project-g/listings/207/207-1.webp"
   ],
   location: "Mostakbal City",
   locationAr: "مستقبل سيتي",
@@ -570,11 +579,13 @@ const projects = [
   titleAr: "سعادة القاهرة الجديدة",
   developer: "Horizon Egypt Developments",
   developerId: "horizon",
-  image: "https://example.com/images/saada-main.jpg",
+  image: "https://fld.eg/images/1200-90/693ded9a0fcf6.webp",
   images: [
-    "https://example.com/images/saada-1.jpg",
-    "https://example.com/images/saada-2.jpg",
-    "https://example.com/images/saada-3.jpg"
+    "https://fld.eg/images/1200-90/693ded9a0fcf6.webp",
+    "https://mmd-files-dev.s3.amazonaws.com/f33981e3-ab37-48b2-a88b-7465aae5865d.jpg",
+    "https://mmd-files-dev.s3.amazonaws.com/145b50cd-1ce0-4673-904b-156a9a0aa249.jpg",
+    "https://mmd-files-dev.s3.amazonaws.com/755c320c-64cc-4b2d-9820-c8092ce2d2e5.jpg",
+    "https://mmd-files-dev.s3.amazonaws.com/cb9db66f-ff05-473c-a9cc-f2229982c996.jpg"
   ],
   location: "Directly on Suez Road, New Cairo",
   locationAr: "مباشرة على طريق السويس - القاهرة الجديدة",
@@ -614,11 +625,14 @@ const projects = [
   titleAr: "سعادة بوتيك",
   developer: "Horizon Egypt Developments",
   developerId: "horizon",
-  image: "https://example.com/images/saada-boutique-main.jpg",
+  image: "https://fld.eg/images/1200-90/693ded975094c.webp",
   images: [
-    "https://example.com/images/saada-boutique-1.jpg",
-    "https://example.com/images/saada-boutique-2.jpg",
-    "https://example.com/images/saada-boutique-3.jpg"
+    "https://fld.eg/images/1200-90/693ded975094c.webp",
+    "https://mmd-files-dev.s3.amazonaws.com/6634d597-bd10-45d1-bb6d-62901d90ed6b.jpg",
+    "https://mmd-files-dev.s3.amazonaws.com/535b48e9-7528-491e-b9af-b9ff6be51caa.jpg",
+    "https://mmd-files-dev.s3.amazonaws.com/4d46c274-6ace-4431-bf86-9d88efc1cd02.jpg",
+    "https://mmd-files-dev.s3.amazonaws.com/5537caae-9a30-4a2a-a1ab-38152ed2e634.jpg",
+    "https://mmd-files-dev.s3.amazonaws.com/9b4bd2dd-14cf-41d2-b6f3-475fb9f1f2cd.jpeg"
   ],
   location: "6th of October City",
   locationAr: "مدينة السادس من أكتوبر",
@@ -659,11 +673,11 @@ const projects = [
   titleAr: "سعادة الساحل",
   developer: "Horizon Egypt Developments",
   developerId: "horizon",
-  image: "https://example.com/images/saada-sahel-main.jpg",
+  image:     "https://mmd-files-dev.s3.amazonaws.com/f888c0ef-5614-43d8-9382-c426c8ff9ab4.jpg",
   images: [
-    "https://example.com/images/saada-sahel-1.jpg",
-    "https://example.com/images/saada-sahel-2.jpg",
-    "https://example.com/images/saada-sahel-3.jpg"
+    "https://mmd-files-dev.s3.amazonaws.com/f888c0ef-5614-43d8-9382-c426c8ff9ab4.jpg",
+    "https://mmd-files-dev.s3.amazonaws.com/a6b32eb8-76eb-4ec0-93d6-18acec7692d7.jpg",
+    "https://mmd-files-dev.s3.amazonaws.com/f608c275-8984-49e0-a024-dffc2a44c8a4.jpg"
   ],
   location: "Kilo 183, Ras El Hekma",
   locationAr: "الكيلو 183 - رأس الحكمة",
@@ -705,11 +719,13 @@ const projects = [
   titleAr: "سراي",
   developer: "Madinet Masr (MNHD)",
   developerId: "madinet-masr",
-  image: "https://example.com/images/sarai-main.jpg",
+  image: "https://www.propertyfinder.eg/blog/wp-content/uploads/2017/12/sarai.jpg",
   images: [
-    "https://example.com/images/sarai-1.jpg",
-    "https://example.com/images/sarai-2.jpg",
-    "https://example.com/images/sarai-3.jpg"
+    "https://www.propertyfinder.eg/blog/wp-content/uploads/2017/12/sarai.jpg",
+    "https://img-2.aqarmap.com.eg/new-aqarmap-media/large/2504/68108009cb325679970358.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR8S9G3N-PJHsy7_UZBCKwZv7mj-SOsHo6AijLExNWVA&s",
+    "https://red-prod.s3.eu-central-1.amazonaws.com/red/media/unitapp/images/Madinet_Masr_Sarai_V__Apartment_1_Resized.png",
+    "https://assets.live.beyond-creation.net/madinet-masr/media/library/sarai1809202402574013052026151003.webp?w=1920&q=80&ext=webp"
   ],
   location: "Intersection of Suez Road & Hope Axis (El Amal Axis), New Cairo",
   locationAr: "تقاطع طريق السويس مع محور الأمل - القاهرة الجديدة",
@@ -757,11 +773,12 @@ const projects = [
   titleAr: "باترفلاي",
   developer: "Madinet Masr (MNHD)",
   developerId: "madinet-masr",
-  image: "https://example.com/images/butterfly-main.jpg",
+  image: "https://assets.live.beyond-creation.net/madinet-masr/media/library/seo%20the%20butterfly24092024160709.jpg",
   images: [
-    "https://example.com/images/butterfly-1.jpg",
-    "https://example.com/images/butterfly-2.jpg",
-    "https://example.com/images/butterfly-3.jpg"
+    "https://assets.live.beyond-creation.net/madinet-masr/media/library/seo%20the%20butterfly24092024160709.jpg",
+    "https://i.ytimg.com/vi/t1RuhD_Zvrs/maxresdefault.jpg",
+    "https://betterhouseproperty.com/wp-content/uploads/2024/08/%D9%81%D9%8A%D9%84%D8%A7-%D9%81%D9%8A-%D8%B0%D8%A7-%D8%A8%D8%AA%D8%B1%D9%81%D9%84%D8%A7%D9%8A.webp",
+    "https://developers-eg.com/wp-content/uploads/2024/11/The-Butterfly-Mostakbal-City-Prices.jpg"
   ],
   location: "Mostakbal City",
   locationAr: "مستقبل سيتي",
@@ -805,11 +822,14 @@ const projects = [
   titleAr: "بلومفيلدز",
   developer: "Tatweer Misr",
   developerId: "tatweer-misr",
-  image: "https://example.com/images/bloomfields-main.jpg",
+  image: "https://newlevelseg.com/wp-content/uploads/2022/09/WhatsApp-Image-2022-09-26-at-9.52.20-AM.jpeg",
   images: [
-    "https://example.com/images/bloomfields-1.jpg",
-    "https://example.com/images/bloomfields-2.jpg",
-    "https://example.com/images/bloomfields-3.jpg"
+    "https://newlevelseg.com/wp-content/uploads/2022/09/WhatsApp-Image-2022-09-26-at-9.52.20-AM.jpeg",
+    "https://realestate.eg/images/project-g/2019/01/48/residential-in-mostakbal-city-bloomfields-compound-68722db16373d.webp",
+    "https://newcairo-developments.com/wp-content/uploads/2025/12/Compound-Bloomfields-New-Cairo.jpg",
+    "https://baytakinvestment.com/wp-content/uploads/2026/02/3-7.jpg",
+    "https://realestate.eg/images/project-g/2023/09/5053113/residential-in-mostakbal-city-the-lakes-compound-6872355df27f2.webp",
+    "https://diarnaegypt.com/wp-content/uploads/WPL/6838/img_-%D8%A8%D9%84%D9%88%D9%85-%D9%81%D9%8A%D9%84%D8%AF%D8%B2-%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D9%82%D8%A8%D9%84-%D8%B3%D9%8A%D8%AA%D9%8A.webp"
   ],
   location: "Mostakbal City",
   locationAr: "مستقبل سيتي",
@@ -855,11 +875,13 @@ const projects = [
   titleAr: "سالت",
   developer: "Tatweer Misr",
   developerId: "tatweer-misr",
-  image: "https://example.com/images/salt-main.jpg",
+  image: "https://iproperties.com.eg/wp-content/uploads/2026/07/25874b9f-39fe-4ec3-ae73-970ac7ffc20c.jpg",
   images: [
-    "https://example.com/images/salt-1.jpg",
-    "https://example.com/images/salt-2.jpg",
-    "https://example.com/images/salt-3.jpg"
+    "https://iproperties.com.eg/wp-content/uploads/2026/07/25874b9f-39fe-4ec3-ae73-970ac7ffc20c.jpg",
+    "https://img-3.aqarmap.com.eg/new-aqarmap-media/large/2309/6505e2dd73191049836290.jpg",
+    "https://fld.eg/images/1200-90/674f23724be8b.webp",
+    "https://assets.live.beyond-creation.net/tatweer-misr/media/library/SEO%20Image%20salt%20seo15122024094141.png",
+    "https://egyproperty-eg.com/wp-content/uploads/2024/01/Gallery-3.png"
   ],
   location: "Kilo 185, Ras El Hekma",
   locationAr: "الكيلو 185 - رأس الحكمة",
@@ -904,11 +926,15 @@ const projects = [
   titleAr: "سينز",
   developer: "Tatweer Misr",
   developerId: "tatweer-misr",
-  image: "https://example.com/images/scenes-main.jpg",
+  image: "https://alkayanpremium.com/wp-content/uploads/2025/11/scenes-mostakbal-city-Desgin.webp",
   images: [
-    "https://example.com/images/scenes-1.jpg",
-    "https://example.com/images/scenes-2.jpg",
-    "https://example.com/images/scenes-3.jpg"
+    "https://alkayanpremium.com/wp-content/uploads/2025/11/scenes-mostakbal-city-Desgin.webp",
+    "https://prod-images.nawy.com/processed/compound_image/image/10612/high.webp",
+    "https://prod-images.nawy.com/processed/compound_image/image/10611/high.webp",
+    "https://realestate.eg/images/project-g/listings/5060246/5060246-3.webp",
+    "https://16547.tel/wp-content/uploads/2024/12/Scenes-Tatweer-misr.jpeg",
+    "https://developers-eg.com/wp-content/uploads/2024/09/Park-Central-Mostakbal-City-Compound-768x320.jpg",
+    "https://prod-images.nawy.com/processed/compound_image/image/10609/high.webp"
   ],
   location: "Mostakbal City",
   locationAr: "مستقبل سيتي",
@@ -951,11 +977,19 @@ const projects = [
   titleAr: "سولاري",
   developer: "Misr Italia Properties",
   developerId: "misr-italia",
-  image: "https://example.com/images/solare-main.jpg",
+  image: "https://elevation-realestate.com/en/wp-content/uploads/2023/07/Misr-Italia-North-Coast.jpg",
+  
   images: [
-    "https://example.com/images/solare-1.jpg",
-    "https://example.com/images/solare-2.jpg",
-    "https://example.com/images/solare-3.jpg"
+    "https://elevation-realestate.com/en/wp-content/uploads/2023/07/Misr-Italia-North-Coast.jpg",
+    "https://assets.live.beyond-creation.net/misr-italia/media/library/EDSA_NorthCoast03_CGI03_05%20(2)%20(1)3107202513245505082025161147.webp100820251557091708202512044720082025152139.webp",
+    "https://assets.live.beyond-creation.net/misr-italia/media/library/Twinhouse3107202513115512082025122338.webp",
+    "https://assets.live.beyond-creation.net/misr-italia/media/library/water-villa20082025152016.webp",
+    "https://assets.live.beyond-creation.net/misr-italia/media/library/hilltop220082025153635.webp",
+    "https://assets.live.beyond-creation.net/misr-italia/media/library/hilltop20082025152637.webp",
+    "https://assets.live.beyond-creation.net/misr-italia/media/library/hilltop%20(1)21082025171508.webp",
+    "https://assets.live.beyond-creation.net/misr-italia/media/library/250514-Type%20V%20Lagoon%20shot0406202517560905082025173158.webp",
+    "https://assets.live.beyond-creation.net/misr-italia/media/library/Standalone%20Villa31072025132917.jpg",
+    "https://assets.live.beyond-creation.net/misr-italia/media/library/Island%20Villa%20-%20One%20Storey%20Villa3107202513183805082025174112.webp"
   ],
   location: "Kilo 199, Ras El Hekma, North Coast",
   locationAr: "الكيلو 199 - رأس الحكمة - الساحل الشمالي",
@@ -1000,11 +1034,17 @@ const projects = [
   titleAr: "كاي",
   developer: "Misr Italia Properties",
   developerId: "misr-italia",
-  image: "https://example.com/images/kai-main.jpg",
+  image: "https://www.coregypt.com/wp-content/uploads/2018/06/original-12.jpg",
   images: [
-    "https://example.com/images/kai-1.jpg",
-    "https://example.com/images/kai-2.jpg",
-    "https://example.com/images/kai-3.jpg"
+    "https://www.coregypt.com/wp-content/uploads/2018/06/original-12.jpg",
+    "https://assets.live.beyond-creation.net/misr-italia/media/library/20240130%20Kai%20Sokhna(Beauty)-1624042024124607.jpg",
+    "https://assets.live.beyond-creation.net/misr-italia/media/library/20240130%20Kai%20Sokhna(Beauty)-5413052024133506.jpg",
+    "https://assets.live.beyond-creation.net/misr-italia/media/library/20240130%20Kai%20Sokhna(Beauty)-1913052024154524.jpg",
+    "https://assets.live.beyond-creation.net/misr-italia/media/library/20240130%20Kai%20Sokhna(Beauty)-22124042024124616.jpg",
+    "https://assets.live.beyond-creation.net/misr-italia/media/library/20240130%20Kai%20Sokhna(Beauty)-21713052024133505.jpg",
+    "https://assets.live.beyond-creation.net/misr-italia/media/library/20240130%20Kai%20Sokhna(Beauty)-19313052024133505.jpg",
+    "https://assets.live.beyond-creation.net/misr-italia/media/library/20240130%20Kai%20Sokhna(Beauty)-42%20(1)24042024124612.jpg",
+    "https://assets.live.beyond-creation.net/misr-italia/media/library/20240130%20Kai%20Sokhna(Beauty)-4024042024124614.jpg"
   ],
   location: "Kilo 100, Zafarana Road, Ain Sokhna",
   locationAr: "الكيلو 100 - طريق الزعفرانة - العين السخنة",
@@ -1048,11 +1088,14 @@ const projects = [
   titleAr: "فينشي",
   developer: "Misr Italia Properties",
   developerId: "misr-italia",
-  image: "https://example.com/images/vinci-main.jpg",
+  image: "https://invest-gate.me/wp-content/uploads/2022/09/WhatsApp-Image-2022-09-12-at-2.18.55-PM.jpg",
   images: [
-    "https://example.com/images/vinci-1.jpg",
-    "https://example.com/images/vinci-2.jpg",
-    "https://example.com/images/vinci-3.jpg"
+    "https://invest-gate.me/wp-content/uploads/2022/09/WhatsApp-Image-2022-09-12-at-2.18.55-PM.jpg",
+    "https://assets.live.beyond-creation.net/misr-italia/media/library/Vinici20082025160246.webp",
+    "https://realestate.eg/images/project-g/listings/11/11-15.webp",
+    "https://assets.live.beyond-creation.net/misr-italia/media/library/CON520082025163924.webp",
+    "https://realestate.eg/images/project-g/listings/11/11-1.webp",
+    "https://assets.live.beyond-creation.net/misr-italia/media/library/CON920082025163931.webp"
   ],
   location: "R7 District, New Administrative Capital",
   locationAr: "الخي الحي السكني السابع R7 - العاصمة الإدارية الجديدة",
@@ -1098,11 +1141,13 @@ const projects = [
   titleAr: "كريستا",
   developer: "Mountain View (DMG)",
   developerId: "mountain-view",
-  image: "https://example.com/images/crysta-main.jpg",
+  image: "https://newheightseg.com/wp-content/uploads/2025/06/cryata-1-1.jpg",
   images: [
-    "https://example.com/images/crysta-1.jpg",
-    "https://example.com/images/crysta-2.jpg",
-    "https://example.com/images/crysta-3.jpg"
+    "https://newheightseg.com/wp-content/uploads/2025/06/cryata-1-1.jpg",
+    "https://flatandvilla.com/wp-content/uploads/2025/06/%D9%82%D8%B1%D9%8A%D8%A9-%D9%83%D8%B1%D9%8A%D8%B3%D8%AA%D8%A7-%D8%A7%D9%84%D8%B3%D8%A7%D8%AD%D9%84-%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D9%84%D9%8A.webp",
+    "https://northcoast-developments.com/wp-content/uploads/2025/06/%D9%82%D8%B1%D9%8A%D8%A9-%D9%85%D8%A7%D9%88%D9%86%D8%AA%D9%86-%D9%81%D9%8A%D9%88-%D9%83%D8%B1%D9%8A%D8%B3%D8%AA%D8%A7-%D8%A7%D9%84%D8%B3%D8%A7%D8%AD%D9%84-%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D9%84%D9%8A.jpg",
+    "https://northcoast-developments.com/wp-content/uploads/2025/06/%D9%83%D8%B1%D9%8A%D8%B3%D8%AA%D8%A7-%D8%A7%D9%84%D8%B3%D8%A7%D8%AD%D9%84-%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D9%84%D9%8A.jpg",
+    "https://selecthouse.co/wp-content/uploads/2025/06/%D9%83%D8%B1%D9%8A%D8%B3%D8%AA%D8%A7-%D9%85%D8%A7%D9%88%D9%86%D8%AA%D9%86-%D9%81%D9%8A%D9%88-%D8%B3%D9%8A%D8%AF%D9%8A-%D8%B9%D8%A8%D8%AF-%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D9%86-1.webp"
   ],
   location: "Kilo 123, Sidi Abdel Rahman, North Coast",
   locationAr: "الكيلو 123 - سيدي عبد الرحمن - الساحل الشمالي",
@@ -1142,11 +1187,12 @@ const projects = [
   titleAr: "أليفا",
   developer: "Mountain View (DMG)",
   developerId: "mountain-view",
-  image: "https://example.com/images/aliva-main.jpg",
+  image: "https://blog.estatebook.com/wp-content/uploads/2023/12/Aliva-news-scaled.jpg",
   images: [
-    "https://example.com/images/aliva-1.jpg",
-    "https://example.com/images/aliva-2.jpg",
-    "https://example.com/images/aliva-3.jpg"
+    "https://blog.estatebook.com/wp-content/uploads/2023/12/Aliva-news-scaled.jpg",
+    "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/property_image/image/259958/Aliva-River-mountain-view.jpg",
+    "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/property_image/image/259960/Aliva-Mostakbal-city-2.webp",
+    "https://s3.eu-central-1.amazonaws.com/prod.images.cooingestate.com/admin/property_image/image/259957/Aliva-Mountain-View-768x311.webp"
   ],
   location: "Mostakbal City",
   locationAr: "مستقبل سيتي",
@@ -1191,11 +1237,11 @@ const projects = [
   titleAr: "ماونتن فيو آي سيتي القاهرة الجديدة",
   developer: "Mountain View (DMG)",
   developerId: "mountain-view",
-  image: "https://example.com/images/mv-icity-main.jpg",
+  image: "https://developers-eg.com/wp-content/uploads/2024/10/Apartments-For-sale-in-Mountain-View-Hyde-Park-New-Cairo.jpg",
   images: [
-    "https://example.com/images/mv-icity-1.jpg",
-    "https://example.com/images/mv-icity-2.jpg",
-    "https://example.com/images/mv-icity-3.jpg"
+    "https://developers-eg.com/wp-content/uploads/2024/10/Hyde-Park-New-Cairo-by-Mountain-View.jpg",
+    "https://developers-eg.com/wp-content/uploads/2024/10/Mountain-View-Hyde-Park-New-Cairo-Compound.jpg",
+    "https://developers-eg.com/wp-content/uploads/2024/10/Mountain-View-Hyde-Park-New-Cairo.jpg"
   ],
   location: "Directly on Middle Ring Road, Adjacent to Palm Hills New Cairo (PHNC)",
   locationAr: "مباشرة على الطريق الدائري الأوسطي - ملاصق لكمبوند بالم هيلز القاهرة الجديدة",
@@ -1239,11 +1285,13 @@ const projects = [
   titleAr: "كريك فيو",
   developer: "Mountain View (DMG)",
   developerId: "mountain-view",
-  image: "https://example.com/images/creek-view-main.jpg",
+  image: "https://developers-eg.com/wp-content/uploads/2026/05/Creek-View-5th-Settlement.jpg",
   images: [
-    "https://example.com/images/creek-view-1.jpg",
-    "https://example.com/images/creek-view-2.jpg",
-    "https://example.com/images/creek-view-3.jpg"
+    "https://developers-eg.com/wp-content/uploads/2026/05/Creek-View-5th-Settlement.jpg",
+    "https://developers-eg.com/wp-content/uploads/2026/05/Apartments-For-Sale-in-Creek-View.jpg",
+    "https://developers-eg.com/wp-content/uploads/2026/05/Apartments-For-Sale-in-Creekview-Fifth-Settlement-Compound.jpg",
+    "https://developers-eg.com/wp-content/uploads/2026/05/Creekview-New-Cairo-Compound.jpg",
+    "https://developers-eg.com/wp-content/uploads/2026/05/Mountain-View-Creek-View-New-Cairo-Compound.jpg"
   ],
   location: "5th Settlement, New Cairo (Adjacent to Hyde Park)",
   locationAr: "التجمع الخامس - القاهرة الجديدة (بجوار هايد بارك)",
@@ -1285,11 +1333,11 @@ const projects = [
   titleAr: "جايا",
   developer: "Al Ahly Sabbour Developments",
   developerId: "al-ahly-sabbour",
-  image: "https://example.com/images/gaia-main.jpg",
+  image: "https://fld.eg/images/1200-90/67506157ea6f1.webp",
   images: [
-    "https://example.com/images/gaia-1.jpg",
-    "https://example.com/images/gaia-2.jpg",
-    "https://example.com/images/gaia-3.jpg"
+    "https://realestate.eg/images/project-g/listings/228/228-11.webp",
+    "https://bluerock-eg.com/images/project/179/gaia-1693316552_10.webp",
+    "https://selecthouse.co/wp-content/uploads/2023/02/Gaia-Sabbour.webp"
   ],
   location: "Kilo 193, Ras El Hekma, North Coast",
   locationAr: "الكيلو 193 - رأس الحكمة - الساحل الشمالي",
@@ -1330,11 +1378,11 @@ const projects = [
   titleAr: "أت إيست",
   developer: "Al Ahly Sabbour Developments",
   developerId: "al-ahly-sabbour",
-  image: "https://example.com/images/at-east-main.jpg",
+  image: "https://realestate.eg/images/project-g/listings/5054970/5054970-3.webp",
   images: [
-    "https://example.com/images/at-east-1.jpg",
-    "https://example.com/images/at-east-2.jpg",
-    "https://example.com/images/at-east-3.jpg"
+    "https://realestate.eg/images/project-g/listings/5054970/5054970-3.webp",
+    "https://realestate.eg/images/project-g/listings/5054970/5054970-5.webp",
+    "https://realestate.eg/images/project-g/listings/5054970/5054970-1.webp",
   ],
   location: "New Cairo",
   locationAr: "القاهرة الجديدة",
@@ -1376,11 +1424,11 @@ const projects = [
   titleAr: "ذا مورنينج",
   developer: "Al Ahly Sabbour Developments",
   developerId: "al-ahly-sabbour",
-  image: "https://example.com/images/the-morning-main.jpg",
+  image: "https://gprproperty.com/wp-content/uploads/2025/04/Compound-the-Mornings-.webp",
   images: [
-    "https://example.com/images/the-morning-1.jpg",
-    "https://example.com/images/the-morning-2.jpg",
-    "https://example.com/images/the-morning-3.jpg"
+    "https://gprproperty.com/wp-content/uploads/2025/04/Compound-the-Mornings-.webp",
+    "https://realestate.eg/images/project-g/listings/5061439/5061439-6.webp"
+   
   ],
   location: "Al Yasmine Neighborhood, New Cairo",
   locationAr: "حي الياسمين - القاهرة الجديدة",
@@ -1421,11 +1469,12 @@ const projects = [
   titleAr: "جون",
   developer: "SODIC",
   developerId: "sodic",
-  image: "https://example.com/images/june-main.jpg",
+  image: "https://diarnaegypt.com/wp-content/uploads/WPL/3844/img_0a57591d-4f06-49a7-bf84-dcd2048fac49.jpg",
   images: [
-    "https://example.com/images/june-1.jpg",
-    "https://example.com/images/june-2.jpg",
-    "https://example.com/images/june-3.jpg"
+    "https://diarnaegypt.com/wp-content/uploads/WPL/3844/img_0a57591d-4f06-49a7-bf84-dcd2048fac49.jpg",
+    "https://cms.sodic.com/uploads/June_Masterplan_5ea87ca818.jpg",
+    "https://cms.sodic.com/uploads/MF_Roof_Art_Deco_Amends_5_no_see_m2_dc4773cbf7.jpg",
+    "https://cms.sodic.com/uploads/Twin_villa_with_roof_spread_31_35750df12f.jpg"
   ],
   location: "Kilo 193, Ras El Hekma, North Coast",
   locationAr: "الكيلو 193 - رأس الحكمة - الساحل الشمالي",
@@ -1466,11 +1515,14 @@ const projects = [
   titleAr: "ذا إستيتس",
   developer: "SODIC",
   developerId: "sodic",
-  image: "https://example.com/images/the-estates-main.jpg",
+  image: "https://sodicdevelopment-eg.com/images/the%20estates/banner.jpg",
   images: [
-    "https://example.com/images/the-estates-1.jpg",
-    "https://example.com/images/the-estates-2.jpg",
-    "https://example.com/images/the-estates-3.jpg"
+    "https://sodicdevelopment-eg.com/images/the%20estates/banner.jpg",
+    "https://cms.sodic.com/uploads/image_15_066d508bce.webp",
+    "https://cms.sodic.com/uploads/image_11_f002387646.webp",
+    "https://cms.sodic.com/uploads/image_21_c548c68275.webp",
+    "https://cms.sodic.com/uploads/image_37_53c4e40625.webp",
+    "https://cms.sodic.com/uploads/image_4_9fc905bdd2.webp"
   ],
   location: "New Zayed",
   locationAr: "زايد الجديدة",
@@ -1512,11 +1564,13 @@ const projects = [
   titleAr: "أزها الساحل الشمالي",
   developer: "Madaar Developments",
   developerId: "madaar-developments",
-  image: "https://example.com/images/azha-sahel-main.jpg",
+  image: "https://pioneerproperty.net/en/wp-content/uploads/2024/06/Azha-North-coast-Madaar-Developments.jpg",
   images: [
-    "https://example.com/images/azha-sahel-1.jpg",
-    "https://example.com/images/azha-sahel-2.jpg",
-    "https://example.com/images/azha-sahel-3.jpg"
+    "https://blogs.realestate.gov.eg/wp-content/uploads/2024/08/azha-north-coast-resort22.jpg",
+    "https://pioneerproperty.net/en/wp-content/uploads/2024/06/chalets-For-sale-in-azha-North-coast-Village.jpg",
+    "https://pioneerproperty.net/en/wp-content/uploads/2024/06/Payment-Plan-of-azha-North-Coast.jpg",
+    "https://pioneerproperty.net/en/wp-content/uploads/2024/06/Azha-north-coast-Village.jpg",
+    "https://pioneerproperty.net/en/wp-content/uploads/2024/06/Azha-North-Coast-Prices.jpg"
   ],
   location: "Kilo 214, Ras El Hekma, North Coast",
   locationAr: "الكيلو 214 - رأس الحكمة - الساحل الشمالي",
@@ -1563,11 +1617,13 @@ const projects = [
   titleAr: "أزها العين السخنة",
   developer: "Madaar Developments",
   developerId: "madaar-developments",
-  image: "https://example.com/images/azha-sokhna-main.jpg",
+  image: "https://developers-eg.com/wp-content/uploads/2021/04/%D8%A7%D8%B2%D9%87%D9%80%D8%A7-%D8%A7%D9%84%D8%B9%D9%80%D9%8A%D9%86-%D8%A7%D9%84%D9%80%D8%B3%D8%AE%D9%86%D8%A9.jpg",
   images: [
-    "https://example.com/images/azha-sokhna-1.jpg",
-    "https://example.com/images/azha-sokhna-2.jpg",
-    "https://example.com/images/azha-sokhna-3.jpg"
+    "https://developers-eg.com/wp-content/uploads/2021/04/%D8%A7%D8%B2%D9%87%D9%80%D8%A7-%D8%A7%D9%84%D8%B9%D9%80%D9%8A%D9%86-%D8%A7%D9%84%D9%80%D8%B3%D8%AE%D9%86%D8%A9.jpg",
+    "https://developers-eg.com/wp-content/uploads/2021/04/azha-%D8%A7%D9%84%D8%B9%D9%8A%D9%86-%D8%A7%D9%84%D8%B3%D8%AE%D9%86%D8%A9.jpg",
+    "https://developers-eg.com/wp-content/uploads/2021/04/%D9%82%D8%B1%D9%8A%D8%A9-%D8%A7%D8%B2%D9%87%D8%A7-%D8%A7%D9%84%D8%B9%D9%8A%D9%86-%D8%A7%D9%84%D8%B3%D8%AE%D9%86%D8%A9.jpg",
+    "https://developers-eg.com/wp-content/uploads/2021/04/%D8%A7%D8%B2%D9%87%D9%80%D8%A7-%D8%A7%D9%84%D8%B9%D9%80%D9%8A%D9%86-%D8%A7%D9%84%D9%80%D8%B3%D8%AE%D9%86%D8%A9.jpg",
+    "https://developers-eg.com/wp-content/uploads/2021/04/%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D8%A7%D8%B2%D9%87%D8%A7-%D8%A7%D9%84%D8%B9%D9%8A%D9%86-%D8%A7%D9%84%D8%B3%D8%AE%D9%86%D8%A9.jpg"
   ],
   location: "Kilo 126, Ain Sokhna (11 km from Sokhna Toll Gates)",
   locationAr: "الكيلو 126 - العين السخنة (على بعد 11 كم من البوابات)",
@@ -1608,11 +1664,12 @@ const projects = [
   titleAr: "هاسيندا رأس الحكمة",
   developer: "Palm Hills Developments",
   developerId: "palm-hills",
-  image: "https://example.com/images/hacienda-ras-el-hekma-main.jpg",
+  image: "https://static.wixstatic.com/media/bcb58b_33e873fad12845d8b92f99eaf87cafb4~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Haceinda%20ras%20el%20hekma09.png",
   images: [
-    "https://example.com/images/hacienda-ras-el-hekma-1.jpg",
-    "https://example.com/images/hacienda-ras-el-hekma-2.jpg",
-    "https://example.com/images/hacienda-ras-el-hekma-3.jpg"
+    "https://static.wixstatic.com/media/bcb58b_33e873fad12845d8b92f99eaf87cafb4~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Haceinda%20ras%20el%20hekma09.png",
+    "https://static.wixstatic.com/media/bcb58b_3499d804b00d47b294437c8a00788284~mv2.jpg/v1/crop/x_0,y_1079,w_4500,h_3339/fill/w_1604,h_1188,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Hacienda%20ras%20El%20Hdekma%2022_5_26-10.jpg",
+    "https://static.wixstatic.com/media/bcb58b_92b2c667849b4676a1d086234217aa38~mv2.png/v1/fill/w_864,h_1536,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Hacienda%20ras%20El%20hekma.png",
+    "https://static.wixstatic.com/media/bcb58b_5b00000db7cb4253bd2ca6f75be9edb2~mv2.jpg/v1/crop/x_0,y_2534,w_4500,h_5466/fill/w_1960,h_2384,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Hacienda%20ras%20El%20Hekma%2022d_5_26-2.jpg"
   ],
   location: "Kilo 240, Ras El Hekma, North Coast",
   locationAr: "الكيلو 240 - رأس الحكمة - الساحل الشمالي",
@@ -1658,11 +1715,11 @@ const projects = [
   titleAr: "ذا كراون",
   developer: "Palm Hills Developments",
   developerId: "palm-hills",
-  image: "https://example.com/images/the-crown-main.jpg",
+  image: "https://realestate.eg/images/project-g/listings/22/22-1.webp",
   images: [
-    "https://example.com/images/the-crown-1.jpg",
-    "https://example.com/images/the-crown-2.jpg",
-    "https://example.com/images/the-crown-3.jpg"
+    "https://www.palmhills.properties/wp-content/uploads/2023/12/%D9%83%D9%85%D8%A8%D9%88%D9%86%D8%AF-%D8%B0%D8%A7-%D9%83%D8%B1%D8%A7%D9%88%D9%86-%D8%A7%D9%83%D8%AA%D9%88%D8%A8%D8%B1-6-1170x785.jpg",
+    "https://www.palmhills.properties/wp-content/uploads/2023/12/%D9%83%D9%85%D8%A8%D9%88%D9%86%D8%AF-%D8%B0%D8%A7-%D9%83%D8%B1%D8%A7%D9%88%D9%86-%D8%A7%D9%83%D8%AA%D9%88%D8%A8%D8%B1-8-1170x785.jpg",
+    "https://www.palmhills.properties/wp-content/uploads/2023/12/%D9%83%D9%85%D8%A8%D9%88%D9%86%D8%AF-%D8%B0%D8%A7-%D9%83%D8%B1%D8%A7%D9%88%D9%86-%D8%A7%D9%83%D8%AA%D9%88%D8%A8%D8%B1-2-1.jpg"
   ],
   location: "Palm Hills Plateau, 6th of October City",
   locationAr: "هضبة بالم هيلز - مدينة 6 أكتوبر",
