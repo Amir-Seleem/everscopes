@@ -24,6 +24,7 @@
         
 // ===== DATA =====
 const developers = [
+
   { 
     id: "arabia-holding", 
     name: "Arabia Holding", 
@@ -144,6 +145,164 @@ const developers = [
 ];
 
 const projects = [
+
+  {
+  id: "p41",
+  title: "KOR New Capital",
+  titleAr: "كابيتال أبراج KOR",
+  developer: "Arabia Holding",
+  developerId: "arabia-holding",
+  image: "https://aqrmasr.com/wp-content/uploads/2025/11/%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D8%A7%D8%B1%D8%A7%D8%A8%D9%8A%D8%A7-%D9%87%D9%88%D9%84%D8%AF%D9%8A%D9%86%D8%AC-%D8%A7%D9%84%D8%B9%D8%A7%D8%B5%D9%85%D8%A9-%D9%83%D9%88%D8%B1.jpeg",
+  images: [
+    "https://aqrmasr.com/wp-content/uploads/2025/11/%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D8%A7%D8%B1%D8%A7%D8%A8%D9%8A%D8%A7-%D9%87%D9%88%D9%84%D8%AF%D9%8A%D9%86%D8%AC-%D8%A7%D9%84%D8%B9%D8%A7%D8%B5%D9%85%D8%A9-%D9%83%D9%88%D8%B1.jpeg",
+    "https://www.newcapital-projects.com/wp-content/uploads/2025/11/%D9%85%D9%88%D9%84-%D9%83%D9%88%D8%B1-%D8%A7%D9%84%D8%B9%D8%A7%D8%B5%D9%85%D8%A9-%D8%A7%D9%84%D8%A7%D8%AF%D8%A7%D8%B1%D9%8A%D8%A9.jpg",
+    "https://www.newcapital-projects.com/wp-content/uploads/2025/11/%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%83%D9%88%D8%B1-%D8%A7%D9%84%D8%B9%D8%A7%D8%B5%D9%85%D8%A9-%D8%A7%D9%84%D8%A7%D8%AF%D8%A7%D8%B1%D9%8A%D8%A9.jpg",
+    "https://www.newcapital-projects.com/wp-content/uploads/2025/11/%D9%85%D8%A7%D8%B3%D8%AA%D8%B1-%D8%A8%D9%84%D8%A7%D9%86-%D9%85%D9%88%D9%84-%D9%83%D9%88%D8%B1-%D8%A7%D9%84%D8%B9%D8%A7%D8%B5%D9%85%D8%A9-%D8%A7%D9%84%D8%A7%D8%AF%D8%A7%D8%B1%D9%8A%D8%A9.jpg",
+    "https://www.newcapital-projects.com/wp-content/uploads/2025/11/%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%83%D9%88%D8%B1-%D8%A7%D9%84%D8%B9%D8%A7%D8%B5%D9%85%D8%A9-%D8%A7%D9%84%D8%A7%D8%AF%D8%A7%D8%B1%D9%8A%D8%A9-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9.jpg",
+    "https://www.newcapital-projects.com/wp-content/uploads/2025/11/%D9%83%D9%88%D8%B1-%D8%A7%D9%84%D8%B9%D8%A7%D8%B5%D9%85%D8%A9-%D8%A7%D9%84%D8%A7%D8%AF%D8%A7%D8%B1%D9%8A%D8%A9-1.jpg",
+    "https://www.newcapital-projects.com/wp-content/uploads/2025/11/%D9%83%D9%88%D8%B1-%D8%A7%D9%84%D8%B9%D8%A7%D8%B5%D9%85%D8%A9-%D8%A7%D9%84%D8%A7%D8%AF%D8%A7%D8%B1%D9%8A%D8%A9-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9.jpg"
+  
+  ],
+  location: "Financial & Business District, New Administrative Capital",
+  locationAr: "حي المال والأعمال - العاصمة الإدارية الجديدة",
+  type: "Commercial, Administrative & Hotel Towers Complex (G+20)",
+  priceFrom: "6,000,000 EGP",
+  area: "40 sqm+",
+  unitTypes: [
+    "Commercial Shops",
+    "Administrative Offices",
+    "Medical Clinics",
+    "Hotel Units & Serviced Apartments"
+  ],
+  description: "KOR New Capital (Kingdom of Rares) by Arabia Holding is a landmark high-density development situated in the Financial & Business District of the New Administrative Capital. Comprising 7 iconic towers rising Ground + 20 Floors, the complex features specialized towers including LYRA for administrative offices and VEGA for luxury serviced apartments. Positioned just 3 minutes from the Iconic Tower and Bin Zayed Axis, it combines eco-friendly, smart building design with exceptional ROI potential and flexible payment plans up to 11 years.",
+  descriptionAr: "مشروع مملكة النوادرة (أبراج KOR) من شركة عربية القابضة هو مشروع استثماري متكامل بارز يقع في حي المال والأعمال بالعاصمة الإدارية الجديدة. يتكون المشروع من 7 أبراج بارتفاع أرضي + 20 دوراً، مقسمة إلى أبراج متخصصة مثل أبراج LYRA للمكاتب الإدارية وأبراج VEGA للشقق الفندقية الفاخرة. يقع المشروع على بعد 3 دقائق فقط من البرج الأيقوني ومحور بن زايد، ويتميز بأنظمة بناء ذكية وصديقة للبيئة مع عائد استثماري قوي وخطط سداد تصل إلى 11 سنة.",
+  features: [
+    "Prime strategic hub in the Financial & Business District near the Iconic Tower and Regional Ring Road",
+    "High-density development permit with 7 towers rising Ground + 20 Floors",
+    "Dedicated specialized towers: LYRA (Administrative Offices) and VEGA (Hotel Apartments)",
+    "Developed by industry leader Arabia Holding (Eng. Tarek Shoukry)",
+    "Smart, eco-friendly building technology with thermal insulation",
+    "Extremely flexible plans: starting from 1% down payment and up to 11 years equal installments"
+  ],
+  amenities: [
+    "Smart Multi-Level Underground Parking Garage",
+    "Panoramic High-Speed Elevators & Escalators",
+    "Shared Business Lounges & Executive Conference Halls",
+    "Hotel Management, Housekeeping & Concierge Services",
+    "Central Air Conditioning & High-Speed Fiber-Optic Connectivity",
+    "Food Court, Retail Plaza & Outdoor Dining Areas",
+    "Fitness Center, Gym & Wellness Spa",
+    "24/7 Smart Security, Access Gates & CCTV Surveillance",
+    "Backup Power Generators & Automated Firefighting Systems"
+  ],
+  deliveryDate: "2028 - 2029",
+  downPayment: "1% to 10%",
+  installmentYears: "8 to 11 Years",
+  status: "selling-fast"
+},
+
+
+  {
+  id: "p38",
+  title: "Sun Capital",
+  titleAr: "صن كابيتال",
+  developer: "Arabia Holding",
+  developerId: "arabia-holding",
+  image: "https://sun-capital.6october.net/wp-content/uploads/2018/02/Sun-Capital-October-Arabia-Holding-1024x578.jpg",
+  images: [
+    "https://sun-capital.6october.net/wp-content/uploads/2018/02/Sun-Capital-October-Arabia-Holding-1024x578.jpg",
+    "https://arabia-holding.com/storage/project/gallery/01JWDR5EQDAJ8HQJ6BMZJN2J7A.jpg",
+    "https://suncapitalcity.com/wp-content/uploads/2023/05/EG309134-Medium.jpg",
+    "https://suncapitalcity.com/wp-content/uploads/2023/02/suncapital-2-300x300.jpeg",
+    "https://suncapitalcity.com/wp-content/uploads/2023/02/suncapital-3.jpeg",
+    "https://suncapitalcity.com/wp-content/uploads/2023/05/EG309095-Medium.jpg"
+  ],
+  location: "6th of October City",
+  locationAr: "مدينة 6 أكتوبر",
+  type: "Integrated Mixed-Use City",
+  priceFrom: "8,200,000 EGP",
+  area: "117 sqm+",
+  unitTypes: [
+    "2 Bedroom Apartments",
+    "3 Bedroom Apartments",
+    "Townhouses",
+    "Standalone Villas"
+  ],
+  description: "Sun Capital by Arabia Holding is a landmark mega-city development situated in 6th of October City. Positioned near key architectural landmarks, the project provides immediate, ready-to-move housing options starting from 117 sqm. Designed as a self-sustaining urban ecosystem, Sun Capital integrates international hotels, educational institutions, and a extensive commercial zone alongside an 8-year payment plan with only a 10% down payment.",
+  descriptionAr: "مشروع صن كابيتال من شركة عربية القابضة هو مدينة متكاملة ومعلم بارز يقع في قلب مدينة 6 أكتوبر. يقدم المشروع وحدات جاهزة للاستلام الفوري تبدأ مساحاتها من 117 متراً مربعاً. صُممت المدينة لتكون بيئة معيشية متكاملة الذات تضم فنادق عالمية، مدارس، ومناطق تجارية ضخمة، مع تقديم خطة سداد ميسرة تصل إلى 8 سنوات ومقدم 10% فقط.",
+  features: [
+    "Strategic location in 6th of October City",
+    "Developed by top-tier developer Arabia Holding",
+    "Immediate Ready-To-Move (RTM) units available",
+    "Integrated hospitality sector featuring international hotels",
+    "Competitive entry price starting from 8.2M EGP",
+    "Flexible financing over 8 years with a low 10% down payment"
+  ],
+  amenities: [
+    "Mega Commercial Zone & Shopping Malls",
+    "International Schools & Educational Hubs",
+    "Luxury Hotels",
+    "Community Clubhouse",
+    "Swimming Pools",
+    "24/7 Gated Security & Facility Management"
+  ],
+  deliveryDate: "Ready to Move",
+  downPayment: "10%",
+  installmentYears: "8 Years",
+  status: "ready-to-move"
+},
+
+
+{
+  id: "p39",
+  title: "Galleria Moon Valley",
+  titleAr: "جاليريا مون فالي",
+  developer: "Arabia Holding",
+  developerId: "arabia-holding",
+  image: "https://arabia-holding.com/storage/projects/banners/01JWE44SNKYB39T62770452AQX.webp",
+  images: [
+    "https://arabia-holding.com/storage/projects/banners/01JWE44SNKYB39T62770452AQX.webp",
+    "https://arabia-holding.com/storage/project/gallery/01JYK8WS3S24KRW627T0R3H8KV.jpg",
+    "https://arabia-holding.com/storage/project/gallery/01JYK8WS41T0W7VT1XF3M35FEV.jpg",
+    "https://arabia-holding.com/storage/project/gallery/01JYK8WS40XYQK5HAC12AV1JH1.jpg",
+    "https://prod-images.nawy.com/processed/inventory/compounds/209/gallery/Screenshot%202025-12-10%20000215/high.webp",
+    "https://new-projects-media.propertyfinder.com/project/97950bf8-2029-429d-a36f-60c870b8db45/gallery/image/aRUH85W28EZmQn-kIGEfTBG7aI_OeUkYTb9TEYYlt9I=/original.webp",
+    "https://arabia-holding.com/storage/project/gallery/01JYK8WS3ZCQ8PWED3FED071KG.jpg"
+  ],
+  location: "Golden Square, Fifth Settlement, New Cairo",
+  locationAr: "المربع الذهبي - التجمع الخامس - القاهرة الجديدة",
+  type: "Low-Density Residential Compound (G+3)",
+  priceFrom: "13,700,000 EGP",
+  area: "130 sqm+",
+  unitTypes: [
+    "2 Bedroom Apartments",
+    "3 Bedroom Apartments",
+    "Penthouses"
+  ],
+  description: "Galleria Moon Valley by Arabia Holding is an art-inspired residential retreat located in New Cairo's prestigious Golden Square. Featuring low-rise Ground + 3 (G+3) architecture, the project provides immediate Ready-To-Move housing options starting from 130 sqm. The community offers underground parking, dedicated medical services, and flexible payment plans ranging from 6 to 8 years with a 10% down payment.",
+  descriptionAr: "مشروع جاليريا مون فالي من شركة عربية القابضة هو مجتمع سكني يقع في قلب المربع الذهبي بالتجمع الخامس بالقاهرة الجديدة. يتميز المشروع بتصميمه المعماري منخفض الارتفاع (أرضي + 3 أدوار) ويوفر وحدات سكنية جاهزة للاستلام الفوري تبدأ مساحاتها من 130 متراً مربعاً. يضم الكمبوند جراجات سفليّة، مركزاً طبياً، وخطط سداد ميسرة من 6 إلى 8 سنوات مع مقدم 10% فقط.",
+  features: [
+    "Prime location in the heart of New Cairo's Golden Square",
+    "Low-density G+3 building structure ensuring privacy and comfort",
+    "Immediate Ready-To-Move (RTM) units",
+    "Developed by leading developer Arabia Holding",
+    "Flexible financing options over 6 to 8 years with a low 10% down payment"
+  ],
+  amenities: [
+    "Underground Parking Garage",
+    "4 Swimming Pools",
+    "Medical Center & Integrated Clinics",
+    "Commercial Strip & Retail Area",
+    "Mosque",
+    "24/7 Gated Security & Surveillance System"
+  ],
+  deliveryDate: "Ready to Move",
+  downPayment: "10%",
+  installmentYears: "6 to 8 Years",
+  status: "ready-to-move"
+},
+
+
   {
   id: "p1",
   title: "El Patio Vida",
@@ -187,6 +346,54 @@ const projects = [
 },
 
 
+{
+  id: "p40",
+  title: "Bungalows",
+  titleAr: "بانجالوز",
+  developer: "Arabia Holding",
+  developerId: "arabia-holding",
+  image: "https://suncapitalcity.com/wp-content/uploads/2018/11/Bungalows-1.jpg",
+  images: [
+    "https://suncapitalcity.com/wp-content/uploads/2018/11/Bungalows-1.jpg",
+    "https://arabia-holding.com/storage/project/gallery/01K04J76W4023236E299JTHT17.jpg",
+    "https://arabia-holding.com/storage/project/gallery/01K04J76W9FN64B8DERB4MYYJ3.jpg",
+    "https://arabia-holding.com/storage/project/gallery/01K04J76W7WF7MDWF4PZ34WJRG.jpg",
+    "https://arabia-holding.com/storage/project/gallery/01K04J76WA7C2AM397P1RK9822.jpg",
+    "https://arabia-holding.com/storage/project/gallery/01K04J76WKZG01HH4MJZMB7JS4.jpg",
+    "https://arabia-holding.com/storage/project/gallery/01K04J76WG0ECJ33MDPZRMDWQX.jpg"
+    
+  ],
+  location: "Kilo 73, North Coast",
+  locationAr: "الكيلو 73 - الساحل الشمالي",
+  type: "Coastal Resort",
+  priceFrom: "3,500,000 EGP",
+  area: "29 sqm+",
+  unitTypes: [
+    "Studios",
+    "1 Bedroom Chalets",
+    "2 Bedroom Chalets"
+  ],
+  description: "Bungalows by Arabia Holding is an intimate seaside retreat located at Kilo 73 on the North Coast. Renowned for its natural white sandy beach and highly accessible entry price points, the resort provides compact, efficient coastal units starting from 29 sqm. Residents enjoy an integrated beachfront lifestyle with a clubhouse, commercial outlets, and a flexible 8-year payment option.",
+  descriptionAr: "مشروع بانجالوز من شركة عربية القابضة هو منتجع ساحلي مميز يقع عند الكيلو 73 بالساحل الشمالي. يتميز بشاطئه الرملي الأبيض الناعم وسعر افتتاحي تنافسي للغاية، ويقدم وحدات ساحلية مدمجة تبدأ مساحاتها من 29 متراً مربعاً. يستمتع السكان بأسلوب حياة ساحلي متكامل يضم كلوب هاوس، منطقة تجارية، وخطط سداد ميسرة تصل إلى 8 سنوات.",
+  features: [
+    "Prime accessible location at Kilo 73, North Coast",
+    "Natural white sandy beach front",
+    "Highly attractive starting entry ticket price from 3.5M EGP",
+    "Developed by top-tier developer Arabia Holding",
+    "Low down payment of 10% with long-term financing over 8 years"
+  ],
+  amenities: [
+    "Pristine Sandy Beach",
+    "Beachfront Clubhouse",
+    "Commercial & Retail Strip",
+    "Mosque",
+    "24/7 Resort Security & Maintenance"
+  ],
+  deliveryDate: "3 Years",
+  downPayment: "10%",
+  installmentYears: "8 Years",
+  status: "selling-fast"
+},
   {
   id: "p3",
   title: "La Vista City",
@@ -579,9 +786,9 @@ const projects = [
   titleAr: "سعادة القاهرة الجديدة",
   developer: "Horizon Egypt Developments",
   developerId: "horizon",
-  image: "https://fld.eg/images/1200-90/693ded9a0fcf6.webp",
+  image: "https://diarnaegypt.com/wp-content/uploads/WPL/6070/img_saada.jpg",
   images: [
-    "https://fld.eg/images/1200-90/693ded9a0fcf6.webp",
+    "https://diarnaegypt.com/wp-content/uploads/WPL/6070/img_saada.jpg",
     "https://mmd-files-dev.s3.amazonaws.com/f33981e3-ab37-48b2-a88b-7465aae5865d.jpg",
     "https://mmd-files-dev.s3.amazonaws.com/145b50cd-1ce0-4673-904b-156a9a0aa249.jpg",
     "https://mmd-files-dev.s3.amazonaws.com/755c320c-64cc-4b2d-9820-c8092ce2d2e5.jpg",
@@ -1753,6 +1960,152 @@ const projects = [
 },
 
 
+{
+  id: "p35",
+  title: "District 5",
+  titleAr: "ديستريكت 5",
+  developer: "Marakez",
+  developerId: "marakez",
+  image: "https://iproperties.com.eg/wp-content/uploads/2020/03/Cover-1200x700-25.jpg",
+  images: [
+    "https://iproperties.com.eg/wp-content/uploads/2020/03/Cover-1200x700-25.jpg",
+    "https://prod-images.nawy.com/processed/compound_image/image/5208/high.webp",
+    "https://prod-images.nawy.com/processed/compound_image/image/5205/high.webp",
+    "https://prod-images.nawy.com/processed/compound_image/image/5207/high.webp"
+  ],
+  location: "New Cairo (Cairo - Sokhna Road)",
+  locationAr: "القاهرة الجديدة - طريق السخنة",
+  type: "Mixed-Use Integrated Complex",
+  priceFrom: "12,000,000 EGP",
+  area: "52 sqm+",
+  unitTypes: [
+    "1 Bedroom Apartments",
+    "2 Bedroom Apartments",
+    "3 Bedroom Apartments"
+  ],
+  description: "District 5 by Marakez is a flagship mixed-use development strategically located along the Cairo-Sokhna Road in New Cairo. Renowned for its urban convenience and high-profile developer backing, the project offers fully finished units starting from 52 sqm with early delivery schedules ranging from Ready-To-Move to 2 years. Residents enjoy seamless access to the iconic D5 Mall and Mindhaus administrative offices.",
+  descriptionAr: "مشروع ديستريكت 5 من شركة مراكز هو مجتمع متكامل متعدد الاستخدامات يقع بموقع استراتيجي على طريق القاهرة - السخنة بالقاهرة الجديدة. يتميز المشروع بسمعة المطور القوية وتسليمات سريعة تتنوع بين الاستلام الفوري وتخلال سنتين مع وحدات كاملة التشطيب تبدأ من 52 متراً مربعاً. يوفر المشروع للسكان سهولة الوصول إلى مول ديستريكت 5 الشهير ومكاتب مايند هاوس الإدارية.",
+  features: [
+    "Strategic position at the intersection of New Cairo and Sokhna Road",
+    "Developed by top tier developer Marakez",
+    "Fast delivery options: Ready-To-Move (RTM) up to 2 years",
+    "Units delivered Fully Finished",
+    "Integrated live-work-play environment featuring Mindhaus business hub",
+    "Flexible financing over 7 to 8 years with a low 5% down payment"
+  ],
+  amenities: [
+    "D5 Mega Mall & Retail Park",
+    "Mindhaus Administrative & Office Hub",
+    "Community Clubhouse",
+    "Swimming Pools",
+    "Sports Courts & Fitness Areas",
+    "24/7 Gated Security & Facility Management"
+  ],
+  deliveryDate: "RTM / 2 Years",
+  downPayment: "5%",
+  installmentYears: "7 to 8 Years",
+  status: "selling-fast"
+},
+
+
+{
+  id: "p36",
+  title: "Crescent Walk",
+  titleAr: "كريسنت ووك",
+  developer: "Marakez",
+  developerId: "marakez",
+  image: "https://alalamelyoum.co/wp-content/uploads/2024/10/IMG-20241015-WA0089-1536x864.jpg",
+  images: [
+    "https://alalamelyoum.co/wp-content/uploads/2024/10/IMG-20241015-WA0089-1536x864.jpg",
+    "https://backend.marakez.net/media/project/masterplans/1adcfc35-488e-4527-aa0a-fca3519b9ea2.webp",
+    "https://prod-images.nawy.com/processed/inventory/compounds/1333/gallery/Screenshot%202026-05-12%20222050/high.webp",
+    "https://prod-images.nawy.com/processed/compound_image/image/9842/high.webp"
+  ],
+  location: "6th Settlement (Tagamoa 6), New Cairo",
+  locationAr: "التجمع السادس - القاهرة الجديدة",
+  type: "Mixed Residential Compound",
+  priceFrom: "8,500,000 EGP",
+  area: "74 sqm+",
+  unitTypes: [
+    "1 Bedroom Apartments",
+    "2 Bedroom Apartments",
+    "3 Bedroom Apartments",
+    "Townhouses",
+    "Twin Houses",
+    "Standalone Villas"
+  ],
+  description: "Crescent Walk by Marakez is a landmark development situated in the emerging 6th Settlement (Tagamoa 6) of New Cairo. Featuring a world-class master plan designed by WATG, the compound offers a versatile selection of homes starting from 74 sqm at an attractive entry ticket price. All apartment units are handed over fully finished, supported by extensive walking trails, sports zones, and green landscapes with an 8-year payment plan.",
+  descriptionAr: "مشروع كريسنت ووك من شركة مراكز هو مجتمع سكني بارز يقع في قلب التجمع السادس بالقاهرة الجديدة. يتميز المشروع بـ ماستر بلان عالمي من تصميم مكتب WATG الشهير، ويقدم تنوعاً كبيراً في الوحدات يبدأ من 74 متراً مربعاً وبسعر افتتاح مميز جداً. تُسلم جميع الشقق كاملة التشطيب، مع توفر مسارات مخصصة للمشي والمشاة، مناطق رياضية، ومساحات خضراء واسعة، مع خطة سداد على 8 سنوات.",
+  features: [
+    "Prime strategic location in the 6th Settlement (Tagamoa 6)",
+    "Master-planned by world-renowned architecture firm WATG",
+    "Developed by leading developer Marakez",
+    "Competitive entry ticket price starting at 8.5M EGP",
+    "Apartment units delivered Fully Finished",
+    "Flexible payment schedule over 8 years with an 8% down payment"
+  ],
+  amenities: [
+    "Extensive Green Spaces & Parklands",
+    "Community Clubhouse",
+    "Dedicated Walking & Cycling Paths",
+    "Sports & Athletics Areas",
+    "24/7 Gated Security & Perimeter Management"
+  ],
+  deliveryDate: "4 Years",
+  downPayment: "8%",
+  installmentYears: "8 Years",
+  status: "selling-fast"
+},
+
+
+{
+  id: "p37",
+  title: "Ramla",
+  titleAr: "رملة",
+  developer: "Marakez",
+  developerId: "marakez",
+  image: "https://cdn.aqarround.com/2023/04/ramla-north-coast.webp",
+  images: [
+    "https://iproperties.com.eg/wp-content/uploads/2025/06/ramla-4-835x467.png",
+    "https://iproperties.com.eg/wp-content/uploads/2025/06/ramla-3-835x467.png",
+    "https://iproperties.com.eg/wp-content/uploads/2025/06/ramla-2-835x467.png"
+  ],
+  location: "Kilo 215, Ras El Hekma, North Coast",
+  locationAr: "الكيلو 215 - رأس الحكمة - الساحل الشمالي",
+  type: "Coastal Resort & Beachfront Compound",
+  priceFrom: "22,700,000 EGP",
+  area: "128 sqm+",
+  unitTypes: [
+    "2 Bedroom Chalets",
+    "3 Bedroom Chalets",
+    "Townhouses",
+    "Twin Houses",
+    "Standalone Villas"
+  ],
+  description: "Ramla by Marakez is a premium coastal sanctuary situated at Kilo 215 in Ras El Hekma. Highlighted by an operational beach, expansive 22-acre swimmable lagoons, and a massive 13-acre sports complex, Ramla delivers a vibrant seaside lifestyle with near-term to immediate delivery options (RTM to 2 years). Units start from 128 sqm, backed by flexible installment plans extending up to 8 years.",
+  descriptionAr: "قرية رملة من شركة مراكز هي وجهة ساحلية فاخرة تقع عند الكيلو 215 بقلب منطقة رأس الحكمة. تتميز بوجود شاطئ يعمل بالفعل، وبحيرات كريستالية قابلة للسباحة على مساحة 22 فداناً، بالإضافة إلى منطقة رياضية ضخمة على مساحة 13 فداناً. يوفر المشروع خيارات تسليم سريعة وفورية (جاهز للتحرك إلى سنتين) مع وحدات تبدأ من 128 متراً مربعاً وخطة سداد تصل إلى 8 سنوات.",
+  features: [
+    "Prime Ras El Hekma location at Kilo 215",
+    "Developed by top-tier developer Marakez",
+    "Active and fully operational beach front",
+    "Early delivery options ranging from Ready-To-Move (RTM) to 2 years",
+    "Massive sports and recreational infrastructure spanning 13 acres",
+    "Flexible 5% to 15% down payment options with plans from 4 to 8 years"
+  ],
+  amenities: [
+    "22 Acres of Swimmable Lagoons",
+    "13-Acre Integrated Sports Zone",
+    "Beach Clubhouse & Lounge",
+    "Fine Dining Restaurants & Waterfront Cafes",
+    "24/7 Resort Security & Facility Management"
+  ],
+  deliveryDate: "RTM / 2 Years",
+  downPayment: "5% to 15%",
+  installmentYears: "4 to 8 Years",
+  status: "selling-fast"
+},
+
+
 ];
 
 const stats = [
@@ -2171,8 +2524,8 @@ function renderContactInfo() {
     </a>
   `).join("") + `
     <div class="contact-map">
-      <div class="contact-map-bg"></div>
-      <div class="contact-map-text">${SVG.map}<p style="font-size:0.875rem; color:#6b7280;">New Cairo, Egypt</p></div>
+      <div class="contact-map-bg"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4108.215504492499!2d31.42946468048186!3d30.020108095681017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583d00116fe889%3A0x606cae12f949fb78!2sEver%20Scopes!5e0!3m2!1sar!2seg!4v1784638519342!5m2!1sar!2seg" width="450" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+      
     </div>`;
 }
 
