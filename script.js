@@ -155,7 +155,6 @@ const projects = [
   image: "https://www.newcapital-projects.com/wp-content/uploads/2025/11/%D9%83%D9%88%D8%B1-%D8%A7%D9%84%D8%B9%D8%A7%D8%B5%D9%85%D8%A9-%D8%A7%D9%84%D8%A7%D8%AF%D8%A7%D8%B1%D9%8A%D8%A9-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9.jpeg",
   images: [
     "https://www.newcapital-projects.com/wp-content/uploads/2025/11/%D9%83%D9%88%D8%B1-%D8%A7%D9%84%D8%B9%D8%A7%D8%B5%D9%85%D8%A9-%D8%A7%D9%84%D8%A7%D8%AF%D8%A7%D8%B1%D9%8A%D8%A9-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9.jpeg",
-
     "https://www.newcapital-projects.com/wp-content/uploads/2025/11/%D9%85%D9%88%D9%84-%D9%83%D9%88%D8%B1-%D8%A7%D9%84%D8%B9%D8%A7%D8%B5%D9%85%D8%A9-%D8%A7%D9%84%D8%A7%D8%AF%D8%A7%D8%B1%D9%8A%D8%A9.jpg",
     "https://www.newcapital-projects.com/wp-content/uploads/2025/11/%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%83%D9%88%D8%B1-%D8%A7%D9%84%D8%B9%D8%A7%D8%B5%D9%85%D8%A9-%D8%A7%D9%84%D8%A7%D8%AF%D8%A7%D8%B1%D9%8A%D8%A9.jpg",
     "https://www.newcapital-projects.com/wp-content/uploads/2025/11/%D9%85%D8%A7%D8%B3%D8%AA%D8%B1-%D8%A8%D9%84%D8%A7%D9%86-%D9%85%D9%88%D9%84-%D9%83%D9%88%D8%B1-%D8%A7%D9%84%D8%B9%D8%A7%D8%B5%D9%85%D8%A9-%D8%A7%D9%84%D8%A7%D8%AF%D8%A7%D8%B1%D9%8A%D8%A9.jpg",
@@ -167,7 +166,7 @@ const projects = [
   location: "Financial & Business District, New Administrative Capital",
   locationAr: "حي المال والأعمال - العاصمة الإدارية الجديدة",
   type: "Commercial, Administrative & Hotel Towers Complex (G+20)",
-  priceFrom: "6,000,000 EGP",
+  priceFrom: "7,450,000 EGP",
   area: "40 sqm+",
   unitTypes: [
     "Commercial Shops",
@@ -175,8 +174,8 @@ const projects = [
     "Medical Clinics",
     "Hotel Units & Serviced Apartments"
   ],
-  description: "KOR New Capital (Kingdom of Rares) by Arabia Holding is a landmark high-density development situated in the Financial & Business District of the New Administrative Capital. Comprising 7 iconic towers rising Ground + 20 Floors, the complex features specialized towers including LYRA for administrative offices and VEGA for luxury serviced apartments. Positioned just 3 minutes from the Iconic Tower and Bin Zayed Axis, it combines eco-friendly, smart building design with exceptional ROI potential and flexible payment plans up to 11 years.",
-  descriptionAr: "مشروع مملكة النوادرة (أبراج KOR) من شركة عربية القابضة هو مشروع استثماري متكامل بارز يقع في حي المال والأعمال بالعاصمة الإدارية الجديدة. يتكون المشروع من 7 أبراج بارتفاع أرضي + 20 دوراً، مقسمة إلى أبراج متخصصة مثل أبراج LYRA للمكاتب الإدارية وأبراج VEGA للشقق الفندقية الفاخرة. يقع المشروع على بعد 3 دقائق فقط من البرج الأيقوني ومحور بن زايد، ويتميز بأنظمة بناء ذكية وصديقة للبيئة مع عائد استثماري قوي وخطط سداد تصل إلى 11 سنة.",
+  description: "KOR New Capital by Arabia Holding is a landmark high-density development situated in the Financial & Business District of the New Administrative Capital. Comprising 7 iconic towers rising Ground + 20 Floors, the complex features specialized towers including LYRA for administrative offices and VEGA for luxury serviced apartments. Positioned just 3 minutes from the Iconic Tower and Bin Zayed Axis, it combines eco-friendly, smart building design with exceptional ROI potential and flexible payment plans up to 11 years.",
+  descriptionAr: " (أبراج KOR) من شركة عربية القابضة هو مشروع استثماري متكامل بارز يقع في حي المال والأعمال بالعاصمة الإدارية الجديدة. يتكون المشروع من 7 أبراج بارتفاع أرضي + 20 دوراً، مقسمة إلى أبراج متخصصة مثل أبراج LYRA للمكاتب الإدارية وأبراج VEGA للشقق الفندقية الفاخرة. يقع المشروع على بعد 3 دقائق فقط من البرج الأيقوني ومحور بن زايد، ويتميز بأنظمة بناء ذكية وصديقة للبيئة مع عائد استثماري قوي وخطط سداد تصل إلى 11 سنة.",
   features: [
     "Prime strategic hub in the Financial & Business District near the Iconic Tower and Regional Ring Road",
     "High-density development permit with 7 towers rising Ground + 20 Floors",
