@@ -156,12 +156,12 @@ const projects = [
   images: [
     "https://cdn.phototourl.com/free/2026-07-29-9e54b510-9538-4777-b36c-cf5ffdbe73c1.png",
     "https://www.newcapital-projects.com/wp-content/uploads/2025/11/%D9%83%D9%88%D8%B1-%D8%A7%D9%84%D8%B9%D8%A7%D8%B5%D9%85%D8%A9-%D8%A7%D9%84%D8%A7%D8%AF%D8%A7%D8%B1%D9%8A%D8%A9-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9.jpeg",
-    "https://www.newcapital-projects.com/wp-content/uploads/2025/11/%D9%85%D9%88%D9%84-%D9%83%D9%88%D8%B1-%D8%A7%D9%84%D8%B9%D8%A7%D8%B5%D9%85%D8%A9-%D8%A7%D9%84%D8%A7%D8%AF%D8%A7%D8%B1%D9%8A%D8%A9.jpg",
-    "https://www.newcapital-projects.com/wp-content/uploads/2025/11/%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%83%D9%88%D8%B1-%D8%A7%D9%84%D8%B9%D8%A7%D8%B5%D9%85%D8%A9-%D8%A7%D9%84%D8%A7%D8%AF%D8%A7%D8%B1%D9%8A%D8%A9.jpg",
-    "https://www.newcapital-projects.com/wp-content/uploads/2025/11/%D9%85%D8%A7%D8%B3%D8%AA%D8%B1-%D8%A8%D9%84%D8%A7%D9%86-%D9%85%D9%88%D9%84-%D9%83%D9%88%D8%B1-%D8%A7%D9%84%D8%B9%D8%A7%D8%B5%D9%85%D8%A9-%D8%A7%D9%84%D8%A7%D8%AF%D8%A7%D8%B1%D9%8A%D8%A9.jpg",
-    "https://www.newcapital-projects.com/wp-content/uploads/2025/11/%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%83%D9%88%D8%B1-%D8%A7%D9%84%D8%B9%D8%A7%D8%B5%D9%85%D8%A9-%D8%A7%D9%84%D8%A7%D8%AF%D8%A7%D8%B1%D9%8A%D8%A9-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9.jpg",
-    "https://www.newcapital-projects.com/wp-content/uploads/2025/11/%D9%83%D9%88%D8%B1-%D8%A7%D9%84%D8%B9%D8%A7%D8%B5%D9%85%D8%A9-%D8%A7%D9%84%D8%A7%D8%AF%D8%A7%D8%B1%D9%8A%D8%A9-1.jpg",
-    "https://www.newcapital-projects.com/wp-content/uploads/2025/11/%D9%83%D9%88%D8%B1-%D8%A7%D9%84%D8%B9%D8%A7%D8%B5%D9%85%D8%A9-%D8%A7%D9%84%D8%A7%D8%AF%D8%A7%D8%B1%D9%8A%D8%A9-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9.jpg"
+    "https://cdn.phototourl.com/free/2026-07-29-4ed8a062-84f5-4980-b67b-a1f9aeb6dcfa.png",
+    "https://cdn.phototourl.com/free/2026-07-29-8e352126-fbaa-4343-a74e-2f236de7bd33.png",
+    "https://cdn.phototourl.com/free/2026-07-29-ba672e82-a692-4603-94e6-b694abca7773.png",
+    "https://cdn.phototourl.com/free/2026-07-29-92165b1e-6149-4006-be3a-ad16459f1771.png",
+    "https://cdn.phototourl.com/free/2026-07-29-6571ea55-82a9-4eae-a925-b10bf10ab236.png",
+    "https://cdn.phototourl.com/free/2026-07-29-4fb16500-c038-4e10-be2b-6b8f32a17c4c.png"
   
   ],
   location: "Financial & Business District, New Administrative Capital",
