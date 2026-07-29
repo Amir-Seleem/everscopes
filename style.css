@@ -293,13 +293,24 @@ input, select, textarea { font: inherit; }
 
 /* Tagline Pill */
 .hero-tagline {
-  display: inline-flex; align-items: center; gap: 0.5rem;
-  padding: 0.5rem 1rem; border-radius: 9999px;
-  background: rgba(255,87,0,0.1); border: 1px solid rgba(255,87,0,0.2);
+  display: inline-flex; 
+  align-items: center; 
+  gap: 0.5rem;
+  padding: 0.5rem 1rem; 
+  border-radius: 9999px;
+  background: rgba(255,87,0,0.1); 
+  border: 1px solid rgba(255,87,0,0.2);
+  
+  /* أضف هذا السطر أو اضبط القيمة حسب حاجتك */
+  margin-top: 4rem; 
   margin-bottom: 2rem;
-  opacity: 0; transform: translateY(30px);
+  
+  opacity: 0; 
+  transform: translateY(30px);
   animation: fadeInUp 0.8s ease-out 0.2s forwards;
 }
+
+
 .hero-tagline-dot {
   width: 8px; height: 8px; border-radius: 50%;
   background: var(--es-orange); animation: pulse 2s infinite;
