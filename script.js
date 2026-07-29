@@ -154,7 +154,7 @@ const projects = [
   developerId: "arabia-holding",
   image: "https://www.enjazproperty.com/en/wp-content/uploads/2025/11/Kor-New-Capital-1.jpg",
   images: [
-    "https://www.newcapital-projects.com/wp-content/uploads/2025/11/%D9%83%D9%88%D8%B1-%D8%A7%D9%84%D8%B9%D8%A7%D8%B5%D9%85%D8%A9-%D8%A7%D9%84%D8%A7%D8%AF%D8%A7%D8%B1%D9%8A%D8%A9-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9.jpeg",
+    "https://www.enjazproperty.com/en/wp-content/uploads/2025/11/Kor-New-Capital-1.jpg",
     "https://www.newcapital-projects.com/wp-content/uploads/2025/11/%D9%85%D9%88%D9%84-%D9%83%D9%88%D8%B1-%D8%A7%D9%84%D8%B9%D8%A7%D8%B5%D9%85%D8%A9-%D8%A7%D9%84%D8%A7%D8%AF%D8%A7%D8%B1%D9%8A%D8%A9.jpg",
     "https://www.newcapital-projects.com/wp-content/uploads/2025/11/%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%83%D9%88%D8%B1-%D8%A7%D9%84%D8%B9%D8%A7%D8%B5%D9%85%D8%A9-%D8%A7%D9%84%D8%A7%D8%AF%D8%A7%D8%B1%D9%8A%D8%A9.jpg",
     "https://www.newcapital-projects.com/wp-content/uploads/2025/11/%D9%85%D8%A7%D8%B3%D8%AA%D8%B1-%D8%A8%D9%84%D8%A7%D9%86-%D9%85%D9%88%D9%84-%D9%83%D9%88%D8%B1-%D8%A7%D9%84%D8%B9%D8%A7%D8%B5%D9%85%D8%A9-%D8%A7%D9%84%D8%A7%D8%AF%D8%A7%D8%B1%D9%8A%D8%A9.jpg",
