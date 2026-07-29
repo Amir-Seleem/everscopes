@@ -162,7 +162,9 @@ const projects = [
     "https://cdn.phototourl.com/free/2026-07-29-92165b1e-6149-4006-be3a-ad16459f1771.png",
     "https://cdn.phototourl.com/free/2026-07-29-6571ea55-82a9-4eae-a925-b10bf10ab236.png",
     "https://cdn.phototourl.com/free/2026-07-29-4fb16500-c038-4e10-be2b-6b8f32a17c4c.png"
-  
+
+
+    
   ],
   location: "Financial & Business District, New Administrative Capital",
   locationAr: "حي المال والأعمال - العاصمة الإدارية الجديدة",
@@ -2412,13 +2414,67 @@ function renderProjects() {
     return `
     <div class="project-card reveal" onclick="openModal('${p.id}')">
       <div class="project-card-inner">
-        <div class="project-card-image">
-          <div class="shimmer" style="position:absolute;inset:0;z-index:1;"></div>
-          <img src="${p.image}" alt="${title}" loading="lazy" onload="this.previousElementSibling.style.display='none'">
-          <div class="project-card-overlay-gradient"></div>
-          <span class="status-badge ${p.status}">${SVG.sparkles} ${statusLabel}</span>
-          <span class="dev-badge">${SVG.building.replace('width="28"','width="12"').replace('height="28"','height="12"')} ${p.developer}</span>
-        </div>
+  <div class="project-card-image" style="position: relative; border-radius: 20px 20px 0 0; overflow: hidden;">
+    <!-- الشيمر (تأثير التحميل) -->
+    <div class="shimmer" style="position:absolute;inset:0;z-index:1;"></div>
+    
+    <!-- صورة المشروع -->
+    <img src="${p.image}" alt="${title}" loading="lazy" onload="this.previousElementSibling.style.display='none'" style="width:100%;height:100%;object-fit:cover;">
+    
+    <!-- التدرج اللوني الشفاف السفلي -->
+    <div class="project-card-overlay-gradient" style="position:absolute;bottom:0;left:0;right:0;height:40%;background:linear-gradient(to top, rgba(0,0,0,0.5), transparent);z-index:2;"></div>
+    
+    <!-- زر الاستفهام والتواصل -->
+    <button 
+      class="project-contact-action" 
+      onclick="event.stopPropagation(); scrollToSection('contact');" 
+      data-i18n="nav_contact"
+      title="Contact" 
+      style="
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 10;
+        
+        /* التدرج اللوني (أزرق غامق إلى أحمر) */
+        background: linear-gradient(135deg, #ff4d00 0%, #e39d06 100%);
+        color: white;
+        
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        border: 2px solid white;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        transition: transform 0.2s ease;
+        outline: none;
+      "
+      onmouseover="this.style.transform='scale(1.1)'"
+      onmouseout="this.style.transform='scale(1)'"
+    >
+      <!-- أيقونة علامة الاستفهام المطابقة للصورة -->
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"></circle>
+        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+        <line x1="12" y1="17" x2="12.01" y2="17"></line>
+      </svg>
+    </button>
+    
+    <!-- الشارات الموجودة مسبقًا -->
+    <span class="status-badge ${p.status}">${SVG.sparkles} ${statusLabel}</span>
+    <span class="dev-badge">${SVG.building.replace('width="28"','width="12"').replace('height="28"','height="12"')} ${p.developer}</span>
+  </div>;
+
+
+
+
+
+
         <div class="project-card-content">
           <div class="project-card-title-row">
             <h3 class="project-card-title">${title}</h3>
